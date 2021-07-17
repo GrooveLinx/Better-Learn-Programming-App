@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
 
-class HomeCard extends StatelessWidget {
+class TopicsCard extends StatelessWidget {
   final String languageName;
   final String imagePath;
-  final Color color;
   final Function onTap;
-  HomeCard({this.imagePath, this.languageName, this.color, this.onTap});
+  final int heroTag;
+  TopicsCard({
+    this.imagePath,
+    this.languageName,
+    this.onTap, this.heroTag,
+  });
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: color,
+          color: Color(0xfffdf5e6),
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
@@ -32,10 +36,13 @@ class HomeCard extends StatelessWidget {
               children: [
                 Spacer(),
                 FittedBox(
-                  child: Image.network(
-                    imagePath,
-                    height: MediaQuery.of(context).size.height * .15,
-                    width: MediaQuery.of(context).size.width * .30,
+                  child: Hero(
+                    tag: heroTag,
+                    child: Image.asset(
+                      imagePath,
+                      height: MediaQuery.of(context).size.height * .15,
+                      width: MediaQuery.of(context).size.width * .30,
+                    ),
                   ),
                 ),
                 Spacer(),
