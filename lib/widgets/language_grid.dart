@@ -1,5 +1,5 @@
 import 'package:code_quiz_v2/models/language-model.dart';
-import 'package:code_quiz_v2/screen/language/programming_language_study.dart';
+import 'package:code_quiz_v2/screen/programming_language_study.dart';
 import 'package:code_quiz_v2/widgets/language_card.dart';
 import 'package:flutter/material.dart';
 
