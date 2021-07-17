@@ -10,23 +10,22 @@ class TopicPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xffffffee),
       appBar: AppBar(
-        backgroundColor: Colors.brown[200],
+        backgroundColor: Colors.brown[100],
         elevation: 0,
         title: Text(
           'CodeQuiz',
           style: TextStyle(
-              color: Colors.black,
-              fontSize: 26,
-              letterSpacing: 1.1,
+              color: Colors.purple[900],
+              fontSize: 30,
               fontFamily: 'Ubuntu',
-              fontWeight: FontWeight.w500),
+              fontWeight: FontWeight.w600),
         ),
       ),
       body: Stack(
         children: [
           Container(
             decoration: BoxDecoration(
-                color: Colors.brown[200],
+                color: Colors.brown[100],
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(25),
                     bottomRight: Radius.circular(25))),
@@ -37,13 +36,15 @@ class TopicPage extends StatelessWidget {
               Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 20, bottom: 15),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
                     child: Text(
                       'Learn Programming &\nTest Your Coding Skills!',
                       style: TextStyle(
                         fontFamily: 'Roboto',
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 1.1,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.teal[800],
+                        letterSpacing: 1.2,
                         fontSize: 24,
                       ),
                     ),

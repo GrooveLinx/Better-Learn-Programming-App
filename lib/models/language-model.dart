@@ -4,11 +4,12 @@ class Language {
   String info;
   String imagePath;
   bool isFav;
-  Language({
-    this.id,
-    this.info,
-    this.name,
-    this.imagePath,
-    this.isFav = false,
-  });
+  String description;
+  Language(
+      {this.id,
+      this.info,
+      this.name,
+      this.imagePath,
+      this.isFav = false,
+      this.description});
 }
