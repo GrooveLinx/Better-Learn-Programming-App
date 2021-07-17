@@ -24,7 +24,7 @@ class BottomNavMenu extends StatelessWidget {
           iconInfo,
           style: TextStyle(
             color: color,
-            fontFamily: 'Roboto',
+            fontFamily: 'Ubuntu',
             fontSize: 15,
           ),
         )

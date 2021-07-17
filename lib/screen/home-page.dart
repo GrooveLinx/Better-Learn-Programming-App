@@ -34,8 +34,8 @@ class _HomePageState extends State<HomePage> {
         child: currentScreen,
       ),
       floatingActionButton: Container(
-        height: 70.0,
-        width: 70.0,
+        height: MediaQuery.of(context).size.height * .18,
+        width: MediaQuery.of(context).size.width * .18,
         child: FittedBox(
           child: FloatingActionButton(
               backgroundColor: Colors.brown[200],
@@ -53,9 +53,9 @@ class _HomePageState extends State<HomePage> {
           FloatingActionButtonLocation.miniCenterDocked,
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(35), topRight: Radius.circular(35)),
+            topLeft: Radius.circular(25), topRight: Radius.circular(25)),
         child: BottomAppBar(
-          color: Colors.brown[200],
+          color: Color(0xffd7ccc8),
           shape: CircularNotchedRectangle(),
           notchMargin: 10,
           child: Container(
@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                         });
                       },
                       child: BottomNavMenu(
-                        icon: Mdi.homeAssistant,
+                        icon: Mdi.home,
                         color: currentTab == 0 ? Colors.black : Colors.black45,
                         iconInfo: 'Home',
                       ),
@@ -126,7 +126,7 @@ class _HomePageState extends State<HomePage> {
                         });
                       },
                       child: BottomNavMenu(
-                        icon: Icons.developer_board,
+                        icon: Mdi.developerBoard,
                         color: currentTab == 3 ? Colors.black : Colors.black45,
                         iconInfo: 'Developer',
                       ),
