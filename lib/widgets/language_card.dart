@@ -31,11 +31,12 @@ class HomeCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Spacer(),
-                Image.network(
-                  imagePath,
-                  height: MediaQuery.of(context).size.height * .15,
-                  width: MediaQuery.of(context).size.width * .30,
-                  fit: BoxFit.cover,
+                FittedBox(
+                  child: Image.network(
+                    imagePath,
+                    height: MediaQuery.of(context).size.height * .15,
+                    width: MediaQuery.of(context).size.width * .30,
+                  ),
                 ),
                 Spacer(),
                 Text(

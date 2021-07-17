@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
         width: MediaQuery.of(context).size.width * .18,
         child: FittedBox(
           child: FloatingActionButton(
-              backgroundColor: Colors.brown[200],
+              backgroundColor: Color(0xffe5bca5),
               child: Icon(
                 Mdi.bookOpenPageVariant,
                 color: Colors.brown[600],
@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
         borderRadius: BorderRadius.only(
             topLeft: Radius.circular(25), topRight: Radius.circular(25)),
         child: BottomAppBar(
-          color: Color(0xffd7ccc8),
+          color: Color(0xffe5bca5),
           shape: CircularNotchedRectangle(),
           notchMargin: 10,
           child: Container(
