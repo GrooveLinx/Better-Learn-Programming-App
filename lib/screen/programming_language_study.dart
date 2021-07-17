@@ -104,8 +104,8 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                                 size: 40,
                               ),
                               color: programmingLanguage.isFav
-                                  ? Colors.yellowAccent[700]
-                                  : Colors.black,
+                                  ? Colors.blueGrey[700]
+                                  : Colors.black54,
                               onPressed: () {
                                 setState(() {
                                   programmingLanguage.isFav =
