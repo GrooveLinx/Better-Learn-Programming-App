@@ -30,7 +30,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
             SliverPadding(
               padding: EdgeInsets.symmetric(vertical: 5),
               sliver: SliverAppBar(
-                brightness: Brightness.light,
+                // brightness: Brightness.light,
                 leading: IconButton(
                   icon: Icon(
                     Mdi.arrowLeftBoldOutline,
@@ -44,7 +44,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                             builder: (BuildContext context) => TopicPage()));
                   },
                 ),
-                backgroundColor: Colors.transparent,
+                backgroundColor: Colors.grey[100],
                 expandedHeight: 250,
                 flexibleSpace: FlexibleSpaceBar(
                   background: Hero(

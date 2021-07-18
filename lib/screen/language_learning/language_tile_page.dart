@@ -1,4 +1,5 @@
 import 'package:code_quiz_v2/database/programming-tile-data.dart';
+import 'package:code_quiz_v2/screen/language_learning/Topics/topic_1.dart';
 import 'package:code_quiz_v2/screen/programming_language_study.dart';
 import 'package:code_quiz_v2/widgets/category-tile.dart';
 import 'package:flutter/material.dart';
@@ -40,7 +41,7 @@ class LanguageTilePage extends StatelessWidget {
                   fontSize: 30)),
         ),
       ),
-      body: ListView(
+      body: Column(
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
@@ -52,45 +53,66 @@ class LanguageTilePage extends StatelessWidget {
               ),
             ],
           ),
-          CategoryTile(
-            dbTitle: languageTile.topic1,
-            onTap: () {},
-          ),
-          CategoryTile(
-            dbTitle: languageTile.topic2,
-            onTap: () {},
-          ),
-          CategoryTile(
-            dbTitle: languageTile.topic3,
-            onTap: () {},
-          ),
-          CategoryTile(
-            dbTitle: languageTile.topic4,
-            onTap: () {},
-          ),
-          CategoryTile(
-            dbTitle: languageTile.topic5,
-            onTap: () {},
-          ),
-          CategoryTile(
-            dbTitle: languageTile.topic6,
-            onTap: () {},
-          ),
-          CategoryTile(
-            dbTitle: languageTile.topic7,
-            onTap: () {},
-          ),
-          CategoryTile(
-            dbTitle: languageTile.topic8,
-            onTap: () {},
-          ),
-          CategoryTile(
-            dbTitle: languageTile.topic9,
-            onTap: () {},
-          ),
-          CategoryTile(
-            dbTitle: languageTile.topic10,
-            onTap: () {},
+          Expanded(
+            child: ClipRRect(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(30),
+                topRight: Radius.circular(30),
+              ),
+              child: ListView(
+                children: [
+                  CategoryTile(
+                    dbTitle: languageTile.topic1,
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Topic1(
+                            id: languageTile.id,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                  CategoryTile(
+                    dbTitle: languageTile.topic2,
+                    onTap: () {},
+                  ),
+                  CategoryTile(
+                    dbTitle: languageTile.topic3,
+                    onTap: () {},
+                  ),
+                  CategoryTile(
+                    dbTitle: languageTile.topic4,
+                    onTap: () {},
+                  ),
+                  CategoryTile(
+                    dbTitle: languageTile.topic5,
+                    onTap: () {},
+                  ),
+                  CategoryTile(
+                    dbTitle: languageTile.topic6,
+                    onTap: () {},
+                  ),
+                  CategoryTile(
+                    dbTitle: languageTile.topic7,
+                    onTap: () {},
+                  ),
+                  CategoryTile(
+                    dbTitle: languageTile.topic8,
+                    onTap: () {},
+                  ),
+                  CategoryTile(
+                    dbTitle: languageTile.topic9,
+                    onTap: () {},
+                  ),
+                  CategoryTile(
+                    dbTitle: languageTile.topic10,
+                    onTap: () {},
+                  ),
+                ],
+              ),
+            ),
           ),
         ],
       ),

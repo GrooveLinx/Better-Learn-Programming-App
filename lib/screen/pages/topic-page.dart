@@ -1,6 +1,7 @@
 import 'package:code_quiz_v2/database/language-list.dart';
 import 'package:code_quiz_v2/widgets/language_grid.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TopicPage extends StatelessWidget {
   const TopicPage({Key key}) : super(key: key);
@@ -10,22 +11,21 @@ class TopicPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xffffffee),
       appBar: AppBar(
-        backgroundColor: Colors.brown[100],
+        backgroundColor: Colors.blueGrey[300],
         elevation: 0,
         title: Text(
           'CodeQuiz',
-          style: TextStyle(
-              color: Colors.purple[900],
-              fontSize: 30,
-              fontFamily: 'Ubuntu',
-              fontWeight: FontWeight.w600),
+          style: GoogleFonts.podkova(
+            textStyle: TextStyle(
+                color: Colors.white, fontSize: 40, fontWeight: FontWeight.w600),
+          ),
         ),
       ),
       body: Stack(
         children: [
           Container(
             decoration: BoxDecoration(
-                color: Colors.brown[100],
+                color: Colors.blueGrey[300],
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(0),
                     bottomRight: Radius.circular(0))),
@@ -38,24 +38,40 @@ class TopicPage extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 20, vertical: 10),
-                    child: Text(
-                      'Learn Programming &\nTest Your Coding Skills!',
-                      style: TextStyle(
-                        fontFamily: 'Roboto',
-                        fontWeight: FontWeight.w600,
-                        color: Colors.teal[800],
-                        letterSpacing: 1.2,
-                        fontSize: 24,
+                    child: SafeArea(
+                      child: Flexible(
+                        child: Text(
+                          'Learn & Test\nYour Coding Skills!',
+                          style: GoogleFonts.poppins(
+                            textStyle: TextStyle(
+                                color: Colors.deepOrange[50],
+                                fontSize: 25,
+                                fontWeight: FontWeight.w600),
+                          ),
+                        ),
                       ),
                     ),
                   ),
                 ],
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * .01,
+                height: MediaQuery.of(context).size.height * .013,
               ),
               Expanded(
-                  child: GridView.builder(
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(30),
+                      topRight: Radius.circular(30),
+                    ),
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(30),
+                      topRight: Radius.circular(30),
+                    ),
+                    child: GridView.builder(
                       padding: EdgeInsets.all(15),
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisSpacing: 25,
@@ -67,8 +83,12 @@ class TopicPage extends StatelessWidget {
                       itemCount: language.length,
                       itemBuilder: (BuildContext context, int index) =>
                           LanguageGrid(
-                            languageData: language[index],
-                          ))),
+                        languageData: language[index],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
             ],
           )
         ],

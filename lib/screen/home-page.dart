@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                         });
                       },
                       child: BottomNavMenu(
-                        icon: Mdi.home,
+                        icon: currentTab == 0 ? Mdi.home : Mdi.homeOutline,
                         color: currentTab == 0 ? Colors.black : Colors.black45,
                         iconInfo: 'Home',
                       ),
@@ -91,7 +91,8 @@ class _HomePageState extends State<HomePage> {
                         });
                       },
                       child: BottomNavMenu(
-                        icon: Mdi.bookVariant,
+                        icon:
+                            currentTab == 1 ? Mdi.bookVariant : Mdi.bookOutline,
                         color: currentTab == 1 ? Colors.black : Colors.black45,
                         iconInfo: 'Bookmark',
                       ),
@@ -111,7 +112,9 @@ class _HomePageState extends State<HomePage> {
                         });
                       },
                       child: BottomNavMenu(
-                        icon: Mdi.chartLineStacked,
+                        icon: currentTab == 2
+                            ? Mdi.chartAreasplineVariant
+                            : Mdi.chartLineStacked,
                         color: currentTab == 2 ? Colors.black : Colors.black45,
                         iconInfo: 'Quiz',
                       ),
