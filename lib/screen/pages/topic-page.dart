@@ -27,8 +27,8 @@ class TopicPage extends StatelessWidget {
             decoration: BoxDecoration(
                 color: Colors.brown[100],
                 borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(25),
-                    bottomRight: Radius.circular(25))),
+                    bottomLeft: Radius.circular(0),
+                    bottomRight: Radius.circular(0))),
             height: MediaQuery.of(context).size.height * .3,
           ),
           Column(

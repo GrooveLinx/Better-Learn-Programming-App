@@ -12,11 +12,13 @@ class LanguageGrid extends StatelessWidget {
     return TopicsCard(
       onTap: () {
         Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (BuildContext context) => ProgrammingLanguageStudy(
-                      id: languageData.id,
-                    )));
+          context,
+          MaterialPageRoute(
+            builder: (BuildContext context) => ProgrammingLanguageStudy(
+              id: languageData.id,
+            ),
+          ),
+        );
       },
       heroTag: languageData.id,
       imagePath: languageData.imagePath,

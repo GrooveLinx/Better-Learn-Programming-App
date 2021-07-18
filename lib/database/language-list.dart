@@ -2,24 +2,25 @@ import 'package:code_quiz_v2/models/language-model.dart';
 
 final List<Language> language = [
   Language(
-      id: 1,
-      name: 'C/C++',
-      info: 'C/C++ Programming Language',
-      imagePath: 'images/c_logo.png',
-      description:
-          '''C++ is a cross-platform language that can be used to create high-performance applications.
+    id: 1,
+    name: 'C/C++',
+    info: 'C/C++ Programming Language',
+    imagePath: 'images/c_logo.png',
+    description:
+        '''C++ is a cross-platform language that can be used to create high-performance applications.
 
 C++ was developed by Bjarne Stroustrup, as an extension to the C language.
 
 C++ gives programmers a high level of control over system resources and memory.
 
-The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.'''),
+The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.''',
+  ),
   Language(
-      id: 2,
-      name: 'Java',
-      info: 'Java Programming Language',
-      imagePath: 'images/java_logo.png',
-      description: '''Java is a popular programming language, created in 1995.
+    id: 2,
+    name: 'Java',
+    info: 'Java Programming Language',
+    imagePath: 'images/java_logo.png',
+    description: '''Java is a popular programming language, created in 1995.
 
 It is owned by Oracle, and more than 3 billion devices run Java.
 
@@ -31,7 +32,8 @@ Web applications
 Web servers and application servers
 Games
 Database connection
-And much, much more!'''),
+And much, much more!''',
+  ),
   Language(
     id: 3,
     name: 'Python',

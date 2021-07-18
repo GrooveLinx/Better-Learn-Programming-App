@@ -14,7 +14,7 @@ class TopicsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: Color(0xfff1ebda),
+          color: Colors.purple[50],
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(

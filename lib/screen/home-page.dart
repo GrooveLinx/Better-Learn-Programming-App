@@ -52,8 +52,8 @@ class _HomePageState extends State<HomePage> {
       floatingActionButtonLocation:
           FloatingActionButtonLocation.miniCenterDocked,
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(25), topRight: Radius.circular(25)),
+        // borderRadius: BorderRadius.only(
+        //     topLeft: Radius.circular(25), topRight: Radius.circular(25)),
         child: BottomAppBar(
           color: Color(0xffe5bca5),
           shape: CircularNotchedRectangle(),
