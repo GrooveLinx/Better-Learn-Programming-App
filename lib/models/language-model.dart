@@ -72,6 +72,34 @@ class ProgrammingTutorial {
   String topic5Description;
   String sample5Program;
   String program5Description;
+  String topic6Title;
+  String topic6Description;
+  String sample6Program;
+  String program6Description;
+  String topic7Title;
+  String topic7Description;
+  String sample7Program;
+  String program7Description;
+  String topic8Title;
+  String topic8Description;
+  String sample8Program;
+  String program8Description;
+  String topic9Title;
+  String topic9Description;
+  String sample9Program;
+  String program9Description;
+  String topic10Title;
+  String topic10Description;
+  String sample10Program;
+  String program10Description;
+  String topic11Title;
+  String topic11Description;
+  String sample11Program;
+  String program11Description;
+  String topic12Title;
+  String topic12Description;
+  String sample12Program;
+  String program12Description;
   bool isFav;
   ProgrammingTutorial(
       {this.id,
@@ -91,5 +119,37 @@ class ProgrammingTutorial {
       this.topic4Description,
       this.sample4Program,
       this.program4Description,
+      this.topic5Title,
+      this.topic5Description,
+      this.sample5Program,
+      this.program5Description,
+      this.topic6Title,
+      this.topic6Description,
+      this.sample6Program,
+      this.program6Description,
+      this.topic7Title,
+      this.topic7Description,
+      this.sample7Program,
+      this.program7Description,
+      this.topic8Title,
+      this.topic8Description,
+      this.sample8Program,
+      this.program8Description,
+      this.topic9Title,
+      this.topic9Description,
+      this.sample9Program,
+      this.program9Description,
+      this.topic10Title,
+      this.topic10Description,
+      this.sample10Program,
+      this.program10Description,
+      this.topic11Title,
+      this.topic11Description,
+      this.sample11Program,
+      this.program11Description,
+      this.topic12Title,
+      this.topic12Description,
+      this.sample12Program,
+      this.program12Description,
       this.isFav = false});
 }

@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'CodeQuiz v2',
       theme: ThemeData(
-      fontFamily: 'Roboto',
+        fontFamily: 'Roboto',
         primarySwatch: Colors.blue,
       ),
       home: HomePage(),

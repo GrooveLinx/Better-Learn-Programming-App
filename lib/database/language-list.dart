@@ -74,22 +74,10 @@ Dart was revealed for the first time in the GOTO conference in the month of 10th
   ),
   Language(
     id: 5,
-    name: 'HTML/CSS',
-    info: 'HTML/CSS',
-    imagePath: 'images/html_logo.png',
-    description: '''HTML : 
-HTML stands for Hyper Text Markup Language
-HTML is the standard markup language for creating Web pages
-HTML describes the structure of a Web page
-HTML consists of a series of elements
-HTML elements tell the browser how to display the content
-HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
-
-CSS :
-CSS stands for Cascading Style Sheets
-CSS describes how HTML elements are to be displayed on screen, paper, or in other media
-CSS saves a lot of work. It can control the layout of multiple web pages all at once
-External stylesheets are stored in CSS files''',
+    name: 'Swift',
+    info: 'Swift Programming Language',
+    imagePath: 'images/swift_logo.png',
+    description: '''Swift is a powerful and intuitive programming language developed by Apple.\nIt is used to create apps for iOS, macOS, watchOS, and so on. Swift code is concise yet expressive (easier to understand and write).''',
   ),
   Language(
     id: 6,
