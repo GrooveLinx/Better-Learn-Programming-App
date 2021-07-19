@@ -1,5 +1,15 @@
 import 'package:code_quiz_v2/database/programming-tile-data.dart';
-import 'package:code_quiz_v2/screen/language_learning/Topics/topic_1.dart';
+import 'package:code_quiz_v2/provider/Topics/topic_1.dart';
+import 'package:code_quiz_v2/provider/Topics/topic_10.dart';
+import 'package:code_quiz_v2/provider/Topics/topic_11.dart';
+import 'package:code_quiz_v2/provider/Topics/topic_2.dart';
+import 'package:code_quiz_v2/provider/Topics/topic_3.dart';
+import 'package:code_quiz_v2/provider/Topics/topic_4.dart';
+import 'package:code_quiz_v2/provider/Topics/topic_5.dart';
+import 'package:code_quiz_v2/provider/Topics/topic_6.dart';
+import 'package:code_quiz_v2/provider/Topics/topic_7.dart';
+import 'package:code_quiz_v2/provider/Topics/topic_8.dart';
+import 'package:code_quiz_v2/provider/Topics/topic_9.dart';
 import 'package:code_quiz_v2/screen/programming_language_study.dart';
 import 'package:code_quiz_v2/widgets/category-tile.dart';
 import 'package:flutter/material.dart';
@@ -88,7 +98,7 @@ class LanguageTilePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Topic1(
+                            builder: (context) => Topic2(
                               id: languageTile.id,
                             ),
                           ),
@@ -103,7 +113,7 @@ class LanguageTilePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Topic1(
+                            builder: (context) => Topic3(
                               id: languageTile.id,
                             ),
                           ),
@@ -118,7 +128,7 @@ class LanguageTilePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Topic1(
+                            builder: (context) => Topic4(
                               id: languageTile.id,
                             ),
                           ),
@@ -133,7 +143,7 @@ class LanguageTilePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Topic1(
+                            builder: (context) => Topic5(
                               id: languageTile.id,
                             ),
                           ),
@@ -148,7 +158,7 @@ class LanguageTilePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Topic1(
+                            builder: (context) => Topic6(
                               id: languageTile.id,
                             ),
                           ),
@@ -163,7 +173,7 @@ class LanguageTilePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Topic1(
+                            builder: (context) => Topic7(
                               id: languageTile.id,
                             ),
                           ),
@@ -178,7 +188,7 @@ class LanguageTilePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Topic1(
+                            builder: (context) => Topic8(
                               id: languageTile.id,
                             ),
                           ),
@@ -192,7 +202,7 @@ class LanguageTilePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Topic1(
+                            builder: (context) => Topic9(
                               id: languageTile.id,
                             ),
                           ),
@@ -207,7 +217,7 @@ class LanguageTilePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Topic1(
+                            builder: (context) => Topic10(
                               id: languageTile.id,
                             ),
                           ),
@@ -221,7 +231,7 @@ class LanguageTilePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Topic1(
+                            builder: (context) => Topic11(
                               id: languageTile.id,
                             ),
                           ),

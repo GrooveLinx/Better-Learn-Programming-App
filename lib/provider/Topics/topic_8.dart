@@ -1,6 +1,6 @@
 import 'package:code_quiz_v2/database/programming-tile-data.dart';
 import 'package:code_quiz_v2/database/programming_tutorial.dart';
-import 'package:code_quiz_v2/screen/language_learning/language_tile_page.dart';
+import 'package:code_quiz_v2/screen/language_tile_page.dart';
 import 'package:code_quiz_v2/widgets/topics/custom_topic_app_bar.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_intro.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_program.dart';
@@ -8,9 +8,9 @@ import 'package:code_quiz_v2/widgets/topics/topics_program_description.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_program_output.dart';
 import 'package:flutter/material.dart';
 
-class Topic1 extends StatelessWidget {
+class Topic8 extends StatelessWidget {
   final int id;
-  const Topic1({
+  const Topic8({
     Key key,
     this.id,
   }) : super(key: key);
@@ -25,7 +25,7 @@ class Topic1 extends StatelessWidget {
             Navigator.pop(context,
                 MaterialPageRoute(builder: (context) => LanguageTilePage()));
           },
-          topicTitle:'${tutorialKey.topic1} of ${tutorialKey.name}',
+          topicTitle: '${tutorialKey.topic1} of ${tutorialKey.name}',
         ),
         preferredSize:
             Size(double.infinity, MediaQuery.of(context).size.height * .08),
@@ -67,11 +67,3 @@ class Topic1 extends StatelessWidget {
     );
   }
 }
-
-/**
- *  ListView.builder(
-        itemCount:  ,
-        itemBuilder: (BuildContext context, int index) {
-          return 
-        },
- */

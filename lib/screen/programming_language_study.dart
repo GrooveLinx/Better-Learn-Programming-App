@@ -1,6 +1,6 @@
 import 'package:code_quiz_v2/database/language-list.dart';
 import 'package:code_quiz_v2/models/language-model.dart';
-import 'package:code_quiz_v2/screen/language_learning/language_tile_page.dart';
+import 'package:code_quiz_v2/screen/language_tile_page.dart';
 import 'package:code_quiz_v2/screen/pages/topic-page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
