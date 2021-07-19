@@ -17,7 +17,9 @@ class TopicPage extends StatelessWidget {
           'CodeQuiz',
           style: GoogleFonts.podkova(
             textStyle: TextStyle(
-                color: Colors.white, fontSize: 40, fontWeight: FontWeight.w600),
+                color: Colors.deepPurple[900],
+                fontSize: 40,
+                fontWeight: FontWeight.w600),
           ),
         ),
       ),

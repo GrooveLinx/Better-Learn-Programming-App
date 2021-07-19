@@ -25,7 +25,7 @@ class Topic2 extends StatelessWidget {
             Navigator.pop(context,
                 MaterialPageRoute(builder: (context) => LanguageTilePage()));
           },
-          topicTitle: '${tutorialKey.topic1} of ${tutorialKey.name}',
+          topicTitle: '${tutorialKey.topic2} of ${tutorialKey.name}',
         ),
         preferredSize:
             Size(double.infinity, MediaQuery.of(context).size.height * .08),

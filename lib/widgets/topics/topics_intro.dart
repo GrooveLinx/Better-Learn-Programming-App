@@ -18,9 +18,9 @@ class TopicsIntro extends StatelessWidget {
       children: [
         Container(
           margin: EdgeInsets.only(bottom: 10),
-          padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-          width: MediaQuery.of(context).size.width * .2,
-          height: MediaQuery.of(context).size.height * .1,
+          //padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
+          width: MediaQuery.of(context).size.width * .1,
+          height: MediaQuery.of(context).size.height * .05,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             color: Colors.brown[100],
@@ -30,21 +30,21 @@ class TopicsIntro extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Icon(
-                Mdi.bookOpenOutline,
-                color: Colors.brown[900],
-                size: 30,
+                Mdi.codeArray,
+                color: Colors.brown[400],
+                size: 25,
               ),
-              Flexible(
-                child: Text(
-                  '${topicId.toString()}',
-                  style: GoogleFonts.poppins(
-                    textStyle: TextStyle(
-                        color: Colors.brown[500],
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500),
-                  ),
-                ),
-              ),
+              // Flexible(
+              //   child: Text(
+              //     '${topicId.toString()}',
+              //     style: GoogleFonts.poppins(
+              //       textStyle: TextStyle(
+              //           color: Colors.brown[500],
+              //           fontSize: 18,
+              //           fontWeight: FontWeight.w500),
+              //     ),
+              //   ),
+              // ),
             ],
           ),
         ),
