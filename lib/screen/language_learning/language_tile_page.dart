@@ -1,20 +1,10 @@
 import 'package:code_quiz_v2/database/programming-tile-data.dart';
 import 'package:code_quiz_v2/screen/language_learning/Topics/topic_1.dart';
-import 'package:code_quiz_v2/screen/language_learning/Topics/topic_10.dart';
-import 'package:code_quiz_v2/screen/language_learning/Topics/topic_11.dart';
-import 'package:code_quiz_v2/screen/language_learning/Topics/topic_2.dart';
-import 'package:code_quiz_v2/screen/language_learning/Topics/topic_3.dart';
-import 'package:code_quiz_v2/screen/language_learning/Topics/topic_5.dart';
-import 'package:code_quiz_v2/screen/language_learning/Topics/topic_7.dart';
-import 'package:code_quiz_v2/screen/language_learning/Topics/topic_8.dart';
 import 'package:code_quiz_v2/screen/programming_language_study.dart';
 import 'package:code_quiz_v2/widgets/category-tile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mdi/mdi.dart';
-import 'Topics/topic_4.dart';
-import 'Topics/topic_6.dart';
-import 'Topics/topic_9.dart';
 
 class LanguageTilePage extends StatelessWidget {
   final int id;
@@ -70,170 +60,176 @@ class LanguageTilePage extends StatelessWidget {
                 topLeft: Radius.circular(30),
                 topRight: Radius.circular(30),
               ),
-              child: ListView(
-                children: [
-                  CategoryTile(
-                    dbTitle: languageTile.topic1,
-                    customSubtitle:
-                        'It\'s the first program of all Programming Language.',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Topic1(
-                            id: languageTile.id,
+              child: Container(
+                color: Colors.amber[50],
+                child: ListView(
+                  padding: EdgeInsets.only(top: 10),
+                  children: [
+                    CategoryTile(
+                      dbTitle: languageTile.topic1,
+                      customSubtitle:
+                          'It\'s the first program of all Programming Language.',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Topic1(
+                              id: languageTile.id,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
-                  CategoryTile(
-                    dbTitle: languageTile.topic2,
-                    customSubtitle:
-                        'Every programming language has it\'s own syntax.',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Topic2(
-                            id: languageTile.id,
+                        );
+                      },
+                    ),
+                    CategoryTile(
+                      dbTitle: languageTile.topic2,
+                      customSubtitle:
+                          'Every programming language has it\'s own syntax.',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Topic1(
+                              id: languageTile.id,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
-                  CategoryTile(
-                    dbTitle: languageTile.topic3,
-                    customSubtitle: 'There are various kinds of data-types.',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Topic3(
-                            id: languageTile.id,
+                        );
+                      },
+                    ),
+                    CategoryTile(
+                      dbTitle: languageTile.topic3,
+                      customSubtitle:
+                          'A set of values and is determined to act on those values.',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Topic1(
+                              id: languageTile.id,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
-                  CategoryTile(
-                    dbTitle: languageTile.topic4,
-                    customSubtitle: 'These are used for case checking.',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Topic4(
-                            id: languageTile.id,
+                        );
+                      },
+                    ),
+                    CategoryTile(
+                      dbTitle: languageTile.topic4,
+                      customSubtitle:
+                          'Conditions are using for checking states or execute particular work.',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Topic1(
+                              id: languageTile.id,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
-                  CategoryTile(
-                    dbTitle: languageTile.topic5,
-                    customSubtitle:
-                        'Using for excute the same work for many times.',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Topic5(
-                            id: languageTile.id,
+                        );
+                      },
+                    ),
+                    CategoryTile(
+                      dbTitle: languageTile.topic5,
+                      customSubtitle:
+                          'Using for emplementing the same work for a number of time.',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Topic1(
+                              id: languageTile.id,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
-                  CategoryTile(
-                    dbTitle: languageTile.topic6,
-                    customSubtitle:
-                        'A function is a block of code that performs a specific task',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Topic6(
-                            id: languageTile.id,
+                        );
+                      },
+                    ),
+                    CategoryTile(
+                      dbTitle: languageTile.topic6,
+                      customSubtitle:
+                          'A function is a block of code that performs a specific task.',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Topic1(
+                              id: languageTile.id,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
-                  CategoryTile(
-                    dbTitle: languageTile.topic7,
-                    customSubtitle:
-                        'Array is a variable that can store multiple values',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Topic7(
-                            id: languageTile.id,
+                        );
+                      },
+                    ),
+                    CategoryTile(
+                      dbTitle: languageTile.topic7,
+                      customSubtitle:
+                          'An array is a variable that can store multiple values.',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Topic1(
+                              id: languageTile.id,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
-                  CategoryTile(
-                    dbTitle: languageTile.topic8,
-                    customSubtitle:
-                        'Pointers are special variables that are used to store addresses.',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Topic8(
-                            id: languageTile.id,
+                        );
+                      },
+                    ),
+                    CategoryTile(
+                      dbTitle: languageTile.topic8,
+                      customSubtitle:
+                          'Pointers are special variables that are used to store addresses.',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Topic1(
+                              id: languageTile.id,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
-                  CategoryTile(
-                    dbTitle: languageTile.topic9,
-                    customSubtitle: 'String is a sequence of characters.',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Topic9(
-                            id: languageTile.id,
+                        );
+                      },
+                    ),
+                    CategoryTile(
+                      dbTitle: languageTile.topic9,
+                      customSubtitle: 'A string is a sequence of characters.',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Topic1(
+                              id: languageTile.id,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
-                  CategoryTile(
-                    dbTitle: languageTile.topic10,
-                    customSubtitle:
-                        'A struct is a collection of variables under a single name.',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Topic10(
-                            id: languageTile.id,
+                        );
+                      },
+                    ),
+                    CategoryTile(
+                      dbTitle: languageTile.topic10,
+                      customSubtitle:
+                          'A structure is a collection of variables under a single name.',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Topic1(
+                              id: languageTile.id,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
-                  CategoryTile(
-                    dbTitle: languageTile.topic11,
-                    customSubtitle: 'Object Oriented Programming.',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => Topic11(
-                            id: languageTile.id,
+                        );
+                      },
+                    ),
+                    CategoryTile(
+                      dbTitle: languageTile.topic11,
+                      customSubtitle: 'Object Oriented Programming.',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Topic1(
+                              id: languageTile.id,
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                  ),
-                ],
+                        );
+                      },
+                    ),
+                  ],
+                ),
               ),
             ),
           ),

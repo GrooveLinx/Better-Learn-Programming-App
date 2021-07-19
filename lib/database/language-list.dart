@@ -14,6 +14,7 @@ C++ was developed by Bjarne Stroustrup, as an extension to the C language.
 C++ gives programmers a high level of control over system resources and memory.
 
 The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.''',
+
   ),
   Language(
     id: 2,

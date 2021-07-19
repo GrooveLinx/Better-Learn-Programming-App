@@ -1,4 +1,5 @@
-import 'package:code_quiz_v2/database/programming_tutorial_data.dart';
+import 'package:code_quiz_v2/database/programming-tile-data.dart';
+import 'package:code_quiz_v2/database/programming_tutorial.dart';
 import 'package:code_quiz_v2/screen/language_learning/language_tile_page.dart';
 import 'package:code_quiz_v2/widgets/topics/custom_topic_app_bar.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_intro.dart';
@@ -16,7 +17,7 @@ class Topic1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final tutorialKey = programmingTutorial.firstWhere((e) => e.id == id);
+    final tutorialKey = categoryTile.firstWhere((e) => e.id == id);
     return Scaffold(
       appBar: PreferredSize(
         child: CustomAppBar(
@@ -24,45 +25,53 @@ class Topic1 extends StatelessWidget {
             Navigator.pop(context,
                 MaterialPageRoute(builder: (context) => LanguageTilePage()));
           },
-          topicTitle: '${tutorialKey.topic1Title}',
+          topicTitle:'${tutorialKey.topic1} of ${tutorialKey.name}',
         ),
         preferredSize:
             Size(double.infinity, MediaQuery.of(context).size.height * .08),
       ),
-      body: ListView(
-        children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+      body: ListView.builder(
+        itemCount: programmingTutorial.length,
+        itemBuilder: (BuildContext context, int index) {
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TopicsIntro(
-                  topicTitle: tutorialKey.topic1Title,
-                  topicDescription: tutorialKey.topic1Description,
+                  topicId: 1 + index,
+                  topicTitle: programmingTutorial[index].topicTitle,
+                  topicDescription: programmingTutorial[index].topicDescription,
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
                 TopicsProgram(
-                  topicProgram: tutorialKey.sample1Program,
-                ),
+                    topicProgram: programmingTutorial[index].sampleProgram),
                 SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
                 TopicsProgramOutput(
-                  topicProgramOutput: tutorialKey.sample1ProgramOutput,
-                ),
+                    topicProgramOutput:
+                        programmingTutorial[index].sampleProgramOutput),
                 SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
                 TopicsProgramDescription(
-                  topicProgramDescription: tutorialKey.program1Description,
-                ),
+                    topicProgramDescription:
+                        programmingTutorial[index].programDescription)
               ],
             ),
-          )
-        ],
+          );
+        },
       ),
     );
   }
 }
+
+/**
+ *  ListView.builder(
+        itemCount:  ,
+        itemBuilder: (BuildContext context, int index) {
+          return 
+        },
+ */

@@ -11,7 +11,7 @@ class TopicPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xffffffee),
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey[300],
+        backgroundColor: Colors.purple[100],
         elevation: 0,
         title: Text(
           'CodeQuiz',
@@ -25,7 +25,7 @@ class TopicPage extends StatelessWidget {
         children: [
           Container(
             decoration: BoxDecoration(
-                color: Colors.blueGrey[300],
+                color: Colors.purple[100],
                 borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(0),
                     bottomRight: Radius.circular(0))),
@@ -44,7 +44,7 @@ class TopicPage extends StatelessWidget {
                           'Learn & Test\nYour Coding Skills!',
                           style: GoogleFonts.poppins(
                             textStyle: TextStyle(
-                                color: Colors.deepOrange[50],
+                                color: Colors.brown[700],
                                 fontSize: 25,
                                 fontWeight: FontWeight.w600),
                           ),
@@ -60,7 +60,7 @@ class TopicPage extends StatelessWidget {
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.white,
+                    color: Colors.amber[50],
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30),
                       topRight: Radius.circular(30),
