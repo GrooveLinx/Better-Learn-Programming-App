@@ -7,21 +7,21 @@ import 'package:code_quiz_v2/widgets/topics/topics_program_description.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_program_output.dart';
 import 'package:flutter/material.dart';
 
-class Topic2 extends StatelessWidget {
+class Topic11 extends StatelessWidget {
   final int id;
-  const Topic2({Key key, this.id}) : super(key: key);
+  const Topic11({Key key, this.id}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final tutorialKey = programmingTutorial.firstWhere((e) => e.id == id);
-    return Scaffold(
+     final tutorialKey = programmingTutorial.firstWhere((e) => e.id == id);
+    return  Scaffold(
       appBar: PreferredSize(
         child: CustomAppBar(
           onTap: () {
             Navigator.pop(context,
                 MaterialPageRoute(builder: (context) => LanguageTilePage()));
           },
-          topicTitle: '${tutorialKey.topic2Title}',
+          topicTitle: '${tutorialKey.topic11Title}',
         ),
         preferredSize:
             Size(double.infinity, MediaQuery.of(context).size.height * .08),
@@ -34,26 +34,26 @@ class Topic2 extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TopicsIntro(
-                  topicTitle: tutorialKey.topic2Title,
-                  topicDescription: tutorialKey.topic2Description,
+                  topicTitle: tutorialKey.topic11Title,
+                  topicDescription: tutorialKey.topic10Description,
                 ),
                 SizedBox(
                   height: 15,
                 ),
                 TopicsProgram(
-                  topicProgram: tutorialKey.sample2Program,
+                  topicProgram: tutorialKey.sample11Program,
                 ),
                 SizedBox(
                   height: 15,
                 ),
                 TopicsProgramOutput(
-                  topicProgramOutput: tutorialKey.sample2ProgramOutput,
+                  topicProgramOutput: tutorialKey.sample11ProgramOutput,
                 ),
                 SizedBox(
                   height: 15,
                 ),
                 TopicsProgramDescription(
-                  topicProgramDescription: tutorialKey.program2Description,
+                  topicProgramDescription: tutorialKey.program11Description,
                 ),
               ],
             ),
