@@ -72,7 +72,7 @@ class TopicPage extends StatelessWidget {
                       topRight: Radius.circular(30),
                     ),
                     child: GridView.builder(
-                      padding: EdgeInsets.all(15),
+                      padding: EdgeInsets.fromLTRB(15, 15, 15, 25),
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisSpacing: 25,
                         mainAxisSpacing: 25,

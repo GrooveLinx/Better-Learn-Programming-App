@@ -11,7 +11,6 @@ import 'package:code_quiz_v2/widgets/category-tile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mdi/mdi.dart';
-
 import 'Topics/topic_4.dart';
 import 'Topics/topic_6.dart';
 import 'Topics/topic_9.dart';
@@ -25,7 +24,7 @@ class LanguageTilePage extends StatelessWidget {
     final languageTile = categoryTile.firstWhere((e) => e.id == id);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.white12,
         elevation: 0,
         leading: IconButton(
           icon: Icon(

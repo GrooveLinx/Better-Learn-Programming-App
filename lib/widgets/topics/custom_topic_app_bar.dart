@@ -17,15 +17,17 @@ class CustomAppBar extends StatelessWidget {
             size: 30,
           ),
           onPressed: onTap),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.brown[50].withOpacity(.3),
       elevation: 0.0,
-      title: Text(
-        topicTitle,
-        style: GoogleFonts.poppins(
-          textStyle: TextStyle(
-              color: Colors.blue[700],
-              fontSize: 24,
-              fontWeight: FontWeight.w500),
+      title: Flexible(
+        child: Text(
+          topicTitle,
+          style: GoogleFonts.poppins(
+            textStyle: TextStyle(
+                color: Colors.brown[500],
+                fontSize: 24,
+                fontWeight: FontWeight.w500),
+          ),
         ),
       ),
     );

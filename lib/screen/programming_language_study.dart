@@ -139,12 +139,12 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                               color: Colors.blueGrey[50],
                               borderRadius: BorderRadius.circular(10),
                               boxShadow: [
-                                BoxShadow(
-                                  color: Color(0xFFE6E6E6), //color of shadow
-                                  spreadRadius: -15, //spread radius
-                                  blurRadius: 17, // blur radius
-                                  offset: Offset(0, 17),
-                                )
+                                // BoxShadow(
+                                //   color: Color(0xFFE6E6E6), //color of shadow
+                                //   spreadRadius: -15, //spread radius
+                                //   blurRadius: 17, // blur radius
+                                //   offset: Offset(0, 17),
+                                // )
                               ]),
                           child: Flexible(
                             child: Text(
@@ -169,7 +169,9 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                             );
                           },
                           child: Container(
-                            margin: EdgeInsets.only(top: 10),
+                            margin: EdgeInsets.only(
+                              top: 10,
+                            ),
                             decoration: BoxDecoration(
                                 color: Colors.purple[50],
                                 borderRadius: BorderRadius.circular(10)),
@@ -202,53 +204,37 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                                   ),
                                 ),
                               ),
-                              trailing: Container(
-                                padding: EdgeInsets.zero,
-                                decoration: BoxDecoration(
-                                  color: Colors.blueGrey[200],
-                                  borderRadius: BorderRadius.circular(50),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color:
-                                          Color(0xFFE6E6E6), //color of shadow
-                                      spreadRadius: -15, //spread radius
-                                      blurRadius: 17, // blur radius
-                                      offset: Offset(0, 17),
-                                    ),
-                                  ],
-                                ),
-                                child: GestureDetector(
-                                  onTap: () {
-                                    Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) =>
-                                                LanguageTilePage()));
-                                  },
-                                  child: IconButton(
-                                    padding: EdgeInsets.zero,
-                                    icon: Icon(
-                                      Mdi.arrowRightBold,
-                                      size: 40,
-                                      color: Colors.black45,
-                                    ),
-                                    onPressed: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (BuildContext context) =>
-                                              LanguageTilePage(
-                                            id: programmingLanguage.id,
-                                          ),
-                                        ),
-                                      );
-                                    },
+                              trailing: GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              LanguageTilePage()));
+                                },
+                                child: IconButton(
+                                  padding: EdgeInsets.zero,
+                                  icon: Icon(
+                                    Mdi.arrowRightCircleOutline,
+                                    size: 30,
+                                    color: Colors.black45,
                                   ),
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (BuildContext context) =>
+                                            LanguageTilePage(
+                                          id: programmingLanguage.id,
+                                        ),
+                                      ),
+                                    );
+                                  },
                                 ),
                               ),
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ],
