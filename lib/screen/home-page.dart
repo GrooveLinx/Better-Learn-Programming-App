@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
             title: Text('BookMark'),
             textAlign: TextAlign.center,
             icon: Icon(
-              currentTab == 3 ? Mdi.bookmark : Mdi.bookmarkOffOutline,
+              currentTab == 3 ? Mdi.bookmark : Mdi.bookmarkOutline,
               size: 30,
             ),
             activeColor: Colors.black,

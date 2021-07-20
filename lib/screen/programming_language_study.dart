@@ -23,6 +23,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
   Widget build(BuildContext context) {
     final programmingLanguage = language.firstWhere((e) => e.id == widget.id);
     final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
     return Scaffold(
       // backgroundColor: Colors.brown[50],
       body: SafeArea(
@@ -133,7 +134,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                           ),
                         ),
                         SizedBox(
-                          height: 10,
+                          height: height / 50,
                         ),
                         Container(
                           width: double.infinity,
@@ -175,18 +176,17 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                             child: ListTile(
                               leading: Container(
                                 child: FittedBox(
-                                  child: Hero(
-                                    tag: programmingLanguage.id,
-                                    child: Image.asset(
-                                        programmingLanguage.imagePath),
-                                  ),
-                                ),
+                                    child: Hero(
+                                  tag: programmingLanguage.id,
+                                  child: Image.asset(
+                                      programmingLanguage.imagePath),
+                                )),
                               ),
                               title: Text(
                                 'Learn ${programmingLanguage.name}',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(
-                                    color: Colors.purple[400],
+                                    color: Colors.teal[700],
                                     fontWeight: FontWeight.w600,
                                     fontSize: 20,
                                     letterSpacing: 1,

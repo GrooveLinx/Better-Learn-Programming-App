@@ -18,7 +18,7 @@ class TopicsCard extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     return Container(
       decoration: BoxDecoration(
-          color: Colors.teal[50],
+          color: Colors.pink[50],
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(

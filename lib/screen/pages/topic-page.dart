@@ -15,7 +15,7 @@ class TopicPage extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final aspectRatio = MediaQuery.of(context).size.aspectRatio;
     return Scaffold(
-      backgroundColor: Color(0xffffffee),
+      // backgroundColor: Color(0xffffffee),
       appBar: AppBar(
         backgroundColor: Colors.lightGreen[100],
         elevation: 0,
@@ -62,7 +62,7 @@ class TopicPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 15,
-                  vertical: 10,
+                  vertical: 15,
                 ),
                 child: Row(
                   // crossAxisAlignment: CrossAxisAlignment.start,
@@ -70,10 +70,10 @@ class TopicPage extends StatelessWidget {
                   children: [
                     Flexible(
                       child: Text(
-                        'Learn once\nCode anywhere!',
-                        style: GoogleFonts.robotoCondensed(
+                        'Learn once\nProgram\nanywhere!',
+                        style: GoogleFonts.montserrat(
                           textStyle: TextStyle(
-                            color: Colors.brown[700],
+                            color: Colors.blueGrey[600],
                             fontSize: 30,
                             fontWeight: FontWeight.w600,
                           ),
@@ -82,8 +82,8 @@ class TopicPage extends StatelessWidget {
                     ),
                     SvgPicture.asset(
                       'images/dedicated-team.svg',
-                      width: width / 4,
-                      height: height / 5.5,
+                      width: width /3,
+                      height: height / 5,
                     ),
                   ],
                 ),

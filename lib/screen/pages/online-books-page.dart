@@ -10,18 +10,6 @@ class OnlineBookPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        leading: IconButton(
-            icon: Icon(
-              Mdi.backburger,
-              size: 30.0,
-              color: Colors.black,
-            ),
-            onPressed: () {
-              Navigator.pop(
-                  context,
-                  MaterialPageRoute(
-                      builder: (BuildContext context) => TopicPage()));
-            }),
         backgroundColor: Colors.white,
         elevation: 0.0,
         title: Text(
