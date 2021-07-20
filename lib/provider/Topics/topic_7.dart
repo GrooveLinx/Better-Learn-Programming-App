@@ -24,6 +24,7 @@ class Topic7 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final tutorialKey = categoryTile.firstWhere((e) => e.id == id);
+    final height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: PreferredSize(
         child: CustomAppBar(
@@ -51,18 +52,18 @@ class Topic7 extends StatelessWidget {
                         topicDescription: cArrayTutorial[_].topicDescription,
                       ),
                       SizedBox(
-                        height: 10,
+                        height: height / 50,
                       ),
                       TopicsProgram(
                           topicProgram: cArrayTutorial[_].sampleProgram),
                       SizedBox(
-                        height: 10,
+                        height: height / 50,
                       ),
                       TopicsProgramOutput(
                           topicProgramOutput:
                               cArrayTutorial[_].sampleProgramOutput),
                       SizedBox(
-                        height: 10,
+                        height: height / 50,
                       ),
                       TopicsProgramDescription(
                           topicProgramDescription:

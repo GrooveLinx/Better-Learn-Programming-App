@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TopicsCard extends StatelessWidget {
   final String languageName;
@@ -8,13 +9,16 @@ class TopicsCard extends StatelessWidget {
   TopicsCard({
     this.imagePath,
     this.languageName,
-    this.onTap, this.heroTag,
+    this.onTap,
+    this.heroTag,
   });
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
     return Container(
       decoration: BoxDecoration(
-          color: Colors.amber[100],
+          color: Colors.teal[50],
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
@@ -40,20 +44,21 @@ class TopicsCard extends StatelessWidget {
                     tag: heroTag,
                     child: Image.asset(
                       imagePath,
-                      height: MediaQuery.of(context).size.height * .15,
-                      width: MediaQuery.of(context).size.width * .30,
+                      height: height / 5,
+                      width: width / 2,
                     ),
                   ),
                 ),
                 Spacer(),
                 Text(
                   languageName,
-                  style: TextStyle(
-                      fontSize: 20,
+                  style: GoogleFonts.cagliostro(
+                    textStyle: TextStyle(
+                      fontSize: 25,
                       color: Colors.teal[900],
-                      fontFamily: 'Ubuntu',
-                      letterSpacing: 1.1,
-                      fontWeight: FontWeight.bold),
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
                 Spacer(),
               ],

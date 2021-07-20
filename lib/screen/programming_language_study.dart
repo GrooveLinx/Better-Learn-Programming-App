@@ -22,6 +22,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
   @override
   Widget build(BuildContext context) {
     final programmingLanguage = language.firstWhere((e) => e.id == widget.id);
+    final height = MediaQuery.of(context).size.height;
     return Scaffold(
       // backgroundColor: Colors.brown[50],
       body: SafeArea(
@@ -45,7 +46,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                   },
                 ),
                 backgroundColor: Colors.grey[100],
-                expandedHeight: 250,
+                expandedHeight: height / 3,
                 flexibleSpace: FlexibleSpaceBar(
                   background: Hero(
                     tag: programmingLanguage.id,
@@ -59,7 +60,10 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
               ),
             ),
             SliverPadding(
-              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+              padding: EdgeInsets.symmetric(
+                horizontal: 10,
+                vertical: 10,
+              ),
               sliver: SliverList(
                 delegate: SliverChildListDelegate(
                   [
@@ -68,7 +72,9 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                       children: [
                         Container(
                           padding: EdgeInsets.symmetric(
-                              horizontal: 15, vertical: 15),
+                            horizontal: 15,
+                            vertical: 15,
+                          ),
                           decoration: BoxDecoration(
                             color: Colors.red[50],
                             borderRadius: BorderRadius.circular(10),
@@ -83,16 +89,15 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                                     Text(
                                       programmingLanguage.name,
                                       style: TextStyle(
-                                          fontFamily: 'Ubuntu',
-                                          fontSize: 30,
-                                          fontWeight: FontWeight.bold,
-                                          letterSpacing: 1,
-                                          color: Colors.purple[900]),
+                                        fontFamily: 'Ubuntu',
+                                        fontSize: 30,
+                                        fontWeight: FontWeight.bold,
+                                        letterSpacing: 1,
+                                        color: Colors.purple[900],
+                                      ),
                                     ),
                                     SizedBox(
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              .02,
+                                      height: height / 25,
                                     ),
                                     Text(
                                       programmingLanguage.info,
@@ -131,21 +136,13 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                           height: 10,
                         ),
                         Container(
-                          // height: MediaQuery.of(context).size.height * .4,
                           width: double.infinity,
                           padding: EdgeInsets.symmetric(
                               horizontal: 15, vertical: 15),
                           decoration: BoxDecoration(
-                              color: Colors.blueGrey[50],
-                              borderRadius: BorderRadius.circular(10),
-                              boxShadow: [
-                                // BoxShadow(
-                                //   color: Color(0xFFE6E6E6), //color of shadow
-                                //   spreadRadius: -15, //spread radius
-                                //   blurRadius: 17, // blur radius
-                                //   offset: Offset(0, 17),
-                                // )
-                              ]),
+                            color: Colors.blueGrey[50],
+                            borderRadius: BorderRadius.circular(10),
+                          ),
                           child: Flexible(
                             child: Text(
                               programmingLanguage.description,
@@ -178,17 +175,18 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                             child: ListTile(
                               leading: Container(
                                 child: FittedBox(
-                                    child: Hero(
-                                  tag: programmingLanguage.id,
-                                  child: Image.asset(
-                                      programmingLanguage.imagePath),
-                                )),
+                                  child: Hero(
+                                    tag: programmingLanguage.id,
+                                    child: Image.asset(
+                                        programmingLanguage.imagePath),
+                                  ),
+                                ),
                               ),
                               title: Text(
                                 'Learn ${programmingLanguage.name}',
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(
-                                    color: Colors.purple[700],
+                                    color: Colors.purple[400],
                                     fontWeight: FontWeight.w600,
                                     fontSize: 20,
                                     letterSpacing: 1,

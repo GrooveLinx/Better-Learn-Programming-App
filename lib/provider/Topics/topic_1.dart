@@ -28,6 +28,7 @@ class _Topic1State extends State<Topic1> {
   @override
   Widget build(BuildContext context) {
     final tutorialKey = categoryTile.firstWhere((e) => e.id == widget.id);
+    final height = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: PreferredSize(
         child: CustomAppBar(
@@ -38,7 +39,7 @@ class _Topic1State extends State<Topic1> {
           topicTitle: '${tutorialKey.topic1} of ${tutorialKey.name}',
         ),
         preferredSize:
-            Size(double.infinity, MediaQuery.of(context).size.height * .08),
+            Size(double.infinity, MediaQuery.of(context).size.height / 12),
       ),
       body: cBasicTutorial[0].id == tutorialKey.id
           ? ListView.builder(
@@ -55,18 +56,18 @@ class _Topic1State extends State<Topic1> {
                         topicDescription: cBasicTutorial[_].topicDescription,
                       ),
                       SizedBox(
-                        height: 10,
+                        height: height / 50,
                       ),
                       TopicsProgram(
                           topicProgram: cBasicTutorial[_].sampleProgram),
                       SizedBox(
-                        height: 10,
+                        height: height / 50,
                       ),
                       TopicsProgramOutput(
                           topicProgramOutput:
                               cBasicTutorial[_].sampleProgramOutput),
                       SizedBox(
-                        height: 10,
+                        height: height / 50,
                       ),
                       TopicsProgramDescription(
                           topicProgramDescription:

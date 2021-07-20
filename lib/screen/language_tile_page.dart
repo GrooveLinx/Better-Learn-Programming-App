@@ -22,6 +22,8 @@ class LanguageTilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final languageTile = categoryTile.firstWhere((e) => e.id == id);
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white12,
@@ -54,12 +56,17 @@ class LanguageTilePage extends StatelessWidget {
       body: Column(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Image.asset(
+                'images/vector.png',
+                width: width / 2,
+                height: height / 3.5,
+              ),
+              Image.asset(
                 languageTile.imagePath,
-                height: 200,
-                width: 200,
+                width: width / 2,
+                height: height * .20,
               ),
             ],
           ),
@@ -70,6 +77,9 @@ class LanguageTilePage extends StatelessWidget {
                 topRight: Radius.circular(30),
               ),
               child: Container(
+                height: height,
+                width: width,
+                margin: EdgeInsets.only(top: 10),
                 color: Colors.amber[50],
                 child: ListView(
                   padding: EdgeInsets.only(top: 10),

@@ -4,24 +4,30 @@ import 'package:code_quiz_v2/widgets/language_grid.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mdi/mdi.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class TopicPage extends StatelessWidget {
   const TopicPage({Key key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
+    final aspectRatio = MediaQuery.of(context).size.aspectRatio;
     return Scaffold(
       backgroundColor: Color(0xffffffee),
       appBar: AppBar(
-        backgroundColor: Colors.purple[100],
+        backgroundColor: Colors.lightGreen[100],
         elevation: 0,
         title: Text(
           'CodeQuiz',
-          style: GoogleFonts.podkova(
+          style: GoogleFonts.pacifico(
             textStyle: TextStyle(
-                color: Colors.deepPurple[900],
-                fontSize: 40,
-                fontWeight: FontWeight.w600),
+              color: Colors.black54,
+              letterSpacing: 1.1,
+              fontSize: 35,
+              fontWeight: FontWeight.w600,
+            ),
           ),
         ),
         actions: [
@@ -29,11 +35,15 @@ class TopicPage extends StatelessWidget {
             icon: Icon(
               Mdi.developerBoard,
               size: 30,
-              color: Colors.black,
+              color: Colors.blueGrey,
             ),
             onPressed: () {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (_) => DeveloperPage()));
+                context,
+                MaterialPageRoute(
+                  builder: (_) => DeveloperPage(),
+                ),
+              );
             },
           )
         ],
@@ -42,42 +52,49 @@ class TopicPage extends StatelessWidget {
         children: [
           Container(
             decoration: BoxDecoration(
-                color: Colors.purple[100],
-                borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(0),
-                    bottomRight: Radius.circular(0))),
-            height: MediaQuery.of(context).size.height * .3,
+              color: Colors.lightGreen[100],
+            ),
+            height: height,
           ),
           Column(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 20, vertical: 10),
-                    child: SafeArea(
-                      child: Flexible(
-                        child: Text(
-                          'Learn & Test\nYour Coding Skills!',
-                          style: GoogleFonts.poppins(
-                            textStyle: TextStyle(
-                                color: Colors.brown[700],
-                                fontSize: 25,
-                                fontWeight: FontWeight.w600),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 15,
+                  vertical: 10,
+                ),
+                child: Row(
+                  // crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Flexible(
+                      child: Text(
+                        'Learn once\nCode anywhere!',
+                        style: GoogleFonts.robotoCondensed(
+                          textStyle: TextStyle(
+                            color: Colors.brown[700],
+                            fontSize: 30,
+                            fontWeight: FontWeight.w600,
                           ),
                         ),
                       ),
                     ),
-                  ),
-                ],
+                    SvgPicture.asset(
+                      'images/dedicated-team.svg',
+                      width: width / 4,
+                      height: height / 5.5,
+                    ),
+                  ],
+                ),
               ),
               SizedBox(
-                height: MediaQuery.of(context).size.height * .013,
+                height: height / 50,
               ),
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.amber[50],
+                    color: Colors.lime[50],
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30),
                       topRight: Radius.circular(30),
@@ -94,8 +111,7 @@ class TopicPage extends StatelessWidget {
                         crossAxisSpacing: 25,
                         mainAxisSpacing: 25,
                         crossAxisCount: 2,
-                        childAspectRatio:
-                            MediaQuery.of(context).size.aspectRatio * 1.4,
+                        childAspectRatio: aspectRatio / .75,
                       ),
                       itemCount: language.length,
                       itemBuilder: (BuildContext context, int index) =>
