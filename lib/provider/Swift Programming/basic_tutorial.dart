@@ -3,28 +3,28 @@ import 'package:code_quiz_v2/models/language-model.dart';
 final List<ProgrammingTutorial> swiftBasicTutorial = [
   ProgrammingTutorial(
       id: 5,
-      topicTitle: 'I am ja',
+      topicTitle: '',
       topicDescription: '',
       sampleProgram: '',
       sampleProgramOutput: '',
       programDescription: ''),
   ProgrammingTutorial(
       id: 5,
-      topicTitle: 'Print Number Entered by User',
+      topicTitle: '',
       topicDescription: '',
       sampleProgram: '',
       sampleProgramOutput: '''''',
       programDescription: ''),
   ProgrammingTutorial(
       id: 5,
-      topicTitle: 'He is munna',
+      topicTitle: '',
       topicDescription: '',
       sampleProgram: '',
       sampleProgramOutput: '',
       programDescription: ''),
   ProgrammingTutorial(
       id: 5,
-      topicTitle: 'Dart is faw',
+      topicTitle: '',
       topicDescription: '',
       sampleProgram: '',
       sampleProgramOutput: '',
