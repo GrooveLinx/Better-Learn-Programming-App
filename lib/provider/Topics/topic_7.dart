@@ -1,10 +1,11 @@
+import 'package:code_quiz_v2/provider/C%20Programming/array_tutorial.dart';
+import 'package:code_quiz_v2/provider/Dart%20Programming/array_tutorial.dart';
 import 'package:code_quiz_v2/provider/Dart%20Programming/basic_tutorial.dart';
-import 'package:code_quiz_v2/provider/JS%20Programming/basic_tutorial.dart';
-import 'package:code_quiz_v2/provider/Java%20Programming/basic_tutorial.dart';
+import 'package:code_quiz_v2/provider/JS%20Programming/array_tutorial.dart';
+import 'package:code_quiz_v2/provider/Java%20Programming/array_tutorial.dart';
 import 'package:code_quiz_v2/database/programming-tile-data.dart';
-import 'package:code_quiz_v2/provider/C%20Programming/basic_tutorial.dart';
-import 'package:code_quiz_v2/provider/Python%20Programming/basic_tutorial.dart';
-import 'package:code_quiz_v2/provider/Swift%20Programming/basic_tutorial.dart';
+import 'package:code_quiz_v2/provider/Python%20Programming/array_tutorial.dart';
+import 'package:code_quiz_v2/provider/Swift%20Programming/array_tutorial.dart';
 import 'package:code_quiz_v2/screen/language_tile_page.dart';
 import 'package:code_quiz_v2/widgets/topics/custom_topic_app_bar.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_intro.dart';
@@ -30,14 +31,14 @@ class Topic7 extends StatelessWidget {
             Navigator.pop(context,
                 MaterialPageRoute(builder: (context) => LanguageTilePage()));
           },
-          topicTitle: '${tutorialKey.topic1} of ${tutorialKey.name}',
+          topicTitle: '${tutorialKey.topic7} of ${tutorialKey.name}',
         ),
         preferredSize:
             Size(double.infinity, MediaQuery.of(context).size.height * .08),
       ),
-      body: cBasicTutorial[0].id == tutorialKey.id
+      body: cArrayTutorial[0].id == tutorialKey.id
           ? ListView.builder(
-              itemCount: 4, //will be changed
+              itemCount: cArrayTutorial.length, //will be changed
               itemBuilder: (BuildContext context, int _) {
                 return Padding(
                   padding:
@@ -46,35 +47,34 @@ class Topic7 extends StatelessWidget {
                     children: [
                       TopicsIntro(
                         // topicId: 1 + index,
-                        topicTitle: cBasicTutorial[_].topicTitle,
-                        topicDescription:
-                            cBasicTutorial[_].topicDescription,
+                        topicTitle: cArrayTutorial[_].topicTitle,
+                        topicDescription: cArrayTutorial[_].topicDescription,
                       ),
                       SizedBox(
                         height: 10,
                       ),
                       TopicsProgram(
-                          topicProgram: cBasicTutorial[_].sampleProgram),
+                          topicProgram: cArrayTutorial[_].sampleProgram),
                       SizedBox(
                         height: 10,
                       ),
                       TopicsProgramOutput(
                           topicProgramOutput:
-                              cBasicTutorial[_].sampleProgramOutput),
+                              cArrayTutorial[_].sampleProgramOutput),
                       SizedBox(
                         height: 10,
                       ),
                       TopicsProgramDescription(
                           topicProgramDescription:
-                              cBasicTutorial[_].programDescription)
+                              cArrayTutorial[_].programDescription)
                     ],
                   ),
                 );
               },
             )
-          : javaBasicTutorial[0].id == tutorialKey.id
+          : javaArrayTutorial[0].id == tutorialKey.id
               ? ListView.builder(
-                  itemCount: javaBasicTutorial.length,
+                  itemCount: javaArrayTutorial.length,
                   itemBuilder: (BuildContext context, _) {
                     return Padding(
                       padding: const EdgeInsets.symmetric(
@@ -83,35 +83,35 @@ class Topic7 extends StatelessWidget {
                         children: [
                           TopicsIntro(
                             // topicId: 1 + index,
-                            topicTitle: javaBasicTutorial[_].topicTitle,
+                            topicTitle: javaArrayTutorial[_].topicTitle,
                             topicDescription:
-                                javaBasicTutorial[_].topicDescription,
+                                javaArrayTutorial[_].topicDescription,
                           ),
                           SizedBox(
                             height: 10,
                           ),
                           TopicsProgram(
-                              topicProgram: javaBasicTutorial[_].sampleProgram),
+                              topicProgram: javaArrayTutorial[_].sampleProgram),
                           SizedBox(
                             height: 10,
                           ),
                           TopicsProgramOutput(
                               topicProgramOutput:
-                                  javaBasicTutorial[_].sampleProgramOutput),
+                                  javaArrayTutorial[_].sampleProgramOutput),
                           SizedBox(
                             height: 10,
                           ),
                           TopicsProgramDescription(
                               topicProgramDescription:
-                                  javaBasicTutorial[_].programDescription)
+                                  javaArrayTutorial[_].programDescription)
                         ],
                       ),
                     );
                   },
                 )
-              : pythonBasicTutorial[0].id == tutorialKey.id
+              : pythonArrayTutorial[0].id == tutorialKey.id
                   ? ListView.builder(
-                      itemCount: pythonBasicTutorial.length,
+                      itemCount: pythonArrayTutorial.length,
                       itemBuilder: (BuildContext context, _) {
                         return Padding(
                           padding: const EdgeInsets.symmetric(
@@ -120,28 +120,28 @@ class Topic7 extends StatelessWidget {
                             children: [
                               TopicsIntro(
                                 // topicId: 1 + index,
-                                topicTitle: pythonBasicTutorial[_].topicTitle,
+                                topicTitle: pythonArrayTutorial[_].topicTitle,
                                 topicDescription:
-                                    pythonBasicTutorial[_].topicDescription,
+                                    pythonArrayTutorial[_].topicDescription,
                               ),
                               SizedBox(
                                 height: 10,
                               ),
                               TopicsProgram(
                                   topicProgram:
-                                      pythonBasicTutorial[_].sampleProgram),
+                                      pythonArrayTutorial[_].sampleProgram),
                               SizedBox(
                                 height: 10,
                               ),
                               TopicsProgramOutput(
-                                  topicProgramOutput: pythonBasicTutorial[_]
+                                  topicProgramOutput: pythonArrayTutorial[_]
                                       .sampleProgramOutput),
                               SizedBox(
                                 height: 10,
                               ),
                               TopicsProgramDescription(
                                   topicProgramDescription:
-                                      pythonBasicTutorial[_].programDescription)
+                                      pythonArrayTutorial[_].programDescription)
                             ],
                           ),
                         );
@@ -149,7 +149,7 @@ class Topic7 extends StatelessWidget {
                     )
                   : dartBasicTutorial[0].id == tutorialKey.id
                       ? ListView.builder(
-                          itemCount: dartBasicTutorial.length,
+                          itemCount: dartArrayTutorial.length,
                           itemBuilder: (BuildContext context, _) {
                             return Padding(
                               padding: const EdgeInsets.symmetric(
@@ -158,37 +158,37 @@ class Topic7 extends StatelessWidget {
                                 children: [
                                   TopicsIntro(
                                     // topicId: 1 + index,
-                                    topicTitle: dartBasicTutorial[_].topicTitle,
+                                    topicTitle: dartArrayTutorial[_].topicTitle,
                                     topicDescription:
-                                        dartBasicTutorial[_].topicDescription,
+                                        dartArrayTutorial[_].topicDescription,
                                   ),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgram(
                                       topicProgram:
-                                          dartBasicTutorial[_].sampleProgram),
+                                          dartArrayTutorial[_].sampleProgram),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgramOutput(
-                                      topicProgramOutput: dartBasicTutorial[_]
+                                      topicProgramOutput: dartArrayTutorial[_]
                                           .sampleProgramOutput),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgramDescription(
                                       topicProgramDescription:
-                                          dartBasicTutorial[_]
+                                          dartArrayTutorial[_]
                                               .programDescription)
                                 ],
                               ),
                             );
                           },
                         )
-                      : swiftBasicTutorial[0].id == tutorialKey.id
+                      : swiftArrayTutorial[0].id == tutorialKey.id
                           ? ListView.builder(
-                              itemCount: swiftBasicTutorial.length,
+                              itemCount: swiftArrayTutorial.length,
                               itemBuilder: (BuildContext context, _) {
                                 return Padding(
                                   padding: const EdgeInsets.symmetric(
@@ -198,38 +198,38 @@ class Topic7 extends StatelessWidget {
                                       TopicsIntro(
                                         // topicId: 1 + index,
                                         topicTitle:
-                                            swiftBasicTutorial[_].topicTitle,
-                                        topicDescription: swiftBasicTutorial[_]
+                                            swiftArrayTutorial[_].topicTitle,
+                                        topicDescription: swiftArrayTutorial[_]
                                             .topicDescription,
                                       ),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       TopicsProgram(
-                                          topicProgram: swiftBasicTutorial[_]
+                                          topicProgram: swiftArrayTutorial[_]
                                               .sampleProgram),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       TopicsProgramOutput(
                                           topicProgramOutput:
-                                              swiftBasicTutorial[_]
+                                              swiftArrayTutorial[_]
                                                   .sampleProgramOutput),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       TopicsProgramDescription(
                                           topicProgramDescription:
-                                              swiftBasicTutorial[_]
+                                              swiftArrayTutorial[_]
                                                   .programDescription)
                                     ],
                                   ),
                                 );
                               },
                             )
-                          : jsBasicTutorial[0].id == tutorialKey.id
+                          : jsArrayTutorial[0].id == tutorialKey.id
                               ? ListView.builder(
-                                  itemCount: jsBasicTutorial.length,
+                                  itemCount: jsArrayTutorial.length,
                                   itemBuilder: (BuildContext context, _) {
                                     return Padding(
                                       padding: const EdgeInsets.symmetric(
@@ -239,29 +239,29 @@ class Topic7 extends StatelessWidget {
                                           TopicsIntro(
                                             // topicId: 1 + index,
                                             topicTitle:
-                                                jsBasicTutorial[_].topicTitle,
-                                            topicDescription: jsBasicTutorial[_]
+                                                jsArrayTutorial[_].topicTitle,
+                                            topicDescription: jsArrayTutorial[_]
                                                 .topicDescription,
                                           ),
                                           SizedBox(
                                             height: 10,
                                           ),
                                           TopicsProgram(
-                                              topicProgram: jsBasicTutorial[_]
+                                              topicProgram: jsArrayTutorial[_]
                                                   .sampleProgram),
                                           SizedBox(
                                             height: 10,
                                           ),
                                           TopicsProgramOutput(
                                               topicProgramOutput:
-                                                  jsBasicTutorial[_]
+                                                  jsArrayTutorial[_]
                                                       .sampleProgramOutput),
                                           SizedBox(
                                             height: 10,
                                           ),
                                           TopicsProgramDescription(
                                               topicProgramDescription:
-                                                  jsBasicTutorial[_]
+                                                  jsArrayTutorial[_]
                                                       .programDescription)
                                         ],
                                       ),

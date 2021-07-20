@@ -1,6 +1,6 @@
 import 'package:code_quiz_v2/models/language-model.dart';
 
-final List<ProgrammingTutorial> dartFunctionTutorial = [
+final List<ProgrammingTutorial> dartOOPTutorial = [
   ProgrammingTutorial(
       id: 4,
       topicTitle: '',
