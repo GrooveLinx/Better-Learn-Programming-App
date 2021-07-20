@@ -1,7 +1,9 @@
 import 'package:code_quiz_v2/database/language-list.dart';
+import 'package:code_quiz_v2/screen/pages/developer-page.dart';
 import 'package:code_quiz_v2/widgets/language_grid.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mdi/mdi.dart';
 
 class TopicPage extends StatelessWidget {
   const TopicPage({Key key}) : super(key: key);
@@ -22,6 +24,19 @@ class TopicPage extends StatelessWidget {
                 fontWeight: FontWeight.w600),
           ),
         ),
+        actions: [
+          IconButton(
+            icon: Icon(
+              Mdi.developerBoard,
+              size: 30,
+              color: Colors.black,
+            ),
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (_) => DeveloperPage()));
+            },
+          )
+        ],
       ),
       body: Stack(
         children: [
