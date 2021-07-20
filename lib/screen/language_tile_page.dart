@@ -1,6 +1,5 @@
 import 'package:code_quiz_v2/database/programming-tile-data.dart';
 import 'package:code_quiz_v2/provider/Topics/topic_1.dart';
-import 'package:code_quiz_v2/provider/Topics/topic_10.dart';
 import 'package:code_quiz_v2/provider/Topics/topic_11.dart';
 import 'package:code_quiz_v2/provider/Topics/topic_2.dart';
 import 'package:code_quiz_v2/provider/Topics/topic_3.dart';
@@ -183,7 +182,7 @@ class LanguageTilePage extends StatelessWidget {
                     CategoryTile(
                       dbTitle: languageTile.topic8,
                       customSubtitle:
-                          'Pointers are special variables that are used to store addresses.',
+                          'Mathematical and Logical term exercises and implement.',
                       onTap: () {
                         Navigator.push(
                           context,
@@ -211,21 +210,6 @@ class LanguageTilePage extends StatelessWidget {
                     ),
                     CategoryTile(
                       dbTitle: languageTile.topic10,
-                      customSubtitle:
-                          'A structure is a collection of variables under a single name.',
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Topic10(
-                              id: languageTile.id,
-                            ),
-                          ),
-                        );
-                      },
-                    ),
-                    CategoryTile(
-                      dbTitle: languageTile.topic11,
                       customSubtitle: 'Object Oriented Programming.',
                       onTap: () {
                         Navigator.push(

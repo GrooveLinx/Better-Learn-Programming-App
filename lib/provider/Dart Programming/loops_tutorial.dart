@@ -1,7 +1,7 @@
 import 'package:code_quiz_v2/models/language-model.dart';
 
-final List<ProgrammingTutorial> dartSyntaxTutorial = [
- ProgrammingTutorial(
+final List<ProgrammingTutorial> dartLoopTutorial = [
+  ProgrammingTutorial(
       id: 4,
       topicTitle: '',
       topicDescription: '',

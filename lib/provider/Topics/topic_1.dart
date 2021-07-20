@@ -52,8 +52,7 @@ class _Topic1State extends State<Topic1> {
                       TopicsIntro(
                         // topicId: 1 + index,
                         topicTitle: cBasicTutorial[_].topicTitle,
-                        topicDescription:
-                            cBasicTutorial[_].topicDescription,
+                        topicDescription: cBasicTutorial[_].topicDescription,
                       ),
                       SizedBox(
                         height: 10,

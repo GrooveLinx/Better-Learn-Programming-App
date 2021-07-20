@@ -1,6 +1,6 @@
 import 'package:code_quiz_v2/models/language-model.dart';
 
-final List<ProgrammingTutorial> cDataTypesTutorial = [
+final List<ProgrammingTutorial> dartDataTypesTutorial = [
  ProgrammingTutorial(
       id: 4,
       topicTitle: '',

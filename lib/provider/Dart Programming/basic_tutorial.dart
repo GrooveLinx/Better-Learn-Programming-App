@@ -3,28 +3,28 @@ import 'package:code_quiz_v2/models/language-model.dart';
 final List<ProgrammingTutorial> dartBasicTutorial = [
   ProgrammingTutorial(
       id: 4,
-      topicTitle: 'I am ja',
+      topicTitle: '',
       topicDescription: '',
       sampleProgram: '',
       sampleProgramOutput: '',
       programDescription: ''),
   ProgrammingTutorial(
       id: 4,
-      topicTitle: 'Print Number Entered by User',
-      topicDescription: '',
-      sampleProgram: '',
-      sampleProgramOutput: '''''',
-      programDescription: ''),
-  ProgrammingTutorial(
-      id: 4,
-      topicTitle: 'He is munna',
+      topicTitle: '',
       topicDescription: '',
       sampleProgram: '',
       sampleProgramOutput: '',
       programDescription: ''),
   ProgrammingTutorial(
       id: 4,
-      topicTitle: 'Dart is faw',
+      topicTitle: '',
+      topicDescription: '',
+      sampleProgram: '',
+      sampleProgramOutput: '',
+      programDescription: ''),
+  ProgrammingTutorial(
+      id: 4,
+      topicTitle: '',
       topicDescription: '',
       sampleProgram: '',
       sampleProgramOutput: '',
