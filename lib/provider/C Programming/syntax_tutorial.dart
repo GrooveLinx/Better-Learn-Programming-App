@@ -8,25 +8,4 @@ final List<ProgrammingTutorial> cSyntaxTutorial = [
       sampleProgram: '',
       sampleProgramOutput: '',
       programDescription: ''),
-  ProgrammingTutorial(
-      id: 1,
-      topicTitle: '',
-      topicDescription: '',
-      sampleProgram: '',
-      sampleProgramOutput: '',
-      programDescription: ''),
-  ProgrammingTutorial(
-      id: 1,
-      topicTitle: '',
-      topicDescription: '',
-      sampleProgram: '',
-      sampleProgramOutput: '',
-      programDescription: ''),
-  ProgrammingTutorial(
-      id: 1,
-      topicTitle: '',
-      topicDescription: '',
-      sampleProgram: '',
-      sampleProgramOutput: '',
-      programDescription: ''),
 ];

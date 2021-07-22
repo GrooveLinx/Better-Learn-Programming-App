@@ -21,11 +21,10 @@ class TopicsProgram extends StatelessWidget {
           Text(
             topicProgram,
             style: GoogleFonts.poppins(
-              textStyle: TextStyle(
-                  color: Colors.brown[500],
-                  fontSize: 18,
-                  fontWeight: FontWeight.w500),
-            ),
+                letterSpacing: 0.5,
+                color: Colors.brown[500],
+                fontSize: 18,
+                fontWeight: FontWeight.w500),
           ),
         ],
       ),

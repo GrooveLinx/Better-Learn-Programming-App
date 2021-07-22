@@ -1,3 +1,5 @@
+import 'package:code_quiz_v2/database/programming-tile-data.dart';
+import 'package:code_quiz_v2/provider/C%20Programming/basic_tutorial.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mdi/mdi.dart';
@@ -39,17 +41,14 @@ class TopicsIntro extends StatelessWidget {
                     size: 25,
                   ),
                 ),
-                Container(
-                  padding: EdgeInsets.all(8),
-                  decoration: BoxDecoration(
-                      color: Colors.brown[100],
-                      borderRadius: BorderRadius.circular(10)),
-                  child: Icon(
-                    Mdi.codeArray,
-                    color: Colors.brown[400],
-                    size: 25,
-                  ),
-                ),
+                // Container(
+                //   padding: EdgeInsets.all(8),
+                //   decoration: BoxDecoration(
+                //       color: Colors.brown[100],
+                //       borderRadius: BorderRadius.circular(10),
+                //       ),
+                //       child: Text(categoryTile[0].id.toString())
+                // ),
               ],
             ),
           ),
@@ -81,7 +80,7 @@ class TopicsIntro extends StatelessWidget {
                   topicDescription,
                   style: GoogleFonts.poppins(
                     textStyle: TextStyle(
-                        color: Colors.brown[500],
+                        color: Colors.black54,
                         fontSize: 16,
                         fontWeight: FontWeight.w500),
                   ),

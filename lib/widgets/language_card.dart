@@ -39,7 +39,8 @@ class TopicsCard extends StatelessWidget {
                   ],
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 15, bottom: 10),
+                  padding: const EdgeInsets.only(left: 15,
+                   bottom: 15),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.end,

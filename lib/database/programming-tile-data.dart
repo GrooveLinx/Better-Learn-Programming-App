@@ -4,7 +4,7 @@ final List<CategoryTopic> categoryTile = [
   CategoryTopic(
     id: 1,
     name: 'C++',
-    imagePath: 'images/c_logo.png',
+    imagePath: 'images/cpp_logo.png',
     topic1: 'Basics',
     topic2: 'Syntax',
     topic3: 'Data Types',
