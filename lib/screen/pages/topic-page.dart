@@ -111,7 +111,7 @@ class TopicPage extends StatelessWidget {
                         crossAxisSpacing: 25,
                         mainAxisSpacing: 25,
                         crossAxisCount: 2,
-                        childAspectRatio: aspectRatio / .75,
+                        childAspectRatio: aspectRatio / .85,
                       ),
                       itemCount: language.length,
                       itemBuilder: (BuildContext context, int index) =>

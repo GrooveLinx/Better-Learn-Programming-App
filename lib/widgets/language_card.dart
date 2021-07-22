@@ -26,6 +26,7 @@ class TopicsCard extends StatelessWidget {
               clipper: LanguageCardClipper(),
               child: Container(
                 decoration: BoxDecoration(
+                  //border: Border.all(width: 1,color: Colors.pink[100]),
                   color: Colors.pink[50],
                   // borderRadius: BorderRadius.circular(10),
                   boxShadow: [
@@ -36,6 +37,40 @@ class TopicsCard extends StatelessWidget {
                       offset: Offset(0, 17),
                     )
                   ],
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 15, bottom: 10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text(
+                        languageName,
+                        style: GoogleFonts.cagliostro(
+                          textStyle: TextStyle(
+                            fontSize: 25,
+                            color: Colors.teal[900],
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Flexible(
+                        child: Text(
+                          '${languageName} programming language.',
+                          style: GoogleFonts.cagliostro(
+                            textStyle: TextStyle(
+                              fontSize: 17,
+                              color: Colors.grey,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -49,23 +84,6 @@ class TopicsCard extends StatelessWidget {
                   imagePath,
                   height: height / 6,
                   width: width / 2,
-                ),
-              ),
-            ),
-            Positioned(
-              bottom: 10,
-              left: 0,
-              right: 0,
-              child: Center(
-                child: Text(
-                  languageName,
-                  style: GoogleFonts.cagliostro(
-                    textStyle: TextStyle(
-                      fontSize: 23,
-                      color: Colors.teal[900],
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
                 ),
               ),
             ),

@@ -62,19 +62,22 @@ int main() {
 }''',
       sampleProgramOutput: '''Enter an integer: 23
 You entered 23''',
-      programDescription: '''This program asks the user to enter a number.
+      programDescription: '''Let us look at the various parts of the above program −
 
-When the user enters an integer, it is stored in variable number using cin.
+The C++ language defines several headers, which contain information that is either necessary or useful to your program. For this program, the header <iostream> is needed.
 
-Then it is displayed on the screen using cout.
+The line using namespace std; tells the compiler to use the std namespace. Namespaces are a relatively recent addition to C++.
 
-Starting from this example, we will be using the std namespace using the code:
+The next line '// main() is where program execution begins.' is a single-line comment available in C++. Single-line comments begin with // and stop at the end of the line.
 
-using namespace std;
-This will allow us to write cout, cin, endl, etc. instead of std::cout, std::cin, std::endl respectively.'''),
+The line int main() is the main function where program execution begins.
+
+The next line cout << "Hello World"; causes the message "Hello World" to be displayed on the screen.
+
+The next line return 0; terminates main( )function and causes it to return the value 0 to the calling process.'''),
   ProgrammingTutorial(
       id: 1,
-      topicTitle: '',
+      topicTitle: 'Comments',
       topicDescription: '',
       sampleProgram: '',
       sampleProgramOutput: '',

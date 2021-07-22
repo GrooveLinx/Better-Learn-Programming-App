@@ -3,7 +3,7 @@ import 'package:code_quiz_v2/models/language-model.dart';
 final List<CategoryTopic> categoryTile = [
   CategoryTopic(
     id: 1,
-    name: 'C/C++',
+    name: 'C++',
     imagePath: 'images/c_logo.png',
     topic1: 'Basics',
     topic2: 'Syntax',

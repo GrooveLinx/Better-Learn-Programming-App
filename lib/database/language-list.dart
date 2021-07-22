@@ -3,9 +3,9 @@ import 'package:code_quiz_v2/models/language-model.dart';
 final List<Language> language = [
   Language(
     id: 1,
-    name: 'C/C++',
-    info: 'C/C++ Programming Language',
-    imagePath: 'images/c_logo.png',
+    name: 'C++',
+    info: 'C++ Programming Language',
+    imagePath: 'images/cpp_logo.png',
     description:
         '''C++ is a cross-platform language that can be used to create high-performance applications.
 
