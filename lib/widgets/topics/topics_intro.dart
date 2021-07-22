@@ -19,33 +19,39 @@ class TopicsIntro extends StatelessWidget {
         Container(
           margin: EdgeInsets.only(bottom: 10),
           //padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          width: MediaQuery.of(context).size.width * .1,
-          height: MediaQuery.of(context).size.height * .05,
+          width: double.infinity,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
-            color: Colors.brown[100],
           ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Icon(
-                Mdi.codeArray,
-                color: Colors.brown[400],
-                size: 25,
-              ),
-              // Flexible(
-              //   child: Text(
-              //     '${topicId.toString()}',
-              //     style: GoogleFonts.poppins(
-              //       textStyle: TextStyle(
-              //           color: Colors.brown[500],
-              //           fontSize: 18,
-              //           fontWeight: FontWeight.w500),
-              //     ),
-              //   ),
-              // ),
-            ],
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 5),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.brown[100],
+                      borderRadius: BorderRadius.circular(10)),
+                  padding: EdgeInsets.all(8),
+                  child: Icon(
+                    Mdi.codeArray,
+                    color: Colors.brown[400],
+                    size: 25,
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                      color: Colors.brown[100],
+                      borderRadius: BorderRadius.circular(10)),
+                  child: Icon(
+                    Mdi.codeArray,
+                    color: Colors.brown[400],
+                    size: 25,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
         Container(
@@ -63,8 +69,8 @@ class TopicsIntro extends StatelessWidget {
                   topicTitle,
                   style: GoogleFonts.poppins(
                     textStyle: TextStyle(
-                        color: Colors.brown[500],
-                        fontSize: 22,
+                        color: Colors.blueGrey[600],
+                        fontSize: 24,
                         fontWeight: FontWeight.w500),
                   ),
                 ),
