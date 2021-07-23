@@ -60,13 +60,15 @@ class LanguageTilePage extends StatelessWidget {
             children: [
               Image.asset(
                 'images/vector.png',
-                width: width / 2,
-                height: height / 3.5,
+                width: width * .5,
+                height: height * .3,
+                alignment: Alignment.centerLeft,
               ),
               Image.asset(
                 languageTile.imagePath,
-                width: width / 2,
-                height: height * .20,
+                width: width * .5,
+                height: height * .25,
+                alignment: Alignment.centerRight,
               ),
             ],
           ),

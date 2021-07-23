@@ -24,8 +24,22 @@ class TopicsCard extends StatelessWidget {
             clipper: LanguageCardClipper(),
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.pink[50],
-              ),
+                  // color: Colors.brown[100],
+                  boxShadow: [
+                    BoxShadow(
+                        offset: Offset(0, 3),
+                        spreadRadius: 10,
+                        color: Colors.green,
+                        blurRadius: 10)
+                  ],
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: [
+                      Colors.purpleAccent[100],
+                      Colors.blueGrey[200],
+                    ],
+                  )),
               child: Padding(
                 padding: const EdgeInsets.only(left: 15, bottom: 15),
                 child: Column(
@@ -51,7 +65,7 @@ class TopicsCard extends StatelessWidget {
                         style: GoogleFonts.cagliostro(
                           textStyle: TextStyle(
                             fontSize: 17,
-                            color: Colors.grey,
+                            color: Colors.grey[800],
                             fontWeight: FontWeight.w800,
                           ),
                         ),
@@ -109,4 +123,3 @@ class LanguageCardClipper extends CustomClipper<Path> {
     return true;
   }
 }
-

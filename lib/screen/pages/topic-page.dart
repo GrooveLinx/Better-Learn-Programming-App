@@ -4,7 +4,6 @@ import 'package:code_quiz_v2/widgets/language_grid.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mdi/mdi.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class TopicPage extends StatelessWidget {
   const TopicPage({Key key}) : super(key: key);
@@ -15,7 +14,7 @@ class TopicPage extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     final aspectRatio = MediaQuery.of(context).size.aspectRatio;
     return Scaffold(
-      // backgroundColor: Color(0xffffffee),
+      backgroundColor: Color(0xffffffee),
       appBar: AppBar(
         backgroundColor: Colors.lightGreen[100],
         elevation: 0,
@@ -62,7 +61,7 @@ class TopicPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 15,
-                  vertical: 15,
+                  vertical: 0,
                 ),
                 child: Row(
                   // crossAxisAlignment: CrossAxisAlignment.start,
@@ -80,21 +79,27 @@ class TopicPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SvgPicture.asset(
+                    /*  SvgPicture.asset(
                       'images/dedicated-team.svg',
-                      width: width /3,
+                      width: width / 3,
                       height: height / 5,
-                    ),
+                    ), */
+                    Image.asset(
+                      'images/dev.png',
+                      width: width * .5,
+                      height: height * .25,
+                      alignment: Alignment.centerRight,
+                    )
                   ],
                 ),
               ),
               SizedBox(
-                height: height / 50,
+                height: height * .01,
               ),
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.lime[50],
+                    color: Colors.grey[100],
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30),
                       topRight: Radius.circular(30),

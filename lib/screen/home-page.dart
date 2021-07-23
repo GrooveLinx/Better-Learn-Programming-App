@@ -30,11 +30,13 @@ class _HomePageState extends State<HomePage> {
         index: currentTab,
       ),
       bottomNavigationBar: BottomNavyBar(
-        itemCornerRadius: 15,
-        containerHeight: MediaQuery.of(context).size.height * .1,
+        itemCornerRadius: 50,
+        containerHeight: MediaQuery.of(context).size.height * .09,
         backgroundColor: Colors.white,
         selectedIndex: currentTab,
         animationDuration: Duration(milliseconds: 300),
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        
         onItemSelected: (index) {
           setState(() {
             currentTab = index;
