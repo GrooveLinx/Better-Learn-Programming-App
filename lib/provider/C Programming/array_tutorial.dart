@@ -193,7 +193,7 @@ int main()
         {
             cout<< test[i][j]<<" ";
         }
-        cout<<"\n"; //new line at each row
+        cout<<"\\n"; //new line at each row
     }
     return 0;
 }''',

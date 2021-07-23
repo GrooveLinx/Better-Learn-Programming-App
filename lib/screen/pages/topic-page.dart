@@ -75,7 +75,7 @@ class TopicPage extends StatelessWidget {
                           textStyle: TextStyle(
                             color: Colors.blueGrey[600],
                             fontSize: 30,
-                            fontWeight: FontWeight.w600,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
                       ),

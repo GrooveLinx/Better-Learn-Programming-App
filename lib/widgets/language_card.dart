@@ -18,78 +18,67 @@ class TopicsCard extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     return InkWell(
       onTap: onTap,
-      child: Material(
-        color: Colors.transparent,
-        child: Stack(
-          children: [
-            ClipPath(
-              clipper: LanguageCardClipper(),
-              child: Container(
-                decoration: BoxDecoration(
-                  //border: Border.all(width: 1,color: Colors.pink[100]),
-                  color: Colors.pink[50],
-                  // borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      color: Color(0xFFE6E6E6), //color of shadow
-                      spreadRadius: -15, //spread radius
-                      blurRadius: 17, // blur radius
-                      offset: Offset(0, 17),
-                    )
-                  ],
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 15,
-                   bottom: 15),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Text(
-                        languageName,
+      child: Stack(
+        children: [
+          ClipPath(
+            clipper: LanguageCardClipper(),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.pink[50],
+              ),
+              child: Padding(
+                padding: const EdgeInsets.only(left: 15, bottom: 15),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      languageName,
+                      style: GoogleFonts.cagliostro(
+                        textStyle: TextStyle(
+                          fontSize: 25,
+                          color: Colors.teal[900],
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: height * .01,
+                    ),
+                    Flexible(
+                      child: Text(
+                        '$languageName programming language.',
                         style: GoogleFonts.cagliostro(
                           textStyle: TextStyle(
-                            fontSize: 25,
-                            color: Colors.teal[900],
-                            fontWeight: FontWeight.bold,
+                            fontSize: 17,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.w800,
                           ),
                         ),
                       ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Flexible(
-                        child: Text(
-                          '${languageName} programming language.',
-                          style: GoogleFonts.cagliostro(
-                            textStyle: TextStyle(
-                              fontSize: 17,
-                              color: Colors.grey,
-                              fontWeight: FontWeight.w800,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                    SizedBox(
+                      height: height * .01,
+                    ),
+                  ],
                 ),
               ),
             ),
-            Positioned(
-              top: 0,
-              right: 0,
-              left: 0,
-              child: Hero(
-                tag: heroTag,
-                child: Image.asset(
-                  imagePath,
-                  height: height / 6,
-                  width: width / 2,
-                ),
+          ),
+          Positioned(
+            top: 0,
+            right: 0,
+            left: 0,
+            child: Hero(
+              tag: heroTag,
+              child: Image.asset(
+                imagePath,
+                height: height / 6,
+                width: width / 2,
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
@@ -121,51 +110,3 @@ class LanguageCardClipper extends CustomClipper<Path> {
   }
 }
 
-
-/**
- *  child: Material(
-          color: Colors.transparent,
-          child: InkWell(
-            onTap: onTap,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Stack(
-                // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                // crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  // Spacer(),
-                  Positioned(
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    child: Image.asset(
-                      imagePath,
-                      height: height / 5,
-                      width: width / 2,
-                    ),
-                  ),
-                  // Spacer(),
-                  Positioned(
-                    bottom: 0,
-                    left: 0,
-                    right: 0,
-                    child: Center(
-                      child: Text(
-                        languageName,
-                        style: GoogleFonts.cagliostro(
-                          textStyle: TextStyle(
-                            fontSize: 23,
-                            color: Colors.teal[900],
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  //Spacer(),
-                ],
-              ),
-            ),
-          ),
-        ),
- */

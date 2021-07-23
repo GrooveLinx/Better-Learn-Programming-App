@@ -23,7 +23,6 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
   Widget build(BuildContext context) {
     final programmingLanguage = language.firstWhere((e) => e.id == widget.id);
     final height = MediaQuery.of(context).size.height;
-    final width = MediaQuery.of(context).size.width;
     return Scaffold(
       // backgroundColor: Colors.brown[50],
       body: SafeArea(

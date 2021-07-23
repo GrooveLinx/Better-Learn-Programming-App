@@ -26,9 +26,9 @@ int main() {
       id: 1,
       topicTitle: 'Nested For Loop',
       topicDescription:
-          '''In C++, we can use for loop inside another for loop, it is known as nested for loop. The inner loop is executed fully when outer loop is executed one time. So if outer loop and inner loop are executed 4 times, inner loop will be executed 4 times for each outer loop i.e. total 16 times.''',
-      sampleProgram: '''Let's see a simple example of nested for loop in C++.
-
+          '''In C++, we can use for loop inside another for loop, it is known as nested for loop. Let's see a simple example of nested for loop in C++.
+''',
+      sampleProgram: '''
 #include <iostream>
 using namespace std;
 
@@ -38,7 +38,7 @@ int main () {
             cout<<i<<" "<<j<<"\\n";
           }
         }
-    }''',
+}''',
       sampleProgramOutput: '''1  1
 1  2
 1  3
@@ -48,7 +48,8 @@ int main () {
 3  1
 3  2
 3  3''',
-      programDescription: ''),
+      programDescription:
+          ''' The inner loop is executed fully when outer loop is executed one time. So if outer loop and inner loop are executed 4 times, inner loop will be executed 4 times for each outer loop i.e. total 16 times.'''),
   ProgrammingTutorial(
       id: 1,
       topicTitle: 'Infinite For Loop',
@@ -63,7 +64,7 @@ int main () {
           {
                   cout<<"Infinitive For Loop";
           }
-    }''',
+}''',
       sampleProgramOutput: '''Infinitive For Loop
 Infinitive For Loop
 Infinitive For Loop

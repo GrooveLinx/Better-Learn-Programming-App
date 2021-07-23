@@ -32,7 +32,7 @@ int main () {
 }'''),
   ProgrammingTutorial(
       id: 1,
-      topicTitle: 'If-Else condition',
+      topicTitle: 'if-else Condition',
       topicDescription:
           '''The C++ if-else statement also tests the condition. It executes if block if condition is true otherwise else block is executed.
 ''',
