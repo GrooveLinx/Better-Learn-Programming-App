@@ -57,8 +57,8 @@ class ProgrammingTutorial {
   String sampleProgram;
   String sampleProgramOutput;
   String programDescription;
-
   bool isFav;
+
   ProgrammingTutorial(
       {this.id,
       this.topicTitle,

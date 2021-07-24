@@ -201,18 +201,4 @@ int main()
 4 0 3 
 9 1 8''',
       programDescription: ''),
-  ProgrammingTutorial(
-      id: 1,
-      topicTitle: '',
-      topicDescription: '',
-      sampleProgram: '',
-      sampleProgramOutput: '',
-      programDescription: ''),
-  ProgrammingTutorial(
-      id: 1,
-      topicTitle: '',
-      topicDescription: '',
-      sampleProgram: '',
-      sampleProgramOutput: '',
-      programDescription: ''),
 ];
