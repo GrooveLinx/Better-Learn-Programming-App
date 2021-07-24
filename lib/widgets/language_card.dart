@@ -23,23 +23,17 @@ class TopicsCard extends StatelessWidget {
           ClipPath(
             clipper: LanguageCardClipper(),
             child: Container(
+              clipBehavior: Clip.antiAliasWithSaveLayer,
               decoration: BoxDecoration(
-                  // color: Colors.brown[100],
-                  boxShadow: [
-                    BoxShadow(
-                        offset: Offset(0, 3),
-                        spreadRadius: 10,
-                        color: Colors.green,
-                        blurRadius: 10)
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Colors.amber[100],
+                    Colors.purple[100],
                   ],
-                  gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [
-                      Colors.purpleAccent[100],
-                      Colors.blueGrey[200],
-                    ],
-                  )),
+                ),
+              ),
               child: Padding(
                 padding: const EdgeInsets.only(left: 15, bottom: 15),
                 child: Column(

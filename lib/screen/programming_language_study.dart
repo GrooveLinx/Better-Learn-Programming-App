@@ -34,7 +34,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                 // brightness: Brightness.light,
                 leading: IconButton(
                   icon: Icon(
-                    Mdi.arrowLeftBoldOutline,
+                    Icons.arrow_back_ios,
                     color: Colors.blueGrey[600],
                     size: 30,
                   ),

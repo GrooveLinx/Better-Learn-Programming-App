@@ -13,7 +13,6 @@ import 'package:code_quiz_v2/screen/programming_language_study.dart';
 import 'package:code_quiz_v2/widgets/category-tile.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mdi/mdi.dart';
 
 class LanguageTilePage extends StatelessWidget {
   final int id;
@@ -30,7 +29,7 @@ class LanguageTilePage extends StatelessWidget {
         elevation: 0,
         leading: IconButton(
           icon: Icon(
-            Mdi.arrowLeftBoldOutline,
+            Icons.arrow_back_ios,
             color: Colors.blueGrey,
             size: 30,
           ),
