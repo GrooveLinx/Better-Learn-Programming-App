@@ -9,8 +9,7 @@ class QuizWelcomePage extends StatelessWidget {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
-      //backgroundColor: Color(0xFF442C3E),
-      backgroundColor: Colors.green[200],
+      backgroundColor: Color(0xFF442C3E),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -28,7 +27,7 @@ class QuizWelcomePage extends StatelessWidget {
                     style: TextStyle(
                         fontFamily: 'Ubuntu',
                         letterSpacing: 1.3,
-                        color: Color(0xFF442C3E),
+                        color: Colors.white,
                         fontSize: 23,
                         fontWeight: FontWeight.w600),
                   ),
@@ -45,20 +44,20 @@ class QuizWelcomePage extends StatelessWidget {
                   height: height * 0.1,
                   width: width * 0.6,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(20),
-                      topRight: Radius.circular(20),
-                    ),
-                    boxShadow: [
-                      BoxShadow(
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(20),
+                        topRight: Radius.circular(20),
+                      ),
+                      boxShadow: [
+                        BoxShadow(
                           color: Color(0xFF442C3E).withOpacity(0.1),
                           spreadRadius: 10,
                           blurRadius: 15,
-                          offset: Offset(5, 3))
-                    ],
-                   // color: Color(0xFF442C3E),
-                   color: Colors.blueGrey[100]
-                  ),
+                          offset: Offset(5, 3),
+                        )
+                      ],
+                      // color: Color(0xFF442C3E),
+                      color: Colors.blueGrey[100]),
                   child: Center(
                     child: Text(
                       'Start Quiz',

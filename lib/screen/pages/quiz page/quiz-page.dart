@@ -83,7 +83,6 @@ class _QuizPageState extends State<QuizPage> {
 
   Padding question() {
     var height = MediaQuery.of(context).size.height;
-    var width = MediaQuery.of(context).size.width;
     return Padding(
       padding: EdgeInsets.only(top: 8, left: 30, right: 30, bottom: 38),
       child: Container(
