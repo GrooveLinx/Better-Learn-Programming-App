@@ -10,7 +10,7 @@ class QuizWelcomePage extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
       //backgroundColor: Color(0xFF442C3E),
-      backgroundColor: Colors.blueGrey,
+      backgroundColor: Colors.green[200],
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -28,7 +28,7 @@ class QuizWelcomePage extends StatelessWidget {
                     style: TextStyle(
                         fontFamily: 'Ubuntu',
                         letterSpacing: 1.3,
-                        color: Colors.white,
+                        color: Color(0xFF442C3E),
                         fontSize: 23,
                         fontWeight: FontWeight.w600),
                   ),
@@ -57,7 +57,7 @@ class QuizWelcomePage extends StatelessWidget {
                           offset: Offset(5, 3))
                     ],
                    // color: Color(0xFF442C3E),
-                   color: Colors.purple[100]
+                   color: Colors.blueGrey[100]
                   ),
                   child: Center(
                     child: Text(

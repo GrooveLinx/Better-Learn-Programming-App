@@ -110,25 +110,6 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                                   ],
                                 ),
                               ),
-                              IconButton(
-                                icon: Icon(
-                                  programmingLanguage.isFav
-                                      ? Mdi.star
-                                      : Mdi.starOutline,
-                                  size: 40,
-                                ),
-                                color: programmingLanguage.isFav
-                                    ? Colors.blueGrey[700]
-                                    : Colors.black54,
-                                onPressed: () {
-                                  setState(
-                                    () {
-                                      programmingLanguage.isFav =
-                                          !programmingLanguage.isFav;
-                                    },
-                                  );
-                                },
-                              )
                             ],
                           ),
                         ),

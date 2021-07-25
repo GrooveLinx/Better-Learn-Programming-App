@@ -12,6 +12,7 @@ import 'package:code_quiz_v2/widgets/topics/topics_program.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_program_description.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_program_output.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Topic1 extends StatefulWidget {
   final int id;
@@ -51,7 +52,37 @@ class _Topic1State extends State<Topic1> {
                   child: Column(
                     children: [
                       TopicsIntro(
-                        // topicId: 1 + index,
+                        icon: cBasicTutorial[_].isFav
+                            ? Icons.star
+                            : Icons.star_border,
+                        onPressed: () {
+                          setState(
+                            () {
+                              cBasicTutorial[_].isFav =
+                                  !cBasicTutorial[_].isFav;
+                              final snackBar = SnackBar(
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(22.0),
+                                        topRight: Radius.circular(22.0))),
+                                backgroundColor: Colors.purple[200],
+                                duration: Duration(milliseconds: 400),
+                                content: Text(
+                                  'Successfully added to Bookmark!',
+                                  style: GoogleFonts.pacifico(
+                                    textStyle: TextStyle(
+                                      fontSize: 20,
+                                      letterSpacing: 1,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ),
+                              );
+                              ScaffoldMessenger.of(context)
+                                  .showSnackBar(snackBar);
+                            },
+                          );
+                        },
                         topicTitle: cBasicTutorial[_].topicTitle,
                         topicDescription: cBasicTutorial[_].topicDescription,
                       ),
@@ -87,7 +118,17 @@ class _Topic1State extends State<Topic1> {
                       child: Column(
                         children: [
                           TopicsIntro(
-                            // topicId: 1 + index,
+                            icon: javaBasicTutorial[_].isFav
+                                ? Icons.star
+                                : Icons.star_border,
+                            onPressed: () {
+                              setState(
+                                () {
+                                  javaBasicTutorial[_].isFav =
+                                      !javaBasicTutorial[_].isFav;
+                                },
+                              );
+                            },
                             topicTitle: javaBasicTutorial[_].topicTitle,
                             topicDescription:
                                 javaBasicTutorial[_].topicDescription,
@@ -124,7 +165,17 @@ class _Topic1State extends State<Topic1> {
                           child: Column(
                             children: [
                               TopicsIntro(
-                                // topicId: 1 + index,
+                                icon: pythonBasicTutorial[_].isFav
+                                    ? Icons.star
+                                    : Icons.star_border,
+                                onPressed: () {
+                                  setState(
+                                    () {
+                                      pythonBasicTutorial[_].isFav =
+                                          !pythonBasicTutorial[_].isFav;
+                                    },
+                                  );
+                                },
                                 topicTitle: pythonBasicTutorial[_].topicTitle,
                                 topicDescription:
                                     pythonBasicTutorial[_].topicDescription,
@@ -162,7 +213,17 @@ class _Topic1State extends State<Topic1> {
                               child: Column(
                                 children: [
                                   TopicsIntro(
-                                    // topicId: 1 + index,
+                                    icon: dartBasicTutorial[_].isFav
+                                        ? Icons.star
+                                        : Icons.star_border,
+                                    onPressed: () {
+                                      setState(
+                                        () {
+                                          dartBasicTutorial[_].isFav =
+                                              !dartBasicTutorial[_].isFav;
+                                        },
+                                      );
+                                    },
                                     topicTitle: dartBasicTutorial[_].topicTitle,
                                     topicDescription:
                                         dartBasicTutorial[_].topicDescription,
@@ -201,7 +262,17 @@ class _Topic1State extends State<Topic1> {
                                   child: Column(
                                     children: [
                                       TopicsIntro(
-                                        // topicId: 1 + index,
+                                        icon: swiftBasicTutorial[_].isFav
+                                            ? Icons.star
+                                            : Icons.star_border,
+                                        onPressed: () {
+                                          setState(
+                                            () {
+                                              swiftBasicTutorial[_].isFav =
+                                                  !swiftBasicTutorial[_].isFav;
+                                            },
+                                          );
+                                        },
                                         topicTitle:
                                             swiftBasicTutorial[_].topicTitle,
                                         topicDescription: swiftBasicTutorial[_]
@@ -242,7 +313,17 @@ class _Topic1State extends State<Topic1> {
                                       child: Column(
                                         children: [
                                           TopicsIntro(
-                                            // topicId: 1 + index,
+                                            icon: jsBasicTutorial[_].isFav
+                                                ? Icons.star
+                                                : Icons.star_border,
+                                            onPressed: () {
+                                              setState(
+                                                () {
+                                                  jsBasicTutorial[_].isFav =
+                                                      !jsBasicTutorial[_].isFav;
+                                                },
+                                              );
+                                            },
                                             topicTitle:
                                                 jsBasicTutorial[_].topicTitle,
                                             topicDescription: jsBasicTutorial[_]
