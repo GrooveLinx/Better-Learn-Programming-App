@@ -49,7 +49,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                 expandedHeight: height / 3,
                 flexibleSpace: FlexibleSpaceBar(
                   background: Hero(
-                    tag: programmingLanguage.id,
+                    tag: programmingLanguage.imagePath,
                     child: FittedBox(
                       child: Image.asset(
                         programmingLanguage.imagePath,
@@ -175,11 +175,9 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                             child: ListTile(
                               leading: Container(
                                 child: FittedBox(
-                                    child: Hero(
-                                  tag: programmingLanguage.id,
                                   child: Image.asset(
                                       programmingLanguage.imagePath),
-                                )),
+                                ),
                               ),
                               title: Text(
                                 'Learn ${programmingLanguage.name}',

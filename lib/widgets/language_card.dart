@@ -5,7 +5,7 @@ class TopicsCard extends StatelessWidget {
   final String languageName;
   final String imagePath;
   final Function onTap;
-  final int heroTag;
+  final String heroTag;
   TopicsCard({
     this.imagePath,
     this.languageName,
