@@ -92,12 +92,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "flutter_web_plugins",
-      "rootUri": "file:///E:/flutter/packages/flutter_web_plugins",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "google_fonts",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-2.1.0",
       "packageUri": "lib/",
@@ -112,12 +106,6 @@
     {
       "name": "http_parser",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "js",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -278,42 +266,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "url_launcher",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.0.9",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "url_launcher_linux",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-2.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "url_launcher_macos",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-2.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "url_launcher_platform_interface",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-2.0.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "url_launcher_web",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-2.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "url_launcher_windows",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-2.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "vector_math",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.0",
       "packageUri": "lib/",
@@ -344,7 +296,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-07-25T19:11:10.842459Z",
+  "generated": "2021-07-26T04:49:54.372399Z",
   "generator": "pub",
   "generatorVersion": "2.12.1"
 }

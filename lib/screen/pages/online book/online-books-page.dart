@@ -1,7 +1,9 @@
 import 'package:code_quiz_v2/provider/online%20books/online-books-provider.dart';
+import 'package:code_quiz_v2/screen/pages/online%20book/book-details.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+
 class OnlineBookPage extends StatefulWidget {
   const OnlineBookPage({Key key}) : super(key: key);
 
@@ -26,26 +28,21 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
             )
           },
         );
-
     super.didChangeDependencies();
   }
 
-
   @override
   Widget build(BuildContext context) {
-
-
-    final aspectRatio = MediaQuery.of(context).size.aspectRatio;
     return Scaffold(
       backgroundColor: Colors.amber[100],
       appBar: AppBar(
-        backgroundColor: Colors.green[100],
-        elevation: 5.0,
+        backgroundColor: Colors.amber[100],
+        elevation: 0.0,
         title: Text(
           'Online Books',
           style: TextStyle(
-              color: Colors.black,
-              fontSize: 24,
+              color: Colors.blueGrey,
+              fontSize: 28,
               letterSpacing: 1.1,
               fontFamily: 'Ubuntu',
               fontWeight: FontWeight.w600),
@@ -58,59 +55,128 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
           : Center(
               child: Consumer<BookProvider>(
                 builder: (context, bookObject, _) => Center(
-                  child: GridView.builder(
-                    padding: EdgeInsets.fromLTRB(15, 15, 15, 25),
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisSpacing: 25,
-                      mainAxisSpacing: 30,
-                      crossAxisCount: 2,
-                      childAspectRatio: aspectRatio / .90,
-                    ),
-                    itemCount: bookObject.getBooksData.books.length,
-                    itemBuilder: (BuildContext context, int index) {
-                      return Material(
-                        color: Colors.transparent,
-                        child: InkWell(
-                          onTap: () {
-
-                          },
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: Colors.teal[100],
-                                borderRadius: BorderRadius.circular(10),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.grey,
-                                    spreadRadius: -3,
-                                    blurRadius: 10,
-                                    offset: Offset(1, 5),
-                                  )
-                                ]),
+                  child: Stack(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.all(20),
+                        child: Flexible(
+                          child: Text(
+                            'Get Programming\nBooks!',
+                            style: GoogleFonts.montserrat(
+                              textStyle: TextStyle(
+                                color: Colors.green[900],
+                                fontSize: 34,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 150),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.red[100],
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(20),
+                              topRight: Radius.circular(20),
+                            ),
+                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(20),
+                              topRight: Radius.circular(20),
+                            ),
                             child: Column(
                               children: [
-                                Image.network(
-                                  bookObject.getBooksData.books[index].image
-                                      .toString(),
-                                  height: 200,
-                                  width: 200,
-                                  fit: BoxFit.cover,
-                                ),
-                                Text(
-                                  bookObject.getBooksData.books[index].title,
-                                  textAlign: TextAlign.center,
-                                  style: GoogleFonts.ubuntu(
-                                    textStyle: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 16,
-                                    ),
+                                Expanded(
+                                  child: ListView.builder(
+                                    padding: EdgeInsets.all(15),
+                                    scrollDirection: Axis.horizontal,
+                                    itemCount:
+                                        bookObject.getBooksData.books.length,
+                                    itemBuilder:
+                                        (BuildContext context, int index) {
+                                      return Material(
+                                        color: Colors.transparent,
+                                        child: InkWell(
+                                          onTap: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (_) => BookDetails(),
+                                              ),
+                                            );
+                                          },
+                                          child: Container(
+                                            width: 180,
+                                            height: 200,
+                                            margin: EdgeInsets.symmetric(
+                                                horizontal: 10, vertical: 30),
+                                            decoration: BoxDecoration(
+                                              color: Colors.green[50],
+                                              borderRadius:
+                                                  BorderRadius.circular(10),
+                                              boxShadow: [
+                                                BoxShadow(
+                                                  color: Colors.grey,
+                                                  spreadRadius: -3,
+                                                  blurRadius: 10,
+                                                  offset: Offset(1, 5),
+                                                )
+                                              ],
+                                            ),
+                                            child: Column(
+                                              children: [
+                                                Hero(
+                                                  tag: bookObject.getBooksData
+                                                      .books[index].image,
+                                                  child: Image.network(
+                                                    bookObject.getBooksData
+                                                        .books[index].image
+                                                        .toString(),
+                                                    height: 200,
+                                                    width: 200,
+                                                    fit: BoxFit.cover,
+                                                  ),
+                                                ),
+                                                Padding(
+                                                  padding: const EdgeInsets
+                                                          .symmetric(
+                                                      horizontal: 10),
+                                                  child: Flexible(
+                                                    child: Text(
+                                                      bookObject.getBooksData
+                                                          .books[index].title,
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: GoogleFonts.roboto(
+                                                        textStyle: TextStyle(
+                                                          color:
+                                                              Colors.blue[900],
+                                                          letterSpacing: 1.1,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          fontSize: 16,
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      );
+                                    },
                                   ),
                                 ),
                               ],
                             ),
                           ),
                         ),
-                      );
-                    },
+                      ),
+                    ],
                   ),
                 ),
               ),
@@ -118,4 +184,3 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
     );
   }
 }
-

@@ -34,7 +34,6 @@ dependencies:
   bottom_navy_bar: ^6.0.0
   provider: ^5.0.0 
   http: ^0.13.3
-  url_launcher: ^6.0.9
 
 dev_dependencies:
   flutter_test:
