@@ -1,6 +1,7 @@
 import 'package:code_quiz_v2/screen/pages/online%20book/online-books-page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BookDetails extends StatefulWidget {
   final String image;
@@ -55,7 +56,6 @@ class _BookDetailsState extends State<BookDetails> {
               ],
             ),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 15),
               margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
               height: MediaQuery.of(context).size.height * .8,
               width: double.infinity,
@@ -86,54 +86,85 @@ class _BookDetailsState extends State<BookDetails> {
                     child: Image.network(widget.image),
                   ),
                   Spacer(),
-                  Text(
-                    '${widget.title}',
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.roboto(
-                      textStyle: TextStyle(
-                        color: Colors.blue[900],
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24,
-                      ),
-                    ),
-                  ),
-                  Spacer(),
-                  Text(
-                    '${widget.subTitle}',
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.roboto(
-                      textStyle: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
-                      ),
-                    ),
-                  ),
-                  Spacer(),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      IconButton(
-                        icon: Icon(
-                          Icons.link,
-                          size: 40,
-                          color: Colors.blueGrey,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Text(
+                      '${widget.title}',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.roboto(
+                        textStyle: TextStyle(
+                          color: Colors.blue[900],
+                          fontWeight: FontWeight.bold,
+                          fontSize: 24,
                         ),
-                        onPressed: () {},
                       ),
-                      Text(
-                        '${widget.price}',
-                        style: GoogleFonts.roboto(
-                          textStyle: TextStyle(
-                            color: Colors.green[900],
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24,
+                    ),
+                  ),
+                  Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Text(
+                      '${widget.subTitle}',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.roboto(
+                        textStyle: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Spacer(),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        GestureDetector(
+                          onTap: () {
+                            _openLink(widget.url);
+                          },
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * .35,
+                            height: MediaQuery.of(context).size.height * .08,
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(15),
+                                topRight: Radius.circular(15),
+                              ),
+                            ),
+                            child: Center(
+                              child: Text(
+                                'Get Now',
+                                style: GoogleFonts.roboto(
+                                  textStyle: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 24,
+                                  ),
+                                ),
+                              ),
+                            ),
                           ),
                         ),
-                      )
-                    ],
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 15),
+                          child: Text(
+                            '${widget.price}',
+                            style: GoogleFonts.roboto(
+                              textStyle: TextStyle(
+                                color: Colors.green[900],
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
                   ),
-                  Spacer()
                 ],
               ),
             )
@@ -141,5 +172,13 @@ class _BookDetailsState extends State<BookDetails> {
         ),
       ),
     );
+  }
+}
+
+Future<void> _openLink(String url) async {
+  try {
+    await launch(url);
+  } catch (err) {
+    print('could not launch $url');
   }
 }

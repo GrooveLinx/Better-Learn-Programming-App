@@ -62,14 +62,18 @@ class _Topic1State extends State<Topic1> {
                                   !cBasicTutorial[_].isFav;
                               final snackBar = SnackBar(
                                 shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(22.0),
-                                        topRight: Radius.circular(22.0))),
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(22.0),
+                                    topRight: Radius.circular(22.0),
+                                  ),
+                                ),
                                 backgroundColor: Colors.purple[200],
-                                duration: Duration(milliseconds: 400),
+                                duration: Duration(milliseconds: 700),
                                 content: Text(
-                                  'Successfully added to Bookmark!',
-                                  style: GoogleFonts.pacifico(
+                                  cBasicTutorial[_].isFav
+                                      ? 'Successfully added to Bookmark!'
+                                      : 'Successfully removed from Bookmark!',
+                                  style: GoogleFonts.poppins(
                                     textStyle: TextStyle(
                                       fontSize: 20,
                                       letterSpacing: 1,

@@ -68,7 +68,7 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                               'Get Programming\nBooks!',
                               style: GoogleFonts.poppins(
                                 textStyle: TextStyle(
-                                  color: Colors.green[900],
+                                  color: Colors.purple[900],
                                   fontSize: 38,
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -118,6 +118,8 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                                                       .subtitle,
                                                   price: bookObject.getBooksData
                                                       .books[index].price,
+                                                  url: bookObject.getBooksData
+                                                      .books[index].url,
                                                 ),
                                               ),
                                             );
@@ -138,8 +140,8 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                                                 begin: Alignment.topCenter,
                                                 end: Alignment.bottomCenter,
                                                 colors: [
-                                                  Colors.purple[200],
                                                   Colors.red[200],
+                                                  Colors.orange[200],
                                                 ],
                                               ),
                                               borderRadius:

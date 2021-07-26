@@ -2,6 +2,7 @@ import 'package:code_quiz_v2/screen/pages/topic-page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mdi/mdi.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class DeveloperPage extends StatelessWidget {
   const DeveloperPage({Key key}) : super(key: key);
@@ -22,7 +23,11 @@ class DeveloperPage extends StatelessWidget {
           ),
           onPressed: () {
             Navigator.pop(
-                context, MaterialPageRoute(builder: (_) => TopicPage()));
+              context,
+              MaterialPageRoute(
+                builder: (_) => TopicPage(),
+              ),
+            );
           },
         ),
         backgroundColor: Colors.white,
@@ -67,7 +72,7 @@ class DeveloperPage extends StatelessWidget {
                 ),
               ),
               child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 10),
+                padding: const EdgeInsets.only(top: 15,),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -84,6 +89,82 @@ class DeveloperPage extends StatelessWidget {
                             alignment: Alignment.centerLeft,
                           ),
                         ),
+                        Container(
+                          height: MediaQuery.of(context).size.height * .1,
+                          width: MediaQuery.of(context).size.width * .6,
+                          decoration: BoxDecoration(
+                            color: Color(0xFF442C3E),
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(30),
+                              bottomRight: Radius.circular(30),
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.developer_board,
+                                size: 30,
+                                color: Colors.white,
+                              ),
+                              SizedBox(
+                                width: 20,
+                              ),
+                              Text(
+                                'Developers',
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w600,
+                                    fontSize: 20,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        IconButton(
+                          onPressed: () {
+                            _openFacebookLink(
+                                'https://www.facebook.com/rippledevs/');
+                          },
+                          icon: Icon(
+                            Mdi.facebook,
+                            size: 45,
+                            color: Colors.blueGrey,
+                          ),
+                        ),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * .13,
+                        ),
+                        IconButton(
+                          onPressed: () {
+                            _openLinkedInLink('https://www.linkedin.com/company/ripplebee/');
+                          },
+                          icon: Icon(
+                            Mdi.linkedin,
+                            size: 45,
+                            color: Colors.blueGrey,
+                          ),
+                        ),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * .13,
+                        ),
+                        IconButton(
+                          onPressed: () {
+                            _openTwitterLink('https://twitter.com/rippledevs');
+                          },
+                          icon: Icon(
+                            Mdi.twitter,
+                            size: 45,
+                            color: Colors.blueGrey,
+                          ),
+                        )
                       ],
                     ),
                     Row(
@@ -96,16 +177,16 @@ class DeveloperPage extends StatelessWidget {
                             padding: EdgeInsets.symmetric(
                                 horizontal: 10, vertical: 10),
                             decoration: BoxDecoration(
-                              // color: Colors.blueGrey[100],
+                              color: Colors.purple[100],
                               borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(40),
-                                bottomRight: Radius.circular(40),
+                                topLeft: Radius.circular(25),
+                               // topRight: Radius.circular(25),
                               ),
                             ),
-                            width: width * .7,
+                            width: width,
                             child: Center(
                               child: Text(
-                                'Developed by\nThe Geeks of RippleBee',
+                                'Powered by\nGeeks of RippleBee',
                                 textAlign: TextAlign.center,
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(
@@ -128,5 +209,29 @@ class DeveloperPage extends StatelessWidget {
         ],
       ),
     );
+  }
+}
+
+Future<void> _openFacebookLink(String url) async {
+  try {
+    await launch(url);
+  } catch (err) {
+    print('could not launch $url');
+  }
+}
+
+Future<void> _openLinkedInLink(String url) async {
+  try {
+    await launch(url);
+  } catch (err) {
+    print('could not launch $url');
+  }
+}
+
+Future<void> _openTwitterLink(String url) async {
+  try {
+    await launch(url);
+  } catch (err) {
+    print('could not launch $url');
   }
 }
