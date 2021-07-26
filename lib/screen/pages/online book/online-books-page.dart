@@ -66,157 +66,145 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                           child: Flexible(
                             child: Text(
                               'Get Programming\nBooks!',
-                              style: GoogleFonts.montserrat(
+                              style: GoogleFonts.poppins(
                                 textStyle: TextStyle(
                                   color: Colors.green[900],
-                                  fontSize: 34,
-                                  fontWeight: FontWeight.w500,
+                                  fontSize: 38,
+                                  fontWeight: FontWeight.w600,
                                 ),
                               ),
                             ),
                           ),
                         ),
+                        SizedBox(
+                          height: MediaQuery.of(context).size.height * .02,
+                        ),
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Colors.green[200],
+                              color: Colors.lightGreen[100],
                               borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(20),
-                                topRight: Radius.circular(20),
+                                topLeft: Radius.circular(30),
+                                topRight: Radius.circular(30),
                               ),
                             ),
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(20),
-                                topRight: Radius.circular(20),
-                              ),
-                              child: Column(
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      margin:
-                                          EdgeInsets.symmetric(horizontal: 15),
-                                      child: ListView.builder(
-                                        padding:
-                                            EdgeInsets.symmetric(vertical: 20),
-                                        scrollDirection: Axis.horizontal,
-                                        itemCount: bookObject
-                                            .getBooksData.books.length,
-                                        itemBuilder:
-                                            (BuildContext context, int index) {
-                                          return InkWell(
-                                            onTap: () {
-                                              Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                  builder: (_) => BookDetails(
-                                                    image: bookObject
-                                                        .getBooksData
-                                                        .books[index]
-                                                        .image,
-                                                    title: bookObject
-                                                        .getBooksData
-                                                        .books[index]
-                                                        .title,
-                                                    subTitle: bookObject
-                                                        .getBooksData
-                                                        .books[index]
-                                                        .subtitle,
-                                                    price: bookObject
-                                                        .getBooksData
-                                                        .books[index]
-                                                        .price,
-                                                  ),
+                            child: Column(
+                              children: [
+                                Expanded(
+                                  child: Container(
+                                    padding:
+                                        EdgeInsets.symmetric(horizontal: 5),
+                                    child: ListView.builder(
+                                      padding:
+                                          EdgeInsets.symmetric(vertical: 20),
+                                      scrollDirection: Axis.horizontal,
+                                      itemCount:
+                                          bookObject.getBooksData.books.length,
+                                      itemBuilder:
+                                          (BuildContext context, int index) {
+                                        return InkWell(
+                                          onTap: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (_) => BookDetails(
+                                                  image: bookObject.getBooksData
+                                                      .books[index].image,
+                                                  title: bookObject.getBooksData
+                                                      .books[index].title,
+                                                  subTitle: bookObject
+                                                      .getBooksData
+                                                      .books[index]
+                                                      .subtitle,
+                                                  price: bookObject.getBooksData
+                                                      .books[index].price,
                                                 ),
-                                              );
-                                            },
-                                            child: Container(
-                                              width: MediaQuery.of(context)
-                                                      .size
-                                                      .width *
-                                                  .5,
-                                              height: MediaQuery.of(context)
-                                                      .size
-                                                      .height *
-                                                  .5,
-                                              margin: EdgeInsets.symmetric(
-                                                  horizontal: 10, vertical: 30),
-                                              decoration: BoxDecoration(
-                                                gradient: LinearGradient(
-                                                  begin: Alignment.topCenter,
-                                                  end: Alignment.bottomCenter,
-                                                  colors: [
-                                                    Colors.purple[100],
-                                                    Colors.red[100],
-                                                  ],
-                                                ),
-                                                borderRadius:
-                                                    BorderRadius.circular(10),
-                                                boxShadow: [
-                                                  BoxShadow(
-                                                    color: Colors.grey,
-                                                    spreadRadius: -3,
-                                                    blurRadius: 10,
-                                                    offset: Offset(1, 5),
-                                                  )
+                                              ),
+                                            );
+                                          },
+                                          child: Container(
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width *
+                                                .5,
+                                            height: MediaQuery.of(context)
+                                                    .size
+                                                    .height *
+                                                .5,
+                                            margin: EdgeInsets.symmetric(
+                                                horizontal: 10, vertical: 30),
+                                            decoration: BoxDecoration(
+                                              gradient: LinearGradient(
+                                                begin: Alignment.topCenter,
+                                                end: Alignment.bottomCenter,
+                                                colors: [
+                                                  Colors.purple[200],
+                                                  Colors.red[200],
                                                 ],
                                               ),
-                                              child: Column(
-                                                children: [
-                                                  Hero(
-                                                    tag: bookObject.getBooksData
-                                                        .books[index].image,
-                                                    child: Image.network(
-                                                      bookObject.getBooksData
-                                                          .books[index].image
-                                                          .toString(),
-                                                      width:
-                                                          MediaQuery.of(context)
-                                                                  .size
-                                                                  .width *
-                                                              .4,
-                                                      height:
-                                                          MediaQuery.of(context)
-                                                                  .size
-                                                                  .height *
-                                                              .3,
-                                                      fit: BoxFit.cover,
-                                                    ),
+                                              borderRadius:
+                                                  BorderRadius.circular(10),
+                                              boxShadow: [
+                                                BoxShadow(
+                                                  color: Colors.grey,
+                                                  spreadRadius: -3,
+                                                  blurRadius: 10,
+                                                  offset: Offset(1, 5),
+                                                )
+                                              ],
+                                            ),
+                                            child: Column(
+                                              children: [
+                                                Hero(
+                                                  tag: bookObject.getBooksData
+                                                      .books[index].image,
+                                                  child: Image.network(
+                                                    bookObject.getBooksData
+                                                        .books[index].image
+                                                        .toString(),
+                                                    width:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .width *
+                                                            .4,
+                                                    height:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .height *
+                                                            .3,
+                                                    fit: BoxFit.cover,
                                                   ),
-                                                  Padding(
-                                                    padding: const EdgeInsets
-                                                            .symmetric(
-                                                        horizontal: 10),
-                                                    child: Flexible(
-                                                      child: Text(
-                                                        bookObject.getBooksData
-                                                            .books[index].title,
-                                                        textAlign:
-                                                            TextAlign.center,
-                                                        style:
-                                                            GoogleFonts.roboto(
-                                                          textStyle: TextStyle(
-                                                            color: Colors
-                                                                .blue[900],
-                                                            letterSpacing: 1.1,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                            fontSize: 16,
-                                                          ),
+                                                ),
+                                                Padding(
+                                                  padding: const EdgeInsets
+                                                          .symmetric(
+                                                      horizontal: 10),
+                                                  child: Flexible(
+                                                    child: Text(
+                                                      bookObject.getBooksData
+                                                          .books[index].title,
+                                                      textAlign:
+                                                          TextAlign.center,
+                                                      style: GoogleFonts.roboto(
+                                                        textStyle: TextStyle(
+                                                          color: Colors.black,
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          fontSize: 18,
                                                         ),
                                                       ),
                                                     ),
                                                   ),
-                                                ],
-                                              ),
+                                                ),
+                                              ],
                                             ),
-                                          );
-                                        },
-                                      ),
+                                          ),
+                                        );
+                                      },
                                     ),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
                         ),

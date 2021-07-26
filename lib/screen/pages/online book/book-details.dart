@@ -20,7 +20,7 @@ class _BookDetailsState extends State<BookDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple[50],
+      backgroundColor: Colors.yellow[50],
       body: SafeArea(
         child: Column(
           children: [
@@ -31,14 +31,14 @@ class _BookDetailsState extends State<BookDetails> {
                   child: Container(
                     padding: EdgeInsets.all(3),
                     decoration: BoxDecoration(
-                      color: Colors.brown[100],
+                      color: Colors.brown[200],
                       borderRadius: BorderRadius.circular(70),
                     ),
                     child: IconButton(
                       padding: EdgeInsets.zero,
                       icon: Icon(
                         Icons.arrow_back,
-                        color: Colors.blueGrey,
+                        color: Colors.cyan[50],
                         size: 30,
                       ),
                       onPressed: () {
@@ -55,7 +55,7 @@ class _BookDetailsState extends State<BookDetails> {
               ],
             ),
             Container(
-              padding: EdgeInsets.symmetric(horizontal: 10),
+              padding: EdgeInsets.symmetric(horizontal: 15),
               margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
               height: MediaQuery.of(context).size.height * .8,
               width: double.infinity,
@@ -64,8 +64,8 @@ class _BookDetailsState extends State<BookDetails> {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    Colors.amber[100],
-                    Colors.red[100],
+                    Colors.red[200],
+                    Colors.orange[200],
                   ],
                 ),
                 borderRadius: BorderRadius.circular(20),
@@ -83,10 +83,7 @@ class _BookDetailsState extends State<BookDetails> {
                   Spacer(),
                   Hero(
                     tag: widget.image,
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(10),
-                      child: Image.network(widget.image),
-                    ),
+                    child: Image.network(widget.image),
                   ),
                   Spacer(),
                   Text(
@@ -95,22 +92,18 @@ class _BookDetailsState extends State<BookDetails> {
                     style: GoogleFonts.roboto(
                       textStyle: TextStyle(
                         color: Colors.blue[900],
-                        letterSpacing: 1.1,
                         fontWeight: FontWeight.bold,
-                        fontSize: 23,
+                        fontSize: 24,
                       ),
                     ),
                   ),
-                  SizedBox(
-                    height: 10,
-                  ),
+                  Spacer(),
                   Text(
                     '${widget.subTitle}',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.roboto(
                       textStyle: TextStyle(
                         color: Colors.black,
-                        letterSpacing: 1.1,
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
                       ),
@@ -133,7 +126,6 @@ class _BookDetailsState extends State<BookDetails> {
                         style: GoogleFonts.roboto(
                           textStyle: TextStyle(
                             color: Colors.green[900],
-                            letterSpacing: 1.1,
                             fontWeight: FontWeight.bold,
                             fontSize: 24,
                           ),
