@@ -20,7 +20,7 @@ class _BookDetailsState extends State<BookDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.pink[50],
+      backgroundColor: Colors.deepPurple[50],
       body: SafeArea(
         child: Column(
           children: [
@@ -32,12 +32,12 @@ class _BookDetailsState extends State<BookDetails> {
                     padding: EdgeInsets.all(3),
                     decoration: BoxDecoration(
                       color: Colors.brown[100],
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(70),
                     ),
                     child: IconButton(
                       padding: EdgeInsets.zero,
                       icon: Icon(
-                        Icons.arrow_back_ios,
+                        Icons.arrow_back,
                         color: Colors.blueGrey,
                         size: 30,
                       ),
@@ -51,7 +51,7 @@ class _BookDetailsState extends State<BookDetails> {
                       },
                     ),
                   ),
-                )
+                ),
               ],
             ),
             Container(
@@ -60,8 +60,24 @@ class _BookDetailsState extends State<BookDetails> {
               height: MediaQuery.of(context).size.height * .8,
               width: double.infinity,
               decoration: BoxDecoration(
-                  color: Colors.pink[100],
-                  borderRadius: BorderRadius.circular(20)),
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Colors.amber[100],
+                    Colors.red[100],
+                  ],
+                ),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey,
+                    spreadRadius: -3,
+                    blurRadius: 10,
+                    offset: Offset(1, 5),
+                  )
+                ],
+              ),
               child: Column(
                 children: [
                   Spacer(),
