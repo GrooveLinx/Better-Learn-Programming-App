@@ -34,9 +34,9 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[100],
+      backgroundColor: Colors.amber[50],
       appBar: AppBar(
-        backgroundColor: Colors.amber[100],
+        backgroundColor: Colors.amber[50],
         elevation: 0.0,
         title: Text(
           'Online Books',
@@ -90,27 +90,46 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                             child: Column(
                               children: [
                                 Expanded(
-                                  child: ListView.builder(
-                                    padding: EdgeInsets.all(15),
-                                    scrollDirection: Axis.horizontal,
-                                    itemCount:
-                                        bookObject.getBooksData.books.length,
-                                    itemBuilder:
-                                        (BuildContext context, int index) {
-                                      return Material(
-                                        color: Colors.transparent,
-                                        child: InkWell(
+                                  child: Container(
+                                    margin:
+                                        EdgeInsets.symmetric(horizontal: 15),
+                                    child: ListView.builder(
+                                      padding:
+                                          EdgeInsets.symmetric(vertical: 20),
+                                      scrollDirection: Axis.horizontal,
+                                      itemCount:
+                                          bookObject.getBooksData.books.length,
+                                      itemBuilder:
+                                          (BuildContext context, int index) {
+                                        return InkWell(
                                           onTap: () {
                                             Navigator.push(
                                               context,
                                               MaterialPageRoute(
-                                                builder: (_) => BookDetails(),
+                                                builder: (_) => BookDetails(
+                                                  image: bookObject.getBooksData
+                                                      .books[index].image,
+                                                  title: bookObject.getBooksData
+                                                      .books[index].title,
+                                                  subTitle: bookObject
+                                                      .getBooksData
+                                                      .books[index]
+                                                      .subtitle,
+                                                  price: bookObject.getBooksData
+                                                      .books[index].price,
+                                                ),
                                               ),
                                             );
                                           },
                                           child: Container(
-                                            width: 180,
-                                            height: 200,
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width *
+                                                .5,
+                                            height: MediaQuery.of(context)
+                                                    .size
+                                                    .height *
+                                                .5,
                                             margin: EdgeInsets.symmetric(
                                                 horizontal: 10, vertical: 30),
                                             decoration: BoxDecoration(
@@ -135,8 +154,16 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                                                     bookObject.getBooksData
                                                         .books[index].image
                                                         .toString(),
-                                                    height: 200,
-                                                    width: 200,
+                                                    width:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .width *
+                                                            .4,
+                                                    height:
+                                                        MediaQuery.of(context)
+                                                                .size
+                                                                .height *
+                                                            .3,
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -166,9 +193,9 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                                               ],
                                             ),
                                           ),
-                                        ),
-                                      );
-                                    },
+                                        );
+                                      },
+                                    ),
                                   ),
                                 ),
                               ],

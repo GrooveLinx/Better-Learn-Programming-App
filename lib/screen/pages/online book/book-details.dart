@@ -1,8 +1,16 @@
 import 'package:code_quiz_v2/screen/pages/online%20book/online-books-page.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class BookDetails extends StatefulWidget {
-  BookDetails({Key key}) : super(key: key);
+  final String image;
+  final String title;
+  final String subTitle;
+  final String price;
+  final String url;
+  BookDetails(
+      {Key key, this.image, this.title, this.subTitle, this.price, this.url})
+      : super(key: key);
 
   @override
   _BookDetailsState createState() => _BookDetailsState();
@@ -12,6 +20,7 @@ class _BookDetailsState extends State<BookDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.pink[50],
       body: SafeArea(
         child: Column(
           children: [
@@ -44,6 +53,81 @@ class _BookDetailsState extends State<BookDetails> {
                   ),
                 )
               ],
+            ),
+            Container(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+              height: MediaQuery.of(context).size.height * .8,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                  color: Colors.pink[100],
+                  borderRadius: BorderRadius.circular(20)),
+              child: Column(
+                children: [
+                  Spacer(),
+                  Hero(
+                    tag: widget.image,
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(10),
+                      child: Image.network(widget.image),
+                    ),
+                  ),
+                  Spacer(),
+                  Text(
+                    '${widget.title}',
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.roboto(
+                      textStyle: TextStyle(
+                        color: Colors.blue[900],
+                        letterSpacing: 1.1,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 23,
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    '${widget.subTitle}',
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.roboto(
+                      textStyle: TextStyle(
+                        color: Colors.black,
+                        letterSpacing: 1.1,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
+                  ),
+                  Spacer(),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      IconButton(
+                        icon: Icon(
+                          Icons.link,
+                          size: 40,
+                          color: Colors.blueGrey,
+                        ),
+                        onPressed: () {},
+                      ),
+                      Text(
+                        '${widget.price}',
+                        style: GoogleFonts.roboto(
+                          textStyle: TextStyle(
+                            color: Colors.green[900],
+                            letterSpacing: 1.1,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                  Spacer()
+                ],
+              ),
             )
           ],
         ),

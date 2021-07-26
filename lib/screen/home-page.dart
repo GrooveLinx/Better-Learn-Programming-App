@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavyBar(
         itemCornerRadius: 50,
         containerHeight: MediaQuery.of(context).size.height * .09,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.white24,
         selectedIndex: currentTab,
         animationDuration: Duration(milliseconds: 300),
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
