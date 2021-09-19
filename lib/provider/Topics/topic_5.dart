@@ -1,10 +1,8 @@
 import 'package:code_quiz_v2/provider/C%20Programming/loops_tutorial.dart';
-import 'package:code_quiz_v2/provider/Dart%20Programming/loops_tutorial.dart';
 import 'package:code_quiz_v2/provider/JS%20Programming/loops_tutorial.dart';
 import 'package:code_quiz_v2/database/programming-tile-data.dart';
 import 'package:code_quiz_v2/provider/Java%20Programming/loop_tutorial.dart';
 import 'package:code_quiz_v2/provider/Python%20Programming/loop_tutorial.dart';
-import 'package:code_quiz_v2/provider/Swift%20Programming/loop_tutorial.dart';
 import 'package:code_quiz_v2/screen/language_tile_page.dart';
 import 'package:code_quiz_v2/widgets/topics/custom_topic_app_bar.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_intro.dart';
@@ -147,9 +145,9 @@ class Topic5 extends StatelessWidget {
                         );
                       },
                     )
-                  : dartLoopTutorial[0].id == tutorialKey.id
+                  : jsLoopTutorial[0].id == tutorialKey.id
                       ? ListView.builder(
-                          itemCount: dartLoopTutorial.length,
+                          itemCount: jsLoopTutorial.length,
                           itemBuilder: (BuildContext context, _) {
                             return Padding(
                               padding: const EdgeInsets.symmetric(
@@ -158,117 +156,34 @@ class Topic5 extends StatelessWidget {
                                 children: [
                                   TopicsIntro(
                                     // topicId: 1 + index,
-                                    topicTitle: dartLoopTutorial[_].topicTitle,
+                                    topicTitle: jsLoopTutorial[_].topicTitle,
                                     topicDescription:
-                                        dartLoopTutorial[_].topicDescription,
+                                        jsLoopTutorial[_].topicDescription,
                                   ),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgram(
                                       topicProgram:
-                                          dartLoopTutorial[_].sampleProgram),
+                                          jsLoopTutorial[_].sampleProgram),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgramOutput(
-                                      topicProgramOutput: dartLoopTutorial[_]
+                                      topicProgramOutput: jsLoopTutorial[_]
                                           .sampleProgramOutput),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgramDescription(
                                       topicProgramDescription:
-                                          dartLoopTutorial[_]
-                                              .programDescription)
+                                          jsLoopTutorial[_].programDescription)
                                 ],
                               ),
                             );
                           },
                         )
-                      : swiftLoopTutorial[0].id == tutorialKey.id
-                          ? ListView.builder(
-                              itemCount: swiftLoopTutorial.length,
-                              itemBuilder: (BuildContext context, _) {
-                                return Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 10),
-                                  child: Column(
-                                    children: [
-                                      TopicsIntro(
-                                        // topicId: 1 + index,
-                                        topicTitle:
-                                            swiftLoopTutorial[_].topicTitle,
-                                        topicDescription: swiftLoopTutorial[_]
-                                            .topicDescription,
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgram(
-                                          topicProgram: swiftLoopTutorial[_]
-                                              .sampleProgram),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgramOutput(
-                                          topicProgramOutput:
-                                              swiftLoopTutorial[_]
-                                                  .sampleProgramOutput),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgramDescription(
-                                          topicProgramDescription:
-                                              swiftLoopTutorial[_]
-                                                  .programDescription)
-                                    ],
-                                  ),
-                                );
-                              },
-                            )
-                          : jsLoopTutorial[0].id == tutorialKey.id
-                              ? ListView.builder(
-                                  itemCount: jsLoopTutorial.length,
-                                  itemBuilder: (BuildContext context, _) {
-                                    return Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 10, vertical: 10),
-                                      child: Column(
-                                        children: [
-                                          TopicsIntro(
-                                            // topicId: 1 + index,
-                                            topicTitle:
-                                                jsLoopTutorial[_].topicTitle,
-                                            topicDescription: jsLoopTutorial[_]
-                                                .topicDescription,
-                                          ),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgram(
-                                              topicProgram: jsLoopTutorial[_]
-                                                  .sampleProgram),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgramOutput(
-                                              topicProgramOutput:
-                                                  jsLoopTutorial[_]
-                                                      .sampleProgramOutput),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgramDescription(
-                                              topicProgramDescription:
-                                                  jsLoopTutorial[_]
-                                                      .programDescription)
-                                        ],
-                                      ),
-                                    );
-                                  },
-                                )
-                              : null,
+                      : null,
     );
   }
 }

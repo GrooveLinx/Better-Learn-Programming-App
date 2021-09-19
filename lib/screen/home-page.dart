@@ -1,5 +1,4 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
-import 'package:code_quiz_v2/screen/pages/bookmart-page.dart';
 import 'package:code_quiz_v2/screen/pages/online%20book/online-books-page.dart';
 import 'package:code_quiz_v2/screen/pages/topic-page.dart';
 import 'package:code_quiz_v2/screen/pages/quiz%20page/quiz-page-welcome.dart';
@@ -19,7 +18,6 @@ class _HomePageState extends State<HomePage> {
     TopicPage(),
     QuizWelcomePage(),
     OnlineBookPage(),
-    BooksmartPage(),
   ];
 
   @override
@@ -75,16 +73,7 @@ class _HomePageState extends State<HomePage> {
             activeColor: Colors.black,
             inactiveColor: Colors.black54,
           ),
-          BottomNavyBarItem(
-            title: Text('BookMark'),
-            textAlign: TextAlign.center,
-            icon: Icon(
-              currentTab == 3 ? Mdi.bookmark : Mdi.bookmarkOutline,
-              size: 30,
-            ),
-            activeColor: Colors.black,
-            inactiveColor: Colors.black54,
-          ),
+         
         ],
       ),
     );

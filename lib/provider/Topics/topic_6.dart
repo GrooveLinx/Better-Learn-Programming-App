@@ -1,10 +1,8 @@
 import 'package:code_quiz_v2/provider/C%20Programming/function_tutorial.dart';
-import 'package:code_quiz_v2/provider/Dart%20Programming/function_tutorial.dart';
 import 'package:code_quiz_v2/provider/JS%20Programming/function_tutorial.dart';
 import 'package:code_quiz_v2/database/programming-tile-data.dart';
 import 'package:code_quiz_v2/provider/Java%20Programming/function_tutorial.dart';
 import 'package:code_quiz_v2/provider/Python%20Programming/function_tutorial.dart';
-import 'package:code_quiz_v2/provider/Swift%20Programming/basic_tutorial.dart';
 import 'package:code_quiz_v2/screen/language_tile_page.dart';
 import 'package:code_quiz_v2/widgets/topics/custom_topic_app_bar.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_intro.dart';
@@ -150,9 +148,9 @@ class Topic6 extends StatelessWidget {
                         );
                       },
                     )
-                  : dartFunctionTutorial[0].id == tutorialKey.id
+                  : jsFunctionTutorial[0].id == tutorialKey.id
                       ? ListView.builder(
-                          itemCount: dartFunctionTutorial.length,
+                          itemCount: jsFunctionTutorial.length,
                           itemBuilder: (BuildContext context, _) {
                             return Padding(
                               padding: const EdgeInsets.symmetric(
@@ -162,120 +160,35 @@ class Topic6 extends StatelessWidget {
                                   TopicsIntro(
                                     // topicId: 1 + index,
                                     topicTitle:
-                                        dartFunctionTutorial[_].topicTitle,
-                                    topicDescription: dartFunctionTutorial[_]
-                                        .topicDescription,
+                                        jsFunctionTutorial[_].topicTitle,
+                                    topicDescription:
+                                        jsFunctionTutorial[_].topicDescription,
                                   ),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgram(
-                                      topicProgram: dartFunctionTutorial[_]
-                                          .sampleProgram),
+                                      topicProgram:
+                                          jsFunctionTutorial[_].sampleProgram),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgramOutput(
-                                      topicProgramOutput:
-                                          dartFunctionTutorial[_]
-                                              .sampleProgramOutput),
+                                      topicProgramOutput: jsFunctionTutorial[_]
+                                          .sampleProgramOutput),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgramDescription(
                                       topicProgramDescription:
-                                          dartFunctionTutorial[_]
+                                          jsFunctionTutorial[_]
                                               .programDescription)
                                 ],
                               ),
                             );
                           },
                         )
-                      : swiftBasicTutorial[0].id == tutorialKey.id
-                          ? ListView.builder(
-                              itemCount: swiftBasicTutorial.length,
-                              itemBuilder: (BuildContext context, _) {
-                                return Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 10),
-                                  child: Column(
-                                    children: [
-                                      TopicsIntro(
-                                        // topicId: 1 + index,
-                                        topicTitle:
-                                            swiftBasicTutorial[_].topicTitle,
-                                        topicDescription: swiftBasicTutorial[_]
-                                            .topicDescription,
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgram(
-                                          topicProgram: swiftBasicTutorial[_]
-                                              .sampleProgram),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgramOutput(
-                                          topicProgramOutput:
-                                              swiftBasicTutorial[_]
-                                                  .sampleProgramOutput),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgramDescription(
-                                          topicProgramDescription:
-                                              swiftBasicTutorial[_]
-                                                  .programDescription)
-                                    ],
-                                  ),
-                                );
-                              },
-                            )
-                          : jsFunctionTutorial[0].id == tutorialKey.id
-                              ? ListView.builder(
-                                  itemCount: jsFunctionTutorial.length,
-                                  itemBuilder: (BuildContext context, _) {
-                                    return Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 10, vertical: 10),
-                                      child: Column(
-                                        children: [
-                                          TopicsIntro(
-                                            // topicId: 1 + index,
-                                            topicTitle: jsFunctionTutorial[_]
-                                                .topicTitle,
-                                            topicDescription:
-                                                jsFunctionTutorial[_]
-                                                    .topicDescription,
-                                          ),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgram(
-                                              topicProgram:
-                                                  jsFunctionTutorial[_]
-                                                      .sampleProgram),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgramOutput(
-                                              topicProgramOutput:
-                                                  jsFunctionTutorial[_]
-                                                      .sampleProgramOutput),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgramDescription(
-                                              topicProgramDescription:
-                                                  jsFunctionTutorial[_]
-                                                      .programDescription)
-                                        ],
-                                      ),
-                                    );
-                                  },
-                                )
-                              : null,
+                      : null,
     );
   }
 }

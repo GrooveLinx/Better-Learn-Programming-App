@@ -1,7 +1,6 @@
 import 'package:code_quiz_v2/database/programming-tile-data.dart';
 import 'package:code_quiz_v2/provider/Topics/topic_1.dart';
 import 'package:code_quiz_v2/provider/Topics/topic_10.dart';
-import 'package:code_quiz_v2/provider/Topics/topic_2.dart';
 import 'package:code_quiz_v2/provider/Topics/topic_3.dart';
 import 'package:code_quiz_v2/provider/Topics/topic_4.dart';
 import 'package:code_quiz_v2/provider/Topics/topic_5.dart';
@@ -100,21 +99,7 @@ class LanguageTilePage extends StatelessWidget {
                         );
                       },
                     ),
-                    CategoryTile(
-                      dbTitle: languageTile.topic2,
-                      customSubtitle:
-                          'Every programming language has it\'s own syntax.',
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Topic2(
-                              id: languageTile.id,
-                            ),
-                          ),
-                        );
-                      },
-                    ),
+                   
                     CategoryTile(
                       dbTitle: languageTile.topic3,
                       customSubtitle:

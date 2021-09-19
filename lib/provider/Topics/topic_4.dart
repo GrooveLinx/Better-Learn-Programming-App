@@ -1,10 +1,8 @@
 import 'package:code_quiz_v2/provider/C%20Programming/condition_tutorial.dart';
-import 'package:code_quiz_v2/provider/Dart%20Programming/condition_tutorial.dart';
 import 'package:code_quiz_v2/provider/JS%20Programming/condition_tutorial.dart';
 import 'package:code_quiz_v2/database/programming-tile-data.dart';
 import 'package:code_quiz_v2/provider/Java%20Programming/conditions_tutorial.dart';
 import 'package:code_quiz_v2/provider/Python%20Programming/conditions_tutorial.dart';
-import 'package:code_quiz_v2/provider/Swift%20Programming/conditions_tutorial.dart';
 import 'package:code_quiz_v2/screen/language_tile_page.dart';
 import 'package:code_quiz_v2/widgets/topics/custom_topic_app_bar.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_intro.dart';
@@ -152,9 +150,9 @@ class Topic4 extends StatelessWidget {
                         );
                       },
                     )
-                  : dartConditionsTutorial[0].id == tutorialKey.id
+                  : jsConditionsTutorial[0].id == tutorialKey.id
                       ? ListView.builder(
-                          itemCount: dartConditionsTutorial.length,
+                          itemCount: jsConditionsTutorial.length,
                           itemBuilder: (BuildContext context, _) {
                             return Padding(
                               padding: const EdgeInsets.symmetric(
@@ -164,122 +162,36 @@ class Topic4 extends StatelessWidget {
                                   TopicsIntro(
                                     // topicId: 1 + index,
                                     topicTitle:
-                                        dartConditionsTutorial[_].topicTitle,
-                                    topicDescription: dartConditionsTutorial[_]
+                                        jsConditionsTutorial[_].topicTitle,
+                                    topicDescription: jsConditionsTutorial[_]
                                         .topicDescription,
                                   ),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgram(
-                                      topicProgram: dartConditionsTutorial[_]
+                                      topicProgram: jsConditionsTutorial[_]
                                           .sampleProgram),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgramOutput(
                                       topicProgramOutput:
-                                          dartConditionsTutorial[_]
+                                          jsConditionsTutorial[_]
                                               .sampleProgramOutput),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgramDescription(
                                       topicProgramDescription:
-                                          dartConditionsTutorial[_]
+                                          jsConditionsTutorial[_]
                                               .programDescription)
                                 ],
                               ),
                             );
                           },
                         )
-                      : swiftConditionsTutorial[0].id == tutorialKey.id
-                          ? ListView.builder(
-                              itemCount: swiftConditionsTutorial.length,
-                              itemBuilder: (BuildContext context, _) {
-                                return Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 10),
-                                  child: Column(
-                                    children: [
-                                      TopicsIntro(
-                                        // topicId: 1 + index,
-                                        topicTitle: swiftConditionsTutorial[_]
-                                            .topicTitle,
-                                        topicDescription:
-                                            swiftConditionsTutorial[_]
-                                                .topicDescription,
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgram(
-                                          topicProgram:
-                                              swiftConditionsTutorial[_]
-                                                  .sampleProgram),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgramOutput(
-                                          topicProgramOutput:
-                                              swiftConditionsTutorial[_]
-                                                  .sampleProgramOutput),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgramDescription(
-                                          topicProgramDescription:
-                                              swiftConditionsTutorial[_]
-                                                  .programDescription)
-                                    ],
-                                  ),
-                                );
-                              },
-                            )
-                          : jsConditionsTutorial[0].id == tutorialKey.id
-                              ? ListView.builder(
-                                  itemCount: jsConditionsTutorial.length,
-                                  itemBuilder: (BuildContext context, _) {
-                                    return Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 10, vertical: 10),
-                                      child: Column(
-                                        children: [
-                                          TopicsIntro(
-                                            // topicId: 1 + index,
-                                            topicTitle: jsConditionsTutorial[_]
-                                                .topicTitle,
-                                            topicDescription:
-                                                jsConditionsTutorial[_]
-                                                    .topicDescription,
-                                          ),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgram(
-                                              topicProgram:
-                                                  jsConditionsTutorial[_]
-                                                      .sampleProgram),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgramOutput(
-                                              topicProgramOutput:
-                                                  jsConditionsTutorial[_]
-                                                      .sampleProgramOutput),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgramDescription(
-                                              topicProgramDescription:
-                                                  jsConditionsTutorial[_]
-                                                      .programDescription)
-                                        ],
-                                      ),
-                                    );
-                                  },
-                                )
-                              : null,
+                      : null,
     );
   }
 }

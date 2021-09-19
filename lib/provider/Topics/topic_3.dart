@@ -1,10 +1,8 @@
 import 'package:code_quiz_v2/provider/C%20Programming/data_types_tutorial.dart';
-import 'package:code_quiz_v2/provider/Dart%20Programming/data_types_tutorial.dart';
 import 'package:code_quiz_v2/provider/JS%20Programming/data_types_tutorial.dart';
 import 'package:code_quiz_v2/database/programming-tile-data.dart';
 import 'package:code_quiz_v2/provider/Java%20Programming/data_types_tutorial.dart';
 import 'package:code_quiz_v2/provider/Python%20Programming/data_types_tutorial.dart';
-import 'package:code_quiz_v2/provider/Swift%20Programming/data_types_tutorial.dart';
 import 'package:code_quiz_v2/screen/language_tile_page.dart';
 import 'package:code_quiz_v2/widgets/topics/custom_topic_app_bar.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_intro.dart';
@@ -151,9 +149,9 @@ class Topic3 extends StatelessWidget {
                         );
                       },
                     )
-                  : dartDataTypesTutorial[0].id == tutorialKey.id
+                  : jsDataTypesTutorial[0].id == tutorialKey.id
                       ? ListView.builder(
-                          itemCount: dartDataTypesTutorial.length,
+                          itemCount: jsDataTypesTutorial.length,
                           itemBuilder: (BuildContext context, _) {
                             return Padding(
                               padding: const EdgeInsets.symmetric(
@@ -163,122 +161,35 @@ class Topic3 extends StatelessWidget {
                                   TopicsIntro(
                                     // topicId: 1 + index,
                                     topicTitle:
-                                        dartDataTypesTutorial[_].topicTitle,
-                                    topicDescription: dartDataTypesTutorial[_]
-                                        .topicDescription,
+                                        jsDataTypesTutorial[_].topicTitle,
+                                    topicDescription:
+                                        jsDataTypesTutorial[_].topicDescription,
                                   ),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgram(
-                                      topicProgram: dartDataTypesTutorial[_]
-                                          .sampleProgram),
+                                      topicProgram:
+                                          jsDataTypesTutorial[_].sampleProgram),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgramOutput(
-                                      topicProgramOutput:
-                                          dartDataTypesTutorial[_]
-                                              .sampleProgramOutput),
+                                      topicProgramOutput: jsDataTypesTutorial[_]
+                                          .sampleProgramOutput),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgramDescription(
                                       topicProgramDescription:
-                                          dartDataTypesTutorial[_]
+                                          jsDataTypesTutorial[_]
                                               .programDescription)
                                 ],
                               ),
                             );
                           },
                         )
-                      : swiftDataTypesTutorial[0].id == tutorialKey.id
-                          ? ListView.builder(
-                              itemCount: swiftDataTypesTutorial.length,
-                              itemBuilder: (BuildContext context, _) {
-                                return Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 10),
-                                  child: Column(
-                                    children: [
-                                      TopicsIntro(
-                                        // topicId: 1 + index,
-                                        topicTitle: swiftDataTypesTutorial[_]
-                                            .topicTitle,
-                                        topicDescription:
-                                            swiftDataTypesTutorial[_]
-                                                .topicDescription,
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgram(
-                                          topicProgram:
-                                              swiftDataTypesTutorial[_]
-                                                  .sampleProgram),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgramOutput(
-                                          topicProgramOutput:
-                                              swiftDataTypesTutorial[_]
-                                                  .sampleProgramOutput),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgramDescription(
-                                          topicProgramDescription:
-                                              swiftDataTypesTutorial[_]
-                                                  .programDescription)
-                                    ],
-                                  ),
-                                );
-                              },
-                            )
-                          : jsDataTypesTutorial[0].id == tutorialKey.id
-                              ? ListView.builder(
-                                  itemCount: jsDataTypesTutorial.length,
-                                  itemBuilder: (BuildContext context, _) {
-                                    return Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 10, vertical: 10),
-                                      child: Column(
-                                        children: [
-                                          TopicsIntro(
-                                            // topicId: 1 + index,
-                                            topicTitle: jsDataTypesTutorial[_]
-                                                .topicTitle,
-                                            topicDescription:
-                                                jsDataTypesTutorial[_]
-                                                    .topicDescription,
-                                          ),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgram(
-                                              topicProgram:
-                                                  jsDataTypesTutorial[_]
-                                                      .sampleProgram),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgramOutput(
-                                              topicProgramOutput:
-                                                  jsDataTypesTutorial[_]
-                                                      .sampleProgramOutput),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgramDescription(
-                                              topicProgramDescription:
-                                                  jsDataTypesTutorial[_]
-                                                      .programDescription)
-                                        ],
-                                      ),
-                                    );
-                                  },
-                                )
-                              : null,
+                      : null,
     );
   }
 }

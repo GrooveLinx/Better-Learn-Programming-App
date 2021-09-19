@@ -39,7 +39,7 @@ int main() {
       sampleProgram: '''#include <iostream>
 using namespace std;
 
-main() {
+int main() {
    cout << "Hello World"; // prints Hello World
 
    return 0;

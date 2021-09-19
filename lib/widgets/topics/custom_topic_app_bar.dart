@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mdi/mdi.dart';
 
 class CustomAppBar extends StatelessWidget {
   final String topicTitle;
@@ -12,7 +11,7 @@ class CustomAppBar extends StatelessWidget {
     return AppBar(
       leading: IconButton(
           icon: Icon(
-            Mdi.backburger,
+            Icons.arrow_back_ios,
             color: Colors.blueGrey,
             size: 30,
           ),

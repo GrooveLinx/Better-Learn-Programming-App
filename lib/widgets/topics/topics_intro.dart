@@ -79,20 +79,6 @@ class _TopicsIntroState extends State<TopicsIntro> {
                       ),
                     ),
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.brown[100],
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: IconButton(
-                        padding: EdgeInsets.zero,
-                        icon: Icon(
-                          widget.icon,
-                          color: Colors.purple,
-                          size: 30,
-                        ),
-                        onPressed: widget.onPressed),
-                  )
                 ],
               ),
               SizedBox(

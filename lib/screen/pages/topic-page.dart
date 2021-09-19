@@ -16,15 +16,14 @@ class TopicPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xffffffee),
       appBar: AppBar(
-        backgroundColor: Colors.lightGreen[100],
+        backgroundColor: Colors.lightGreen[200],
         elevation: 0,
         title: Text(
-          'CodeQuiz',
-          style: GoogleFonts.pacifico(
+          'Programmer\'s Handbook',
+          style: GoogleFonts.ubuntu(
             textStyle: TextStyle(
-              color: Colors.black54,
-              letterSpacing: 1.1,
-              fontSize: 35,
+              color: Colors.brown[600],
+              fontSize: 26,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -51,7 +50,7 @@ class TopicPage extends StatelessWidget {
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Colors.lightGreen[100],
+              color: Colors.lightGreen[200],
             ),
             height: height,
           ),
@@ -68,17 +67,31 @@ class TopicPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Flexible(
-                      child: Text(
-                        'Learn once\nProgram\nanywhere!',
-                        style: GoogleFonts.montserrat(
-                          textStyle: TextStyle(
-                            color: Colors.blueGrey[600],
-                            fontSize: 30,
-                            fontWeight: FontWeight.w500,
+                        child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Learn once',
+                          style: GoogleFonts.ubuntu(
+                            textStyle: TextStyle(
+                              color: Colors.blueGrey[800],
+                              fontSize: 28,
+                              fontWeight: FontWeight.w500,
+                            ),
                           ),
                         ),
-                      ),
-                    ),
+                        Text(
+                          'Program anywhere!',
+                          style: GoogleFonts.ubuntu(
+                            textStyle: TextStyle(
+                              color: Colors.purple[400],
+                              fontSize: 30,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                        ),
+                      ],
+                    )),
                     /*  SvgPicture.asset(
                       'images/dedicated-team.svg',
                       width: width / 3,
@@ -99,7 +112,7 @@ class TopicPage extends StatelessWidget {
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.grey[100],
+                    color: Colors.amber[50],
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30),
                       topRight: Radius.circular(30),

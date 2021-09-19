@@ -1,10 +1,8 @@
 import 'package:code_quiz_v2/provider/C%20Programming/string_tutorial.dart';
-import 'package:code_quiz_v2/provider/Dart%20Programming/string_tutorial.dart';
 import 'package:code_quiz_v2/provider/JS%20Programming/string_tutorial.dart';
 import 'package:code_quiz_v2/database/programming-tile-data.dart';
 import 'package:code_quiz_v2/provider/Java%20Programming/string_tutorial.dart';
 import 'package:code_quiz_v2/provider/Python%20Programming/string_tutorial.dart';
-import 'package:code_quiz_v2/provider/Swift%20Programming/string_tutorial.dart';
 import 'package:code_quiz_v2/screen/language_tile_page.dart';
 import 'package:code_quiz_v2/widgets/topics/custom_topic_app_bar.dart';
 import 'package:code_quiz_v2/widgets/topics/topics_intro.dart';
@@ -149,9 +147,9 @@ class Topic9 extends StatelessWidget {
                         );
                       },
                     )
-                  : dartStringTutorial[0].id == tutorialKey.id
+                  : jsStringTutorial[0].id == tutorialKey.id
                       ? ListView.builder(
-                          itemCount: dartStringTutorial.length,
+                          itemCount: jsStringTutorial.length,
                           itemBuilder: (BuildContext context, _) {
                             return Padding(
                               padding: const EdgeInsets.symmetric(
@@ -160,119 +158,35 @@ class Topic9 extends StatelessWidget {
                                 children: [
                                   TopicsIntro(
                                     // topicId: 1 + index,
-                                    topicTitle:
-                                        dartStringTutorial[_].topicTitle,
+                                    topicTitle: jsStringTutorial[_].topicTitle,
                                     topicDescription:
-                                        dartStringTutorial[_].topicDescription,
+                                        jsStringTutorial[_].topicDescription,
                                   ),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgram(
                                       topicProgram:
-                                          dartStringTutorial[_].sampleProgram),
+                                          jsStringTutorial[_].sampleProgram),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgramOutput(
-                                      topicProgramOutput: dartStringTutorial[_]
+                                      topicProgramOutput: jsStringTutorial[_]
                                           .sampleProgramOutput),
                                   SizedBox(
                                     height: 10,
                                   ),
                                   TopicsProgramDescription(
                                       topicProgramDescription:
-                                          dartStringTutorial[_]
+                                          jsStringTutorial[_]
                                               .programDescription)
                                 ],
                               ),
                             );
                           },
                         )
-                      : swiftStringTutorial[0].id == tutorialKey.id
-                          ? ListView.builder(
-                              itemCount: swiftStringTutorial.length,
-                              itemBuilder: (BuildContext context, _) {
-                                return Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 10, vertical: 10),
-                                  child: Column(
-                                    children: [
-                                      TopicsIntro(
-                                        // topicId: 1 + index,
-                                        topicTitle:
-                                            swiftStringTutorial[_].topicTitle,
-                                        topicDescription: swiftStringTutorial[_]
-                                            .topicDescription,
-                                      ),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgram(
-                                          topicProgram: swiftStringTutorial[_]
-                                              .sampleProgram),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgramOutput(
-                                          topicProgramOutput:
-                                              swiftStringTutorial[_]
-                                                  .sampleProgramOutput),
-                                      SizedBox(
-                                        height: 10,
-                                      ),
-                                      TopicsProgramDescription(
-                                          topicProgramDescription:
-                                              swiftStringTutorial[_]
-                                                  .programDescription)
-                                    ],
-                                  ),
-                                );
-                              },
-                            )
-                          : jsStringTutorial[0].id == tutorialKey.id
-                              ? ListView.builder(
-                                  itemCount: jsStringTutorial.length,
-                                  itemBuilder: (BuildContext context, _) {
-                                    return Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 10, vertical: 10),
-                                      child: Column(
-                                        children: [
-                                          TopicsIntro(
-                                            // topicId: 1 + index,
-                                            topicTitle:
-                                                jsStringTutorial[_].topicTitle,
-                                            topicDescription:
-                                                jsStringTutorial[_]
-                                                    .topicDescription,
-                                          ),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgram(
-                                              topicProgram: jsStringTutorial[_]
-                                                  .sampleProgram),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgramOutput(
-                                              topicProgramOutput:
-                                                  jsStringTutorial[_]
-                                                      .sampleProgramOutput),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          TopicsProgramDescription(
-                                              topicProgramDescription:
-                                                  jsStringTutorial[_]
-                                                      .programDescription)
-                                        ],
-                                      ),
-                                    );
-                                  },
-                                )
-                              : null,
+                      : null,
     );
   }
 }

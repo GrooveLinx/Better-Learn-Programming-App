@@ -1,4 +1,3 @@
-import 'package:code_quiz_v2/screen/pages/topic-page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mdi/mdi.dart';
@@ -22,12 +21,7 @@ class DeveloperPage extends StatelessWidget {
             color: Colors.blueGrey,
           ),
           onPressed: () {
-            Navigator.pop(
-              context,
-              MaterialPageRoute(
-                builder: (_) => TopicPage(),
-              ),
-            );
+            Navigator.pop(context);
           },
         ),
         backgroundColor: Colors.white,

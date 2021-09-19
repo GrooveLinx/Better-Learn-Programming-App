@@ -14,7 +14,6 @@ C++ was developed by Bjarne Stroustrup, as an extension to the C language.
 C++ gives programmers a high level of control over system resources and memory.
 
 The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, and C++17.''',
-
   ),
   Language(
     id: 2,
@@ -55,30 +54,6 @@ Python can be used alongside software to create workflows.
 Python can connect to database systems. It can also read and modify files.
 Python can be used to handle big data and perform complex mathematics.
 Python can be used for rapid prototyping, or for production-ready software development.''',
-  ),
-  Language(
-    id: 4,
-    name: 'Dart',
-    info: 'Dart Programming Language',
-    imagePath: 'images/dart_logo.png',
-    description:
-        '''Dart is a general-purpose, high-level modern programming language which is originally developed by Google. It is the new programming language which is emerged in 2011, but its stable version was released in June 2017. Dart is not so popular at that time, but It gains popularity when it is used by the Flatter.
-
-Dart is a dynamic, class-based, object-oriented programming language with closure and lexical scope. Syntactically, it is quite similar to Java, C, and JavaScript. If you know any of these programming languages, you can easily learn the Dart programming language.
-
-Dart is an open-source programming language which is widely used to develop the mobile application, modern web-applications, desktop application, and the Internet of Things (IoT) using by Flatter framework. It also supports a few advance concepts such as interfaces, mixins, abstract classes, refield generics, and type interface. It is a compiled language and supports two types of compilation techniques.
-
-AOT (Ahead of Time) - It converts the Dart code in the optimized JavaScript code with the help of the dar2js compiler and runs on all modern web-browser. It compiles the code at build time.
-JOT (Just-In-Time) - It converts the byte code in the machine code (native code), but only code that is necessary.
-
-Dart was revealed for the first time in the GOTO conference in the month of 10th - 12th October 2011 at Aarhus, Denmark. It is initially designed by the Lars bark and Kespar and developed by Google.''',
-  ),
-  Language(
-    id: 5,
-    name: 'Swift',
-    info: 'Swift Programming Language',
-    imagePath: 'images/swift_logo.png',
-    description: '''Swift is a powerful and intuitive programming language developed by Apple.\nIt is used to create apps for iOS, macOS, watchOS, and so on. Swift code is concise yet expressive (easier to understand and write).''',
   ),
   Language(
     id: 6,
