@@ -99,7 +99,6 @@ class LanguageTilePage extends StatelessWidget {
                         );
                       },
                     ),
-                   
                     CategoryTile(
                       dbTitle: languageTile.topic3,
                       customSubtitle:

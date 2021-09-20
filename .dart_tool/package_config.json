@@ -44,6 +44,30 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "connectivity",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity-3.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "connectivity_for_web",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_for_web-0.4.0+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "connectivity_macos",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_macos-0.2.1+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "connectivity_platform_interface",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/connectivity_platform_interface-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "crypto",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.1",
       "packageUri": "lib/",
@@ -100,6 +124,12 @@
     {
       "name": "google_fonts",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/google_fonts-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "google_mobile_ads",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/google_mobile_ads-0.13.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -165,19 +195,19 @@
     },
     {
       "name": "path_provider",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.2",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "path_provider_linux",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.0.0",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.1.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "path_provider_macos",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.0",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -189,7 +219,7 @@
     },
     {
       "name": "path_provider_windows",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -207,7 +237,7 @@
     },
     {
       "name": "platform",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.0.0",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -225,7 +255,7 @@
     },
     {
       "name": "process",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.1",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/process-4.2.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -344,7 +374,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-09-19T16:01:16.386040Z",
+  "generated": "2021-09-20T03:10:48.088257Z",
   "generator": "pub",
   "generatorVersion": "2.12.1"
 }

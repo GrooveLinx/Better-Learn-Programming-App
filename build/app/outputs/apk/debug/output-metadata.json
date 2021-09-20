@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.example.code_quiz_v2",
+  "applicationId": "com.ripplebee.better_learn_programming",
   "variantName": "processDebugResources",
   "elements": [
     {

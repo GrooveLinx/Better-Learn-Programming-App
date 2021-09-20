@@ -1,4 +1,4 @@
 io/flutter/plugins/GeneratedPluginRegistrant.java
  io.flutter.plugins.GeneratedPluginRegistrant
-com/example/code_quiz_v2/BuildConfig.java
- com.example.code_quiz_v2.BuildConfig
+com/ripplebee/better_learn_programming/BuildConfig.java
+ com.ripplebee.better_learn_programming.BuildConfig

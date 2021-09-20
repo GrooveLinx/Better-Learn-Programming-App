@@ -65,11 +65,11 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                               horizontal: 20, vertical: 10),
                           child: Flexible(
                             child: Text(
-                              'Get Programming\nBooks!',
+                              'Get Essential\nBooks!',
                               style: GoogleFonts.poppins(
                                 textStyle: TextStyle(
-                                  color: Colors.purple[900],
-                                  fontSize: 38,
+                                  color: Colors.teal[600],
+                                  fontSize: 34,
                                   fontWeight: FontWeight.w600,
                                 ),
                               ),

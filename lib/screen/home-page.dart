@@ -30,11 +30,10 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavyBar(
         itemCornerRadius: 50,
         containerHeight: MediaQuery.of(context).size.height * .09,
-        backgroundColor: Colors.white24,
+        backgroundColor: Colors.brown[200],
         selectedIndex: currentTab,
         animationDuration: Duration(milliseconds: 300),
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        
         onItemSelected: (index) {
           setState(() {
             currentTab = index;
@@ -73,7 +72,6 @@ class _HomePageState extends State<HomePage> {
             activeColor: Colors.black,
             inactiveColor: Colors.black54,
           ),
-         
         ],
       ),
     );

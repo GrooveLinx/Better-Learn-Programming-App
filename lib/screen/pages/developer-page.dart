@@ -16,7 +16,7 @@ class DeveloperPage extends StatelessWidget {
       appBar: AppBar(
         leading: IconButton(
           icon: Icon(
-            Mdi.backburger,
+            Icons.arrow_back_ios,
             size: 30,
             color: Colors.blueGrey,
           ),
@@ -28,10 +28,11 @@ class DeveloperPage extends StatelessWidget {
         elevation: 0,
         title: Text(
           'Developer',
-          style: GoogleFonts.pacifico(
+          style: GoogleFonts.ubuntu(
             textStyle: TextStyle(
               color: Colors.blueGrey,
               fontSize: 26,
+              fontWeight: FontWeight.w500,
             ),
           ),
         ),
@@ -66,7 +67,9 @@ class DeveloperPage extends StatelessWidget {
                 ),
               ),
               child: Padding(
-                padding: const EdgeInsets.only(top: 15,),
+                padding: const EdgeInsets.only(
+                  top: 15,
+                ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -138,7 +141,8 @@ class DeveloperPage extends StatelessWidget {
                         ),
                         IconButton(
                           onPressed: () {
-                            _openLinkedInLink('https://www.linkedin.com/company/ripplebee/');
+                            _openLinkedInLink(
+                                'https://www.linkedin.com/company/ripplebee/');
                           },
                           icon: Icon(
                             Mdi.linkedin,
@@ -174,7 +178,7 @@ class DeveloperPage extends StatelessWidget {
                               color: Colors.purple[100],
                               borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(25),
-                               // topRight: Radius.circular(25),
+                                // topRight: Radius.circular(25),
                               ),
                             ),
                             width: width,
