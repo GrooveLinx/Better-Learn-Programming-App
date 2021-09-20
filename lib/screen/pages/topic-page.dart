@@ -67,11 +67,11 @@ class _TopicPageState extends State<TopicPage> {
         backgroundColor: Colors.lightGreen[200],
         elevation: 0,
         title: Text(
-          'Programmer\'s Handbook',
+          'Coders Handbook',
           style: GoogleFonts.ubuntu(
             textStyle: TextStyle(
               color: Colors.teal[600],
-              fontSize: 26,
+              fontSize: 24,
               fontWeight: FontWeight.w600,
             ),
           ),
