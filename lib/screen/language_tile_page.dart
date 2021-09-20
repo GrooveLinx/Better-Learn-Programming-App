@@ -57,7 +57,7 @@ class LanguageTilePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Image.asset(
-                'images/vector.png',
+                'images/web-development.png',
                 width: width * .5,
                 height: height * .3,
                 alignment: Alignment.centerLeft,

@@ -5,7 +5,7 @@ final List<Language> language = [
     id: 1,
     name: 'C++',
     info: 'C++ Programming Language',
-    imagePath: 'images/cpp_logo.png',
+    imagePath: 'images/c.png',
     description:
         '''C++ is a cross-platform language that can be used to create high-performance applications.
 
@@ -19,7 +19,7 @@ The language was updated 3 major times in 2011, 2014, and 2017 to C++11, C++14, 
     id: 2,
     name: 'Java',
     info: 'Java Programming Language',
-    imagePath: 'images/java_logo.png',
+    imagePath: 'images/java.png',
     description: '''Java is a popular programming language, created in 1995.
 
 It is owned by Oracle, and more than 3 billion devices run Java.
@@ -38,7 +38,7 @@ And much, much more!''',
     id: 3,
     name: 'Python',
     info: 'Python Programming Language',
-    imagePath: 'images/python_logo.png',
+    imagePath: 'images/python.png',
     description:
         '''Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
 
@@ -59,7 +59,7 @@ Python can be used for rapid prototyping, or for production-ready software devel
     id: 6,
     name: 'JavaScript',
     info: 'JavaScript Programming Language',
-    imagePath: 'images/js_logo.png',
+    imagePath: 'images/js-format.png',
     description:
         '''JavaScript (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.
 

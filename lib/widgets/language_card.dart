@@ -29,8 +29,8 @@ class TopicsCard extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    Colors.amber[100],
-                    Colors.purple[100],
+                    Colors.blueGrey[100],
+                    Colors.red[100],
                   ],
                 ),
               ),

@@ -80,8 +80,8 @@ class DeveloperPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(400),
                           child: Image.asset(
                             'images/ripplebee_logo.png',
-                            height: height * .15,
-                            width: width * .25,
+                            height: 100,
+                            width: 100,
                             fit: BoxFit.contain,
                             alignment: Alignment.centerLeft,
                           ),

@@ -1,5 +1,5 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
-import 'package:code_quiz_v2/screen/pages/online%20book/online-books-page.dart';
+import 'package:code_quiz_v2/provider/Internet/connectivity.dart';
 import 'package:code_quiz_v2/screen/pages/topic-page.dart';
 import 'package:code_quiz_v2/screen/pages/quiz%20page/quiz-page-welcome.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> pages = [
     TopicPage(),
     QuizWelcomePage(),
-    OnlineBookPage(),
+    InternetConnectivity(),
   ];
 
   @override
@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavyBar(
         itemCornerRadius: 50,
         containerHeight: MediaQuery.of(context).size.height * .09,
-        backgroundColor: Colors.brown[200],
+        backgroundColor: Colors.brown[300],
         selectedIndex: currentTab,
         animationDuration: Duration(milliseconds: 300),
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

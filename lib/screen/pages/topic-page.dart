@@ -70,7 +70,7 @@ class _TopicPageState extends State<TopicPage> {
           'Programmer\'s Handbook',
           style: GoogleFonts.ubuntu(
             textStyle: TextStyle(
-              color: Colors.brown[600],
+              color: Colors.teal[600],
               fontSize: 26,
               fontWeight: FontWeight.w600,
             ),
@@ -132,7 +132,7 @@ class _TopicPageState extends State<TopicPage> {
                             'Program anywhere!',
                             style: GoogleFonts.ubuntu(
                               textStyle: TextStyle(
-                                color: Colors.purple[400],
+                                color: Colors.brown[400],
                                 fontSize: 30,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -161,7 +161,7 @@ class _TopicPageState extends State<TopicPage> {
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.amber[50],
+                    color: Colors.yellow[100],
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30),
                       topRight: Radius.circular(30),

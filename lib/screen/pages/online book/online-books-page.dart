@@ -59,22 +59,26 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Container(
-                          height: MediaQuery.of(context).size.height * .2,
-                          padding: EdgeInsets.symmetric(
-                              horizontal: 20, vertical: 10),
-                          child: Flexible(
-                            child: Text(
-                              'Get Essential\nBooks!',
-                              style: GoogleFonts.poppins(
-                                textStyle: TextStyle(
-                                  color: Colors.teal[600],
-                                  fontSize: 34,
-                                  fontWeight: FontWeight.w600,
+                        Row(
+                          children: [
+                            Container(
+                              height: MediaQuery.of(context).size.height * .2,
+                              padding: EdgeInsets.symmetric(
+                                  horizontal: 20, vertical: 10),
+                              child: Flexible(
+                                child: Text(
+                                  'Get Essential\nBooks!',
+                                  style: GoogleFonts.poppins(
+                                    textStyle: TextStyle(
+                                      color: Colors.teal[600],
+                                      fontSize: 34,
+                                      fontWeight: FontWeight.w600,
+                                    ),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
+                          ],
                         ),
                         SizedBox(
                           height: MediaQuery.of(context).size.height * .02,
