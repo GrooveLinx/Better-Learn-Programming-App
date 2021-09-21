@@ -108,16 +108,14 @@ class _QuizPageState extends State<QuizPage> {
         child: Center(
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-            child: Flexible(
-              child: Text(
-                questionBank[_currentIndex % questionBank.length].questionText,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontFamily: 'Ubuntu',
-                  color: Colors.white,
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                ),
+            child: Text(
+              questionBank[_currentIndex % questionBank.length].questionText,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontFamily: 'Ubuntu',
+                color: Colors.white,
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
               ),
             ),
           ),

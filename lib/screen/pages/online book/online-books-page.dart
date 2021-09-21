@@ -65,15 +65,13 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                               height: MediaQuery.of(context).size.height * .2,
                               padding: EdgeInsets.symmetric(
                                   horizontal: 20, vertical: 10),
-                              child: Flexible(
-                                child: Text(
-                                  'Get Essential\nBooks!',
-                                  style: GoogleFonts.poppins(
-                                    textStyle: TextStyle(
-                                      color: Colors.teal[600],
-                                      fontSize: 34,
-                                      fontWeight: FontWeight.w600,
-                                    ),
+                              child: Text(
+                                'Get Essential\nBooks!',
+                                style: GoogleFonts.poppins(
+                                  textStyle: TextStyle(
+                                    color: Colors.teal[600],
+                                    fontSize: 34,
+                                    fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
@@ -185,19 +183,16 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                                                   padding: const EdgeInsets
                                                           .symmetric(
                                                       horizontal: 10),
-                                                  child: Flexible(
-                                                    child: Text(
-                                                      bookObject.getBooksData
-                                                          .books[index].title,
-                                                      textAlign:
-                                                          TextAlign.center,
-                                                      style: GoogleFonts.roboto(
-                                                        textStyle: TextStyle(
-                                                          color: Colors.black,
-                                                          fontWeight:
-                                                              FontWeight.bold,
-                                                          fontSize: 18,
-                                                        ),
+                                                  child: Text(
+                                                    bookObject.getBooksData
+                                                        .books[index].title,
+                                                    textAlign: TextAlign.center,
+                                                    style: GoogleFonts.roboto(
+                                                      textStyle: TextStyle(
+                                                        color: Colors.black,
+                                                        fontWeight:
+                                                            FontWeight.bold,
+                                                        fontSize: 18,
                                                       ),
                                                     ),
                                                   ),

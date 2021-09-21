@@ -1,9 +1,14 @@
 import 'package:code_quiz_v2/screen/pages/quiz%20page/quiz-page.dart';
 import 'package:flutter/material.dart';
 
-class QuizWelcomePage extends StatelessWidget {
+class QuizWelcomePage extends StatefulWidget {
   const QuizWelcomePage({Key key}) : super(key: key);
 
+  @override
+  _QuizWelcomePageState createState() => _QuizWelcomePageState();
+}
+
+class _QuizWelcomePageState extends State<QuizWelcomePage> {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
@@ -20,17 +25,15 @@ class QuizWelcomePage extends StatelessWidget {
               height: height * .5,
               width: width * 0.75,
               child: Center(
-                child: Flexible(
-                  child: Text(
-                    'Test your programming and coding skills with quizzes.\n\nPrepare yourself for the job interview! ',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontFamily: 'Ubuntu',
-                        letterSpacing: 1.3,
-                        color: Colors.white,
-                        fontSize: 23,
-                        fontWeight: FontWeight.w600),
-                  ),
+                child: Text(
+                  'Test your programming and coding skills with quizzes.\n\nPrepare yourself for the job interview! ',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontFamily: 'Ubuntu',
+                      letterSpacing: 1.3,
+                      color: Colors.white,
+                      fontSize: 23,
+                      fontWeight: FontWeight.w600),
                 ),
               ),
             ),

@@ -33,7 +33,6 @@ class _MyAppState extends State<MyApp> {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Better Learn',
-        initialRoute: '/',
         routes: {
           '/home': (context) => HomePage(),
         },

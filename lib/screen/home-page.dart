@@ -15,9 +15,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int currentTab = 0;
   final List<Widget> pages = [
-    TopicPage(),
-    QuizWelcomePage(),
-    InternetConnectivity(),
+    TopicPage(), //0
+    QuizWelcomePage(), //1
+    InternetConnectivity(), //2
   ];
 
   @override
@@ -35,9 +35,11 @@ class _HomePageState extends State<HomePage> {
         animationDuration: Duration(milliseconds: 300),
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         onItemSelected: (index) {
-          setState(() {
-            currentTab = index;
-          });
+          setState(
+            () {
+              currentTab = index;
+            },
+          );
         },
         items: [
           BottomNavyBarItem(

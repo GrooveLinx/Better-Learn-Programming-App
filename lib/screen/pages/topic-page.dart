@@ -101,110 +101,99 @@ class _TopicPageState extends State<TopicPage> {
               color: Colors.lightGreen[200],
             ),
             height: height,
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 15,
-                  vertical: 0,
-                ),
-                child: Row(
-                  // crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Flexible(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Learn once',
-                            style: GoogleFonts.ubuntu(
-                              textStyle: TextStyle(
-                                color: Colors.blueGrey[800],
-                                fontSize: 28,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            'Program anywhere!',
-                            style: GoogleFonts.ubuntu(
-                              textStyle: TextStyle(
-                                color: Colors.brown[400],
-                                fontSize: 30,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    /*  SvgPicture.asset(
-                      'images/dedicated-team.svg',
-                      width: width / 3,
-                      height: height / 5,
-                    ), */
-                    Image.asset(
-                      'images/dev.png',
-                      width: width * .5,
-                      height: height * .25,
-                      alignment: Alignment.centerRight,
-                    )
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: height * .01,
-              ),
-              Expanded(
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.yellow[100],
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(30),
-                      topRight: Radius.circular(30),
-                    ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 15,
+                    vertical: 0,
                   ),
-                  child: Stack(
+                  child: Row(
+                    // crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(30),
-                          topRight: Radius.circular(30),
-                        ),
-                        child: GridView.builder(
-                          padding: EdgeInsets.fromLTRB(15, 15, 15, 25),
-                          gridDelegate:
-                              SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisSpacing: 25,
-                            mainAxisSpacing: 25,
-                            crossAxisCount: 2,
-                            childAspectRatio: aspectRatio / .85,
-                          ),
-                          itemCount: language.length,
-                          itemBuilder: (BuildContext context, int index) =>
-                              LanguageGrid(
-                            languageData: language[index],
-                          ),
+                      Flexible(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              'Learn once',
+                              style: GoogleFonts.ubuntu(
+                                textStyle: TextStyle(
+                                  color: Colors.blueGrey[800],
+                                  fontSize: 28,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ),
+                            Text(
+                              'Program anywhere!',
+                              style: GoogleFonts.ubuntu(
+                                textStyle: TextStyle(
+                                  color: Colors.brown[400],
+                                  fontSize: 30,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      _isBannerAdReady
-                          ? Align(
-                              alignment: Alignment.bottomCenter,
-                              child: Container(
-                                width: _bannerAd.size.width.toDouble(),
-                                height: _bannerAd.size.height.toDouble(),
-                                child: AdWidget(ad: _bannerAd),
-                              ),
-                            )
-                          : Spacer()
+                      Image.asset(
+                        'images/dev.png',
+                        width: width * .55,
+                        height: height * .25,
+                        alignment: Alignment.centerRight,
+                      )
                     ],
                   ),
                 ),
-              ),
-            ],
+                _isBannerAdReady
+                    ? Align(
+                        alignment: Alignment.bottomCenter,
+                        child: Container(
+                          width: _bannerAd.size.width.toDouble(),
+                          height: _bannerAd.size.height.toDouble(),
+                          child: AdWidget(ad: _bannerAd),
+                        ),
+                      )
+                    : SizedBox(
+                        height: height * 0.07,
+                      ),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.yellow[100],
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(30),
+                        topRight: Radius.circular(30),
+                      ),
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(30),
+                        topRight: Radius.circular(30),
+                      ),
+                      child: GridView.builder(
+                        padding: EdgeInsets.fromLTRB(15, 15, 15, 25),
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisSpacing: 25,
+                          mainAxisSpacing: 25,
+                          crossAxisCount: 2,
+                          childAspectRatio: aspectRatio / .85,
+                        ),
+                        itemCount: language.length,
+                        itemBuilder: (BuildContext context, int index) =>
+                            LanguageGrid(
+                          languageData: language[index],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
       ),

@@ -10,23 +10,22 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_ios,
-            color: Colors.blueGrey,
-            size: 30,
-          ),
-          onPressed: onTap),
+        icon: Icon(
+          Icons.arrow_back_ios,
+          color: Colors.blueGrey,
+          size: 30,
+        ),
+        onPressed: onTap,
+      ),
       backgroundColor: Colors.brown[50].withOpacity(.3),
       elevation: 0.0,
-      title: Flexible(
-        child: Text(
-          topicTitle,
-          style: GoogleFonts.poppins(
-            textStyle: TextStyle(
-                color: Colors.brown[500],
-                fontSize: 24,
-                fontWeight: FontWeight.w500),
-          ),
+      title: Text(
+        topicTitle,
+        style: GoogleFonts.poppins(
+          textStyle: TextStyle(
+              color: Colors.brown[500],
+              fontSize: 24,
+              fontWeight: FontWeight.w500),
         ),
       ),
     );
