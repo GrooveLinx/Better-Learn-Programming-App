@@ -62,9 +62,9 @@ class _TopicPageState extends State<TopicPage> {
     final width = MediaQuery.of(context).size.width;
     final aspectRatio = MediaQuery.of(context).size.aspectRatio;
     return Scaffold(
-      backgroundColor: Color(0xffffffee),
+      backgroundColor: Color(0Xffe8f4f7),
       appBar: AppBar(
-        backgroundColor: Colors.lightGreen[200],
+        backgroundColor: Color(0xffe8f4f7),
         elevation: 0,
         title: Text(
           'Coders Handbook',
@@ -98,7 +98,7 @@ class _TopicPageState extends State<TopicPage> {
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Colors.lightGreen[200],
+              color: Color(0Xffe8f4f7),
             ),
             height: height,
             child: Column(
@@ -142,7 +142,7 @@ class _TopicPageState extends State<TopicPage> {
                       ),
                       Image.asset(
                         'images/dev.png',
-                        width: width * .55,
+                        width: width * .5,
                         height: height * .25,
                         alignment: Alignment.centerRight,
                       )
@@ -164,7 +164,7 @@ class _TopicPageState extends State<TopicPage> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.yellow[100],
+                      color: Color(0XffCDDEEC),
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(30),
                         topRight: Radius.circular(30),

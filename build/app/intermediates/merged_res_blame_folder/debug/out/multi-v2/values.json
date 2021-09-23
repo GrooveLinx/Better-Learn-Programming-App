@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\arnob\\.gradle\\caches\\transforms-2\\files-2.1\\2d89f52c90b7109f303e1a19c891d8b7\\jetified-play-services-ads-20.1.0\\res\\values\\values.xml",
+                    "source": "C:\\Users\\arnob\\.gradle\\caches\\transforms-2\\files-2.1\\c25ab13732d596248233a3edeb8b309f\\jetified-play-services-ads-20.2.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,6,8,10,12,14,16,18,19,20,21,22,23,24",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -78,24 +78,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\arnob\\.gradle\\caches\\transforms-2\\files-2.1\\96e372efa68022ead844893f90a233ee\\work-runtime-2.1.0\\res\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,120,184",
-                        "endColumns": "64,63,60",
-                        "endOffsets": "115,179,240"
-                    },
-                    "to": {
-                        "startLines": "3,4,5",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "166,231,295",
-                        "endColumns": "64,63,60",
-                        "endOffsets": "226,290,351"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\arnob\\.gradle\\caches\\transforms-2\\files-2.1\\d88b31463b924ccad2fb268ebb2ed6f2\\jetified-play-services-ads-lite-20.1.0\\res\\values\\values.xml",
+                    "source": "C:\\Users\\arnob\\.gradle\\caches\\transforms-2\\files-2.1\\b831253dd1a80f4aaf65d4dae89fd31d\\jetified-play-services-ads-lite-20.2.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,14",
                         "startColumns": "0,0",
@@ -111,6 +94,23 @@
                         "endLines": "137,149",
                         "endColumns": "8,20",
                         "endOffsets": "8993,9457"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\arnob\\.gradle\\caches\\transforms-2\\files-2.1\\96e372efa68022ead844893f90a233ee\\work-runtime-2.1.0\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,120,184",
+                        "endColumns": "64,63,60",
+                        "endOffsets": "115,179,240"
+                    },
+                    "to": {
+                        "startLines": "3,4,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "166,231,295",
+                        "endColumns": "64,63,60",
+                        "endOffsets": "226,290,351"
                     }
                 },
                 {

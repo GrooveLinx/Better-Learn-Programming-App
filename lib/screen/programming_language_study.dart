@@ -239,10 +239,11 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                               trailing: GestureDetector(
                                 onTap: () {
                                   Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                          builder: (context) =>
-                                              LanguageTilePage()));
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => LanguageTilePage(),
+                                    ),
+                                  );
                                 },
                                 child: IconButton(
                                   padding: EdgeInsets.zero,

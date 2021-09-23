@@ -1,5 +1,8 @@
+import 'package:code_quiz_v2/config/customs.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:clip_shadow/clip_shadow.dart';
+import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 
 class TopicsCard extends StatelessWidget {
   final String languageName;
@@ -20,19 +23,13 @@ class TopicsCard extends StatelessWidget {
       onTap: onTap,
       child: Stack(
         children: [
-          ClipPath(
-            clipper: LanguageCardClipper(),
+          ClipShadow(
+            clipper: RoundedDiagonalPathClipper(),
+            boxShadow: softUiShadow,
             child: Container(
-              clipBehavior: Clip.antiAliasWithSaveLayer,
               decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Colors.blueGrey[100],
-                    Colors.red[100],
-                  ],
-                ),
+                borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                color: Color(0XffCDDEEC),
               ),
               child: Padding(
                 padding: const EdgeInsets.only(left: 15, bottom: 15),
@@ -92,28 +89,28 @@ class TopicsCard extends StatelessWidget {
   }
 }
 
-class LanguageCardClipper extends CustomClipper<Path> {
-  @override
-  Path getClip(Size size) {
-    var path = new Path();
+// class LanguageCardClipper extends CustomClipper<Path> {
+//   @override
+//   Path getClip(Size size) {
+//     var path = new Path();
 
-    path.moveTo(0, size.height * 0.33);
-    path.lineTo(0, size.height - 10);
-    path.quadraticBezierTo(0, size.height, 10, size.height);
+//     path.moveTo(0, size.height * 0.33);
+//     path.lineTo(0, size.height - 10);
+//     path.quadraticBezierTo(0, size.height, 10, size.height);
 
-    path.lineTo(size.width - 10, size.height);
-    path.quadraticBezierTo(
-        size.width, size.height, size.width, size.height - 10);
-    path.lineTo(size.width, 20);
-    path.quadraticBezierTo(size.width, 0, size.width - 30, 20);
-    path.lineTo(10, size.height * .33 + 5);
-    path.quadraticBezierTo(
-        0, size.height * .33 + 10, 0, size.height * .33 + 20);
-    return path;
-  }
+//     path.lineTo(size.width - 10, size.height);
+//     path.quadraticBezierTo(
+//         size.width, size.height, size.width, size.height - 10);
+//     path.lineTo(size.width, 20);
+//     path.quadraticBezierTo(size.width, 0, size.width - 30, 20);
+//     path.lineTo(10, size.height * .33 + 5);
+//     path.quadraticBezierTo(
+//         0, size.height * .33 + 10, 0, size.height * .33 + 20);
+//     return path;
+//   }
 
-  @override
-  bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
-    return true;
-  }
-}
+//   @override
+//   bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
+//     return true;
+//   }
+// }

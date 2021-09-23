@@ -21,7 +21,7 @@ class _BookDetailsState extends State<BookDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow[50],
+      backgroundColor: Color(0xffece5e1),
       body: SafeArea(
         child: Column(
           children: [
@@ -64,8 +64,8 @@ class _BookDetailsState extends State<BookDetails> {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    Colors.red[200],
-                    Colors.orange[200],
+                    Color(0xffdacfba),
+                    Color(0xffe9c2a1),
                   ],
                 ),
                 borderRadius: BorderRadius.circular(20),

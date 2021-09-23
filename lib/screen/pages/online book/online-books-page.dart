@@ -34,9 +34,9 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.amber[50],
+      backgroundColor: Color(0xfff4dfcd),
       appBar: AppBar(
-        backgroundColor: Colors.amber[50],
+        backgroundColor: Color(0xfff4dfcd),
         elevation: 0.0,
         title: Text(
           'Online Books',
@@ -84,7 +84,7 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                         Expanded(
                           child: Container(
                             decoration: BoxDecoration(
-                              color: Colors.lightGreen[100],
+                              color: Color(0xffe5ccbd),
                               borderRadius: BorderRadius.only(
                                 topLeft: Radius.circular(30),
                                 topRight: Radius.circular(30),
