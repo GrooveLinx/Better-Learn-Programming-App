@@ -64,7 +64,7 @@ class _TopicPageState extends State<TopicPage> {
     return Scaffold(
       backgroundColor: Color(0Xffe8f4f7),
       appBar: AppBar(
-        backgroundColor: Color(0xffe5edf1),
+        backgroundColor: Color(0xfff5e6d3),
         elevation: 0,
         title: Text(
           'Coder\'s Handbook',
@@ -98,7 +98,7 @@ class _TopicPageState extends State<TopicPage> {
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Color(0Xffe5edf1),
+              color: Color(0Xfff5e6d3),
             ),
             height: height,
             child: Column(
@@ -166,8 +166,8 @@ class _TopicPageState extends State<TopicPage> {
                     decoration: BoxDecoration(
                       color: Color(0XffCDDEEC),
                       borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(30),
-                        topRight: Radius.circular(30),
+                        topLeft: Radius.circular(25),
+                        topRight: Radius.circular(25),
                       ),
                     ),
                     child: ClipRRect(

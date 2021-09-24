@@ -39,7 +39,8 @@ class _SplashScreenState extends State<SplashScreen> {
                     SizedBox(height: 20),
                     Text(
                       'Better Learn Programming',
-                      style: GoogleFonts.ubuntu(
+                      style: GoogleFonts.poppins(
+                        letterSpacing: .7,
                         textStyle: TextStyle(
                           color: Color(0xff76424e),
                           fontSize: 20,
@@ -50,25 +51,37 @@ class _SplashScreenState extends State<SplashScreen> {
                   ],
                 ),
                 Spacer(),
-                Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        bottom: 20,
-                      ),
-                      child: Text(
-                        'Powered by RippleBee',
-                        style: GoogleFonts.poppins(
-                          textStyle: TextStyle(
-                            color: Color(0xff8c8798),
-                            fontSize: 24,
-                            letterSpacing: 0.4,
-                            fontWeight: FontWeight.w500,
-                          ),
+                Center(
+                  child: Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          bottom: 20,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Powered by ',
+                              style: GoogleFonts.ubuntu(
+                                textStyle: TextStyle(
+                                  color: Color(0xff8c8798),
+                                  fontSize: 22,
+                                  letterSpacing: 0.4,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ),
+                            Image.asset(
+                              'images/ripplebee-transparent.png',
+                              height: 60,
+                              width: 60,
+                            ),
+                          ],
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ],
             ),

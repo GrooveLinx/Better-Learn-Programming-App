@@ -34,9 +34,9 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xfff4dfcd),
+      backgroundColor: Color(0xffece4dc),
       appBar: AppBar(
-        backgroundColor: Color(0xfff4dfcd),
+        backgroundColor: Color(0xffece4dc),
         elevation: 0.0,
         title: Text(
           'Online Books',
@@ -86,8 +86,8 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                             decoration: BoxDecoration(
                               color: Color(0xffe5ccbd),
                               borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(30),
-                                topRight: Radius.circular(30),
+                                topLeft: Radius.circular(25),
+                                topRight: Radius.circular(25),
                               ),
                             ),
                             child: Column(
@@ -130,11 +130,10 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                                             width: MediaQuery.of(context)
                                                     .size
                                                     .width *
-                                                .5,
+                                                .53,
                                             height: MediaQuery.of(context)
-                                                    .size
-                                                    .height *
-                                                .5,
+                                                .size
+                                                .height,
                                             margin: EdgeInsets.symmetric(
                                                 horizontal: 10, vertical: 30),
                                             decoration: BoxDecoration(
@@ -159,6 +158,7 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                                             ),
                                             child: Column(
                                               children: [
+                                                Spacer(),
                                                 Hero(
                                                   tag: bookObject.getBooksData
                                                       .books[index].image,
@@ -170,7 +170,7 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                                                         MediaQuery.of(context)
                                                                 .size
                                                                 .width *
-                                                            .4,
+                                                            .50,
                                                     height:
                                                         MediaQuery.of(context)
                                                                 .size
@@ -179,6 +179,7 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
+                                                Spacer(),
                                                 Padding(
                                                   padding: const EdgeInsets
                                                           .symmetric(
@@ -197,6 +198,7 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                                                     ),
                                                   ),
                                                 ),
+                                                Spacer(),
                                               ],
                                             ),
                                           ),
