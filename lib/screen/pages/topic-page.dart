@@ -64,13 +64,13 @@ class _TopicPageState extends State<TopicPage> {
     return Scaffold(
       backgroundColor: Color(0Xffe8f4f7),
       appBar: AppBar(
-        backgroundColor: Color(0xffe8f4f7),
+        backgroundColor: Color(0xffe5edf1),
         elevation: 0,
         title: Text(
           'Coders Handbook',
           style: GoogleFonts.ubuntu(
             textStyle: TextStyle(
-              color: Colors.teal[600],
+              color: Color(0xff2a603b),
               fontSize: 24,
               fontWeight: FontWeight.w600,
             ),
@@ -98,7 +98,7 @@ class _TopicPageState extends State<TopicPage> {
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Color(0Xffe8f4f7),
+              color: Color(0Xffe5edf1),
             ),
             height: height,
             child: Column(
@@ -121,8 +121,8 @@ class _TopicPageState extends State<TopicPage> {
                               'Learn once',
                               style: GoogleFonts.ubuntu(
                                 textStyle: TextStyle(
-                                  color: Colors.blueGrey[800],
-                                  fontSize: 28,
+                                  color: Color(0xff76424e),
+                                  fontSize: 30,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
@@ -131,7 +131,7 @@ class _TopicPageState extends State<TopicPage> {
                               'Program anywhere!',
                               style: GoogleFonts.ubuntu(
                                 textStyle: TextStyle(
-                                  color: Colors.brown[400],
+                                  color: Color(0xff203e4a),
                                   fontSize: 30,
                                   fontWeight: FontWeight.w500,
                                 ),

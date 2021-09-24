@@ -21,7 +21,7 @@ class _QuizPageState extends State<QuizPage> {
         backgroundColor: Color(0xFF442C3E),
         title: Text(
           'Take a Quiz',
-          style: GoogleFonts.pacifico(
+          style: GoogleFonts.ubuntu(
             textStyle: TextStyle(
               color: Colors.white,
               fontSize: 30,
