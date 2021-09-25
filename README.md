@@ -1,5 +1,9 @@
 # Better Learn Programming - Programmer's Handbook
 
+<img src = "https://img.shields.io/endpoint?style=plastic&color=green&logo=google-play&color=e1d1eb&logoColor=faed3e&labelColor=471e61&url=https%3A%2F%2Fplayshields.herokuapp.com%2Fplay%3Fi%3Dcom.ripplebee.better_learn_programming%26l%3D%24name%26m%3Dv%24version">
+
+<a href = "https://play.google.com/store/apps/details?id=com.ripplebee.better_learn_programming"> <img src ="https://user-images.githubusercontent.com/60808266/112758511-9d6d6200-9010-11eb-9b09-0b489bc2d733.png">
+
 <img src="https://user-images.githubusercontent.com/60808266/134616844-ecf6eba6-8836-4b37-a7ac-1a8aaf29883c.png">
 
 <table>
