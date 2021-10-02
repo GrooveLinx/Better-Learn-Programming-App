@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:code_quiz_v2/config/customs.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -32,7 +33,7 @@ class TopicsCard extends StatelessWidget {
                 color: Color(0XffCDDEEC),
               ),
               child: Padding(
-                padding: const EdgeInsets.only(left: 15, bottom: 15),
+                padding: const EdgeInsets.only(left: 10, bottom: 15, right: 10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -50,15 +51,15 @@ class TopicsCard extends StatelessWidget {
                     SizedBox(
                       height: height * .01,
                     ),
-                    Flexible(
-                      child: Text(
-                        '$languageName programming language.',
-                        style: GoogleFonts.cagliostro(
-                          textStyle: TextStyle(
-                            fontSize: 17,
-                            color: Colors.grey[800],
-                            fontWeight: FontWeight.w800,
-                          ),
+                    AutoSizeText(
+                      '$languageName programming language.',
+                      maxLines: 3,
+                      minFontSize: 15,
+                      style: GoogleFonts.cagliostro(
+                        textStyle: TextStyle(
+                          fontSize: 17,
+                          color: Colors.grey[800],
+                          fontWeight: FontWeight.w800,
                         ),
                       ),
                     ),

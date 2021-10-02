@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Flutter\\codeQuiz v2\\code_quiz_v2\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "F:\\Flutter\\Better Learn Programming\\better_learn_programming\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
-                {
-                    "source": "F:\\Flutter\\codeQuiz v2\\code_quiz_v2\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "176,830",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "472,996"
-                    },
-                    "to": {
-                        "startLines": "111,116",
-                        "startColumns": "4,4",
-                        "startOffsets": "7376,7673",
-                        "endLines": "115,118",
-                        "endColumns": "12,12",
-                        "endOffsets": "7668,7837"
-                    }
-                },
                 {
                     "source": "C:\\Users\\arnob\\.gradle\\caches\\transforms-2\\files-2.1\\c55ef91c26d4308e6afaf93e553ef302\\coordinatorlayout-1.0.0\\res\\values\\values.xml",
                     "from": {
@@ -111,6 +92,25 @@
                         "startOffsets": "166,231,295",
                         "endColumns": "64,63,60",
                         "endOffsets": "226,290,351"
+                    }
+                },
+                {
+                    "source": "F:\\Flutter\\Better Learn Programming\\better_learn_programming\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "176,830",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "472,996"
+                    },
+                    "to": {
+                        "startLines": "111,116",
+                        "startColumns": "4,4",
+                        "startOffsets": "7376,7673",
+                        "endLines": "115,118",
+                        "endColumns": "12,12",
+                        "endOffsets": "7668,7837"
                     }
                 },
                 {

@@ -2,7 +2,7 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.ripplebee.better_learn_programming"
 4    android:versionCode="2"
-5    android:versionName="1.0.1" >
+5    android:versionName="1.1.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
@@ -12,11 +12,11 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:36:3-65
-14-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:36:20-62
+14-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:36:3-65
+14-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:36:20-62
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Android package visibility setting -->
-15-->[:connectivity] F:\Flutter\codeQuiz v2\code_quiz_v2\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
-15-->[:connectivity] F:\Flutter\codeQuiz v2\code_quiz_v2\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+15-->[:connectivity] F:\Flutter\Better Learn Programming\better_learn_programming\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+15-->[:connectivity] F:\Flutter\Better Learn Programming\better_learn_programming\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
 16    <queries>
 16-->[com.google.android.gms:play-services-ads-lite:20.2.0] C:\Users\arnob\.gradle\caches\transforms-2\files-2.1\b831253dd1a80f4aaf65d4dae89fd31d\jetified-play-services-ads-lite-20.2.0\AndroidManifest.xml:27:5-43:15
 17
@@ -54,42 +54,42 @@
 35-->[androidx.work:work-runtime:2.1.0] C:\Users\arnob\.gradle\caches\transforms-2\files-2.1\96e372efa68022ead844893f90a233ee\work-runtime-2.1.0\AndroidManifest.xml:27:22-78
 36
 37    <application
-37-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:3:3-35:17
+37-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:3:3-35:17
 38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 38-->[androidx.core:core:1.2.0] C:\Users\arnob\.gradle\caches\transforms-2\files-2.1\544eab86e7823cb4f6f6bbcd34094c52\core-1.2.0\AndroidManifest.xml:24:18-86
 39        android:debuggable="true"
 40        android:icon="@mipmap/ic_launcher"
-40-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:4:15-49
+40-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:4:15-49
 41        android:label="Better Learn" >
-41-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:3:16-44
+41-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:3:16-44
 42        <meta-data
-42-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:5:5-96
+42-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:5:5-96
 43            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
-43-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:5:16-72
+43-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:5:16-72
 44            android:value="true" />
-44-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:5:73-93
+44-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:5:73-93
 45        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
 46        <meta-data
-46-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:7:5-8:72
+46-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:7:5-8:72
 47            android:name="com.google.android.gms.ads.APPLICATION_ID"
-47-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:7:16-72
+47-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:7:16-72
 48            android:value="ca-app-pub-4066984467805494~9766278107" />
-48-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:8:15-69
+48-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:8:15-69
 49
 50        <activity
-50-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:9:5-31:16
+50-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:9:5-31:16
 51            android:name="com.ripplebee.better_learn_programming.MainActivity"
-51-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:9:15-43
+51-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:9:15-43
 52            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-52-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:12:13-163
+52-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:12:13-163
 53            android:hardwareAccelerated="true"
-53-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:13:13-47
+53-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:13:13-47
 54            android:launchMode="singleTop"
-54-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:10:15-45
+54-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:10:15-45
 55            android:theme="@style/LaunchTheme"
-55-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:11:14-48
+55-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:11:14-48
 56            android:windowSoftInputMode="adjustResize" >
-56-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:14:13-55
+56-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:14:13-55
 57
 58            <!--
 59           Specifies an Android theme to apply to this Activity as soon as
@@ -98,11 +98,11 @@
 62                 to determine the Window background behind the Flutter UI.
 63            -->
 64            <meta-data
-64-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:19:7-114
+64-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:19:7-114
 65                android:name="io.flutter.embedding.android.NormalTheme"
-65-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:19:18-73
+65-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:19:18-73
 66                android:resource="@style/NormalTheme" />
-66-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:19:74-111
+66-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:19:74-111
 67            <!--
 68           Displays an Android View that continues showing the launch screen
 69                 Drawable until Flutter paints its first frame, then this splash
@@ -111,21 +111,21 @@
 72                 Flutter's first frame.
 73            -->
 74            <meta-data
-74-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:25:7-132
+74-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:25:7-132
 75                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-75-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:25:18-82
+75-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:25:18-82
 76                android:resource="@drawable/launch_background" />
-76-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:25:83-129
+76-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:25:83-129
 77
 78            <intent-filter>
-78-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:27:7-30:23
+78-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:27:7-30:23
 79                <action android:name="android.intent.action.MAIN" />
-79-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:28:9-61
-79-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:28:17-58
+79-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:28:9-61
+79-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:28:17-58
 80
 81                <category android:name="android.intent.category.LAUNCHER" />
-81-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:29:9-69
-81-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:29:19-66
+81-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:29:9-69
+81-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:29:19-66
 82            </intent-filter>
 83        </activity>
 84        <!--
@@ -133,27 +133,27 @@
 86             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 87        -->
 88        <meta-data
-88-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:34:5-68
+88-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:34:5-68
 89            android:name="flutterEmbedding"
-89-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:34:16-47
+89-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:34:16-47
 90            android:value="2" />
-90-->F:\Flutter\codeQuiz v2\code_quiz_v2\android\app\src\main\AndroidManifest.xml:34:48-65
+90-->F:\Flutter\Better Learn Programming\better_learn_programming\android\app\src\main\AndroidManifest.xml:34:48-65
 91
 92        <activity
-92-->[:url_launcher] F:\Flutter\codeQuiz v2\code_quiz_v2\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+92-->[:url_launcher] F:\Flutter\Better Learn Programming\better_learn_programming\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
 93            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-93-->[:url_launcher] F:\Flutter\codeQuiz v2\code_quiz_v2\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+93-->[:url_launcher] F:\Flutter\Better Learn Programming\better_learn_programming\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
 94            android:exported="false"
-94-->[:url_launcher] F:\Flutter\codeQuiz v2\code_quiz_v2\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+94-->[:url_launcher] F:\Flutter\Better Learn Programming\better_learn_programming\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
 95            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-95-->[:url_launcher] F:\Flutter\codeQuiz v2\code_quiz_v2\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+95-->[:url_launcher] F:\Flutter\Better Learn Programming\better_learn_programming\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
 96
 97        <meta-data
-97-->[:google_mobile_ads] F:\Flutter\codeQuiz v2\code_quiz_v2\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-12:36
+97-->[:google_mobile_ads] F:\Flutter\Better Learn Programming\better_learn_programming\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-12:36
 98            android:name="io.flutter.embedded_views_preview"
-98-->[:google_mobile_ads] F:\Flutter\codeQuiz v2\code_quiz_v2\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-61
+98-->[:google_mobile_ads] F:\Flutter\Better Learn Programming\better_learn_programming\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-61
 99            android:value="true" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-99-->[:google_mobile_ads] F:\Flutter\codeQuiz v2\code_quiz_v2\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-33
+99-->[:google_mobile_ads] F:\Flutter\Better Learn Programming\better_learn_programming\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-33
 100        <activity
 100-->[com.google.android.gms:play-services-ads-lite:20.2.0] C:\Users\arnob\.gradle\caches\transforms-2\files-2.1\b831253dd1a80f4aaf65d4dae89fd31d\jetified-play-services-ads-lite-20.2.0\AndroidManifest.xml:48:9-52:64
 101            android:name="com.google.android.gms.ads.AdActivity"

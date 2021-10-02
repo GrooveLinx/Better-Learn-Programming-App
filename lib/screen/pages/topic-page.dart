@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mdi/mdi.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:auto_size_text/auto_size_text.dart';
 
 class TopicPage extends StatefulWidget {
   const TopicPage({Key key}) : super(key: key);
@@ -66,12 +67,14 @@ class _TopicPageState extends State<TopicPage> {
       appBar: AppBar(
         backgroundColor: Color(0xfff5e6d3),
         elevation: 0,
-        title: Text(
+        title: AutoSizeText(
           'Coder\'s Handbook',
+          minFontSize: 20.0,
+          maxLines: 2,
           style: GoogleFonts.poppins(
             textStyle: TextStyle(
               color: Color(0xff5c4450),
-              fontSize: 25,
+              fontSize: 28,
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -117,22 +120,26 @@ class _TopicPageState extends State<TopicPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            AutoSizeText(
                               'Learn once',
+                              minFontSize: 24.0,
+                              maxLines: 1,
                               style: GoogleFonts.ubuntu(
                                 textStyle: TextStyle(
                                   color: Color(0xff76424e),
-                                  fontSize: 30,
+                                  fontSize: 27.0,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
                             ),
-                            Text(
+                            AutoSizeText(
                               'Program anywhere!',
+                              maxLines: 2,
+                              minFontSize: 24.0,
                               style: GoogleFonts.ubuntu(
                                 textStyle: TextStyle(
                                   color: Color(0xff203e4a),
-                                  fontSize: 30,
+                                  fontSize: 30.0,
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),

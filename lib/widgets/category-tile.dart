@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mdi/mdi.dart';
@@ -37,13 +38,15 @@ class CategoryTile extends StatelessWidget {
                       fontSize: 20),
                 ),
               ),
-              subtitle: Text(
+              subtitle: AutoSizeText(
                 customSubtitle,
+                maxLines: 3,
+                minFontSize: 14,
                 style: GoogleFonts.poppins(
                   textStyle: TextStyle(
                       color: Colors.grey,
                       fontWeight: FontWeight.w500,
-                      fontSize: 14),
+                      fontSize: 16),
                 ),
               ),
               trailing: GestureDetector(

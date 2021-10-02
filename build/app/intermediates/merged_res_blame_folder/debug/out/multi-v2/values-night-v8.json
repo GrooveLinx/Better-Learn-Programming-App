@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Flutter\\codeQuiz v2\\code_quiz_v2\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "F:\\Flutter\\Better Learn Programming\\better_learn_programming\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "F:\\Flutter\\codeQuiz v2\\code_quiz_v2\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "F:\\Flutter\\Better Learn Programming\\better_learn_programming\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",

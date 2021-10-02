@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:code_quiz_v2/config/ads_helper.dart';
 import 'package:code_quiz_v2/database/language-list.dart';
 import 'package:code_quiz_v2/models/language-model.dart';
@@ -142,8 +143,11 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                                     SizedBox(
                                       height: 20,
                                     ),
-                                    Text(
+                                    AutoSizeText(
                                       programmingLanguage.info,
+                                      maxLines: 2,
+                                      minFontSize: 16,
+                                      maxFontSize: 20,
                                       style: TextStyle(
                                         fontFamily: 'Roboto',
                                         fontSize: 20,
@@ -208,8 +212,9 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                               top: 5,
                             ),
                             decoration: BoxDecoration(
-                                color: Colors.purple[50],
-                                borderRadius: BorderRadius.circular(10)),
+                              color: Colors.purple[50],
+                              borderRadius: BorderRadius.circular(10),
+                            ),
                             child: ListTile(
                               leading: Container(
                                 child: FittedBox(
@@ -217,8 +222,10 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                                       programmingLanguage.imagePath),
                                 ),
                               ),
-                              title: Text(
+                              title: AutoSizeText(
                                 'Learn ${programmingLanguage.name}',
+                                maxLines: 2,
+                                minFontSize: 18,
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(
                                     color: Colors.teal[700],

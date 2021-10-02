@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -37,14 +38,20 @@ class _SplashScreenState extends State<SplashScreen> {
                       fit: BoxFit.cover,
                     ),
                     SizedBox(height: 20),
-                    Text(
-                      'Better Learn Programming',
-                      style: GoogleFonts.poppins(
-                        letterSpacing: .7,
-                        textStyle: TextStyle(
-                          color: Color(0xff76424e),
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500,
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: AutoSizeText(
+                        'Better Learn Programming',
+                        textAlign: TextAlign.center,
+                        minFontSize: 18,
+                        maxLines: 2,
+                        style: GoogleFonts.poppins(
+                          letterSpacing: .7,
+                          textStyle: TextStyle(
+                            color: Color(0xff76424e),
+                            fontSize: 20,
+                            fontWeight: FontWeight.w500,
+                          ),
                         ),
                       ),
                     )

@@ -1,6 +1,8 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:code_quiz_v2/provider/online%20books/online-books-provider.dart';
 import 'package:code_quiz_v2/screen/pages/online%20book/book-details.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
@@ -60,21 +62,30 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Container(
                               height: MediaQuery.of(context).size.height * .2,
                               padding: EdgeInsets.symmetric(
                                   horizontal: 20, vertical: 10),
-                              child: Text(
+                              child: AutoSizeText(
                                 'Get Essential\nBooks!',
+                                maxLines: 2,
+                                minFontSize: 24,
                                 style: GoogleFonts.poppins(
                                   textStyle: TextStyle(
-                                    color: Colors.teal[600],
-                                    fontSize: 34,
+                                    color: Colors.black54,
+                                    fontSize: 28,
                                     fontWeight: FontWeight.w600,
                                   ),
                                 ),
                               ),
+                            ),
+                            SvgPicture.asset(
+                              'images/analysis.svg',
+                              fit: BoxFit.cover,
+                              height: 120,
+                              width: 100,
                             ),
                           ],
                         ),
@@ -184,9 +195,11 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                                                   padding: const EdgeInsets
                                                           .symmetric(
                                                       horizontal: 10),
-                                                  child: Text(
+                                                  child: AutoSizeText(
                                                     bookObject.getBooksData
                                                         .books[index].title,
+                                                    maxLines: 2,
+                                                    minFontSize: 16,
                                                     textAlign: TextAlign.center,
                                                     style: GoogleFonts.roboto(
                                                       textStyle: TextStyle(

@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:code_quiz_v2/screen/pages/quiz%20page/quiz-page.dart';
 import 'package:flutter/material.dart';
 
@@ -22,23 +23,21 @@ class _QuizWelcomePageState extends State<QuizWelcomePage> {
           children: [
             Spacer(),
             Container(
-              height: height * .5,
-              width: width * 0.75,
-              child: Center(
-                child: Text(
-                  'Test your programming and coding skills with quizzes.\n\nPrepare yourself for the job interview! ',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontFamily: 'Ubuntu',
-                      letterSpacing: 1.3,
-                      color: Colors.white,
-                      fontSize: 23,
-                      fontWeight: FontWeight.w600),
-                ),
+              padding: EdgeInsets.all(30),
+              child: AutoSizeText(
+                'Test your programming and coding skills with quizzes.\nPrepare yourself for the job interview! ',
+                textAlign: TextAlign.center,
+                maxLines: 5,
+                style: TextStyle(
+                    fontFamily: 'Ubuntu',
+                    letterSpacing: 1.3,
+                    color: Colors.white,
+                    fontSize: 23,
+                    fontWeight: FontWeight.w500),
               ),
             ),
             SizedBox(
-              height: height * 0.03,
+              height: 40,
             ),
             Material(
               color: Colors.transparent,
@@ -59,11 +58,11 @@ class _QuizWelcomePageState extends State<QuizWelcomePage> {
                           offset: Offset(5, 3),
                         )
                       ],
-                      // color: Color(0xFF442C3E),
                       color: Colors.blueGrey[100]),
                   child: Center(
-                    child: Text(
+                    child: AutoSizeText(
                       'Start Quiz',
+                      minFontSize: 34,
                       style: TextStyle(
                         fontFamily: 'Ubuntu',
                         fontWeight: FontWeight.bold,
