@@ -24,7 +24,7 @@ class _QuizPageState extends State<QuizPage> {
           style: GoogleFonts.ubuntu(
             textStyle: TextStyle(
               color: Colors.white,
-              fontSize: 30,
+              fontSize: 24,
             ),
           ),
         ),
@@ -43,7 +43,7 @@ class _QuizPageState extends State<QuizPage> {
         ),
       ),
       body: Container(
-        color: Color(0xFFFCFFCE),
+        color: Colors.amber[50],
         child: SafeArea(
           child: Builder(
             builder: (BuildContext context) => Container(
@@ -53,7 +53,12 @@ class _QuizPageState extends State<QuizPage> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     SizedBox(height: height * .02),
-                    SvgPicture.asset('images/dedicated-team.svg'),
+                    SvgPicture.asset(
+                      'images/question.svg',
+                      height: 200,
+                      width: 100,
+                      fit: BoxFit.contain,
+                    ),
                     SizedBox(height: height * .02),
                     question(),
                     Padding(

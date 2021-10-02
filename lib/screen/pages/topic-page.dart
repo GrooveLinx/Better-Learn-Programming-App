@@ -69,12 +69,12 @@ class _TopicPageState extends State<TopicPage> {
         elevation: 0,
         title: AutoSizeText(
           'Coder\'s Handbook',
-          minFontSize: 20.0,
+          minFontSize: 24.0,
           maxLines: 2,
           style: GoogleFonts.poppins(
             textStyle: TextStyle(
               color: Color(0xff5c4450),
-              fontSize: 28,
+              fontSize: 26,
               fontWeight: FontWeight.w600,
             ),
           ),
