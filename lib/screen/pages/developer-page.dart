@@ -128,8 +128,8 @@ class DeveloperPage extends StatelessWidget {
                       children: [
                         IconButton(
                           onPressed: () {
-                            _openFacebookLink(
-                                'https://www.facebook.com/rippledevs/');
+                            // _openFacebookLink(
+                            //     'https://www.facebook.com/rippledevs/');
                           },
                           icon: Icon(
                             Mdi.facebook,
@@ -142,8 +142,8 @@ class DeveloperPage extends StatelessWidget {
                         ),
                         IconButton(
                           onPressed: () {
-                            _openLinkedInLink(
-                                'https://www.linkedin.com/company/ripplebee/');
+                            // _openLinkedInLink(
+                            //     'https://www.linkedin.com/company/ripplebee/');
                           },
                           icon: Icon(
                             Mdi.linkedin,
@@ -156,7 +156,7 @@ class DeveloperPage extends StatelessWidget {
                         ),
                         IconButton(
                           onPressed: () {
-                            _openTwitterLink('https://twitter.com/rippledevs');
+                            // _openTwitterLink('https://twitter.com/rippledevs');
                           },
                           icon: Icon(
                             Mdi.twitter,
