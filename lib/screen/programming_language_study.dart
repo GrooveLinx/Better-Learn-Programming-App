@@ -1,12 +1,10 @@
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:code_quiz_v2/config/ads_helper.dart';
 import 'package:code_quiz_v2/database/language-list.dart';
 import 'package:code_quiz_v2/models/language-model.dart';
 import 'package:code_quiz_v2/screen/language_tile_page.dart';
 import 'package:code_quiz_v2/screen/pages/topic-page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:mdi/mdi.dart';
 
 class ProgrammingLanguageStudy extends StatefulWidget {
@@ -22,7 +20,7 @@ class ProgrammingLanguageStudy extends StatefulWidget {
 }
 
 class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
-  BannerAd _bannerAd;
+  /*BannerAd _bannerAd;
   bool _isBannerAdReady = false;
   Future<InitializationStatus> _initGoogleMobileAds() {
     return MobileAds.instance.initialize();
@@ -61,7 +59,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
       ),
     );
     _bannerAd.load();
-  }
+  }*/
 
   @override
   Widget build(BuildContext context) {
@@ -148,11 +146,12 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                                       maxLines: 2,
                                       minFontSize: 16,
                                       maxFontSize: 20,
-                                      style: TextStyle(
-                                        fontFamily: 'Roboto',
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.w600,
-                                        color: Color(0xff8c8798),
+                                      style: GoogleFonts.roboto(
+                                        textStyle: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w600,
+                                          color: Color(0xff8c8798),
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -162,7 +161,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                           ),
                         ),
                         SizedBox(
-                          height: height / 50,
+                          height: 15,
                         ),
                         Container(
                           margin: EdgeInsets.only(
@@ -183,7 +182,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                                 color: Colors.black54),
                           ),
                         ),
-                        _isBannerAdReady
+                        /* _isBannerAdReady
                             ? Align(
                                 alignment: Alignment.bottomCenter,
                                 child: Container(
@@ -194,7 +193,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                               )
                             : Container(
                                 height: 0,
-                              ),
+                              ),*/
                         GestureDetector(
                           onTap: () {
                             Navigator.push(
@@ -226,7 +225,7 @@ class _ProgrammingLanguageStudyState extends State<ProgrammingLanguageStudy> {
                                 'Learn ${programmingLanguage.name}',
                                 maxLines: 2,
                                 minFontSize: 18,
-                                style: GoogleFonts.poppins(
+                                style: GoogleFonts.rubik(
                                   textStyle: TextStyle(
                                     color: Colors.teal[700],
                                     fontWeight: FontWeight.w600,

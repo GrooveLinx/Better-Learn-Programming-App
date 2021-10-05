@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mdi/mdi.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -41,20 +42,20 @@ class DeveloperPage extends StatelessWidget {
         children: [
           Container(
             decoration: BoxDecoration(
-              color: Colors.pink[50],
+              //color: Colors.pink[50],
               borderRadius: BorderRadius.only(
                 bottomRight: Radius.circular(40),
               ),
             ),
-            height: height * .35,
-            width: double.infinity,
-            child: Image.asset(
-              'images/dev.jpg',
-              fit: BoxFit.cover,
+            height: height * .3,
+            width: width * .8,
+            child: SvgPicture.asset(
+              'images/codethink.svg',
+              fit: BoxFit.contain,
             ),
           ),
           SizedBox(
-            height: height * .02,
+            height: 10,
           ),
           Expanded(
             child: Container(

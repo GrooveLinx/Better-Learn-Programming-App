@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:code_quiz_v2/screen/pages/online%20book/online-books-page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -102,9 +103,14 @@ class _BookDetailsState extends State<BookDetails> {
                   ),
                   Spacer(),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Text(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 15,
+                      vertical: 5,
+                    ),
+                    child: AutoSizeText(
                       '${widget.subTitle}',
+                      maxLines: 2,
+                      minFontSize: 16,
                       textAlign: TextAlign.center,
                       style: GoogleFonts.roboto(
                         textStyle: TextStyle(

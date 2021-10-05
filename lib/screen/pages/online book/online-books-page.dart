@@ -72,9 +72,9 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                                 'Get Essential\nBooks!',
                                 maxLines: 2,
                                 minFontSize: 24,
-                                style: GoogleFonts.poppins(
+                                style: GoogleFonts.ubuntu(
                                   textStyle: TextStyle(
-                                    color: Colors.black54,
+                                    color: Colors.brown,
                                     fontSize: 28,
                                     fontWeight: FontWeight.w600,
                                   ),
@@ -83,9 +83,8 @@ class _OnlineBookPageState extends State<OnlineBookPage> {
                             ),
                             SvgPicture.asset(
                               'images/analysis.svg',
-                              fit: BoxFit.cover,
-                              height: 120,
-                              width: 100,
+                              fit: BoxFit.contain,
+                              height: 150,
                             ),
                           ],
                         ),

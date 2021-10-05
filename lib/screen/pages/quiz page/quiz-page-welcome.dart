@@ -17,7 +17,7 @@ class _QuizWelcomePageState extends State<QuizWelcomePage> {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: Color(0xffece4ff),
+      backgroundColor: Color(0xffece4d1),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -27,12 +27,10 @@ class _QuizWelcomePageState extends State<QuizWelcomePage> {
             SvgPicture.asset(
               'images/town.svg',
               height: height * .3,
-              // width: width * .6,
-              fit: BoxFit.cover,
+              //width: width * .5,
+              fit: BoxFit.contain,
             ),
-            SizedBox(
-              height: 30,
-            ),
+            Spacer(),
             Container(
               padding: EdgeInsets.symmetric(
                 horizontal: 30.0,
@@ -44,15 +42,13 @@ class _QuizWelcomePageState extends State<QuizWelcomePage> {
                 style: GoogleFonts.rubik(
                   textStyle: TextStyle(
                     color: Color(0xff5c4450),
-                    fontSize: 26,
+                    fontSize: 24,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
               ),
             ),
-            SizedBox(
-              height: 40,
-            ),
+            Spacer(),
             Material(
               color: Colors.transparent,
               child: GestureDetector(
@@ -77,13 +73,13 @@ class _QuizWelcomePageState extends State<QuizWelcomePage> {
                   child: Center(
                     child: AutoSizeText(
                       'Start Quiz',
-                      minFontSize: 32,
+                      minFontSize: 25,
                       style: GoogleFonts.poppins(
                         letterSpacing: 1,
                         textStyle: TextStyle(
                           color: Colors.white,
-                          fontSize: 28,
-                          fontWeight: FontWeight.w600,
+                          fontSize: 30,
+                          fontWeight: FontWeight.w500,
                         ),
                       ),
                     ),
